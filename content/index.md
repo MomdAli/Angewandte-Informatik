@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Angewandte Informatik
 ---
 
 This is a blank Quartz installation.
