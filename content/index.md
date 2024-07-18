@@ -9,8 +9,8 @@ Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Proj
 
 ## 📂 Unterlagen
 
-1. [[Semester 1 Unterlagen]]
-2. [[Semester 2 Unterlagen]]
+1. [[Semester 2/Analysis/Prüfungsvorbereitung]]
+2. [[Semester 2/Programmiertechnik/Prüfungsvorbereitung]]
 3. [[Code-Schnipsel]]
 %%
 ## 🛠️ Vorgestellte Projekte

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="calc.Calculator">
+  <grid id="27dc6" binding="jpMain" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="630" height="890"/>
+    </constraints>
+    <properties>
+      <background color="-16761789"/>
+    </properties>
+    <border type="etched"/>
+    <children>
+      <grid id="64981" binding="jpTop" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="true" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-8933206"/>
+          <preferredSize width="166" height="200"/>
+        </properties>
+        <border type="etched" title="Input"/>
+        <children>
+          <component id="71d9a" class="javax.swing.JTextField" binding="jlInput">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="40" height="10"/>
+                <preferred-size width="150" height="50"/>
+                <maximum-size width="9999999" height="9999999"/>
+              </grid>
+            </constraints>
+            <properties>
+              <dropMode value="USE_SELECTION"/>
+              <editable value="false"/>
+              <focusable value="false"/>
+              <font name="Casio fx-9860GII" size="32" style="0"/>
+              <opaque value="true"/>
+              <requestFocusEnabled value="false"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="f6916" class="javax.swing.JTextField" binding="jlResult">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="40" height="10"/>
+                <preferred-size width="150" height="50"/>
+                <maximum-size width="9999999" height="9999999"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <focusable value="false"/>
+              <font name="Casio fx-9860GII" size="32" style="0"/>
+              <horizontalAlignment value="4"/>
+              <opaque value="true"/>
+              <requestFocusEnabled value="false"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="16292" binding="jpBottom" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="46700" class="javax.swing.JButton" binding="a7Button" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <autoscrolls value="false"/>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="7"/>
+            </properties>
+          </component>
+          <component id="c3e66" class="javax.swing.JButton" binding="a4Button" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="4"/>
+            </properties>
+          </component>
+          <component id="f23c5" class="javax.swing.JButton" binding="a1Button" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="1"/>
+            </properties>
+          </component>
+          <component id="2009e" class="javax.swing.JButton" binding="a0Button" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="0"/>
+            </properties>
+          </component>
+          <component id="c4c3b" class="javax.swing.JButton" binding="dotButton">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="."/>
+            </properties>
+          </component>
+          <component id="7ffd7" class="javax.swing.JButton" binding="a2Button" default-binding="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="2"/>
+            </properties>
+          </component>
+          <component id="f7548" class="javax.swing.JButton" binding="a5Button" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="5"/>
+            </properties>
+          </component>
+          <component id="37c42" class="javax.swing.JButton" binding="a8Button" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="8"/>
+            </properties>
+          </component>
+          <component id="a7df" class="javax.swing.JButton" binding="a9Button" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="9"/>
+            </properties>
+          </component>
+          <component id="85b7" class="javax.swing.JButton" binding="a6Button" default-binding="true">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="6"/>
+            </properties>
+          </component>
+          <component id="cd29e" class="javax.swing.JButton" binding="a3Button" default-binding="true">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="3"/>
+            </properties>
+          </component>
+          <component id="a1401" class="javax.swing.JButton" binding="x10Button" default-binding="true">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="×10"/>
+            </properties>
+          </component>
+          <component id="cafcd" class="javax.swing.JButton" binding="delButton">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="DEL"/>
+            </properties>
+          </component>
+          <component id="7f82b" class="javax.swing.JButton" binding="plusButton">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="+"/>
+            </properties>
+          </component>
+          <component id="cff06" class="javax.swing.JButton" binding="ansButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="Ans"/>
+            </properties>
+          </component>
+          <component id="c1acb" class="javax.swing.JButton" binding="acButton">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="AC"/>
+            </properties>
+          </component>
+          <component id="e911f" class="javax.swing.JButton" binding="minButton">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="-"/>
+            </properties>
+          </component>
+          <component id="42d61" class="javax.swing.JButton" binding="equButton">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="="/>
+            </properties>
+          </component>
+          <component id="da97f" class="javax.swing.JButton" binding="divButton">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value=":"/>
+            </properties>
+          </component>
+          <component id="9e59f" class="javax.swing.JButton" binding="mulButton">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="30" height="10"/>
+                <preferred-size width="90" height="60"/>
+                <maximum-size width="270" height="180"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="24" style="1"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <rolloverEnabled value="true"/>
+              <text value="x"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ebc60" binding="jpMiddle" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="20" bottom="10" right="20"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6f0ff" class="javax.swing.JButton" binding="sinButton">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="sin"/>
+            </properties>
+          </component>
+          <component id="e4917" class="javax.swing.JButton" binding="cosButton">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="cos"/>
+            </properties>
+          </component>
+          <component id="c4af1" class="javax.swing.JButton" binding="bracketLeftButton">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="("/>
+            </properties>
+          </component>
+          <component id="7a77c" class="javax.swing.JButton" binding="bracketRightButton">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value=")"/>
+            </properties>
+          </component>
+          <component id="2bbba" class="javax.swing.JButton" binding="powerButton">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="^"/>
+            </properties>
+          </component>
+          <component id="cfdd2" class="javax.swing.JButton" binding="powerOfTwoButton">
+            <constraints>
+              <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <actionCommand value="^2"/>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="x²"/>
+            </properties>
+          </component>
+          <component id="4eb65" class="javax.swing.JButton" binding="tanButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="tan"/>
+            </properties>
+          </component>
+          <component id="cc23e" class="javax.swing.JButton" binding="sqrtButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <actionCommand value="sqrt"/>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="√"/>
+            </properties>
+          </component>
+          <component id="1e529" class="javax.swing.JButton" binding="piButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="π"/>
+            </properties>
+          </component>
+          <component id="50106" class="javax.swing.JButton" binding="eButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="e"/>
+            </properties>
+          </component>
+          <component id="a5bf8" class="javax.swing.JButton" binding="rndButton">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="Rnd"/>
+            </properties>
+          </component>
+          <component id="6e945" class="javax.swing.JButton" binding="powerOfMin1Button">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="25" height="10"/>
+                <preferred-size width="75" height="40"/>
+                <maximum-size width="750" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <actionCommand value="^-1"/>
+              <background color="-8933206"/>
+              <borderPainted value="true"/>
+              <focusPainted value="false"/>
+              <font name="CaskaydiaMono NF" size="18" style="1"/>
+              <rolloverEnabled value="true"/>
+              <text value="x⁻¹"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a1954" binding="jpCheck" layout-manager="FlowLayout" hgap="20" vgap="10" flow-align="1">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+          <preferredSize width="351" height="53"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ec49d" class="javax.swing.JRadioButton" binding="radRadioButton">
+            <constraints/>
+            <properties>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusPainted value="false"/>
+              <font name="Calibri" size="18" style="0"/>
+              <foreground color="-1835273"/>
+              <opaque value="false"/>
+              <rolloverEnabled value="false"/>
+              <selected value="true"/>
+              <text value="Rad"/>
+            </properties>
+          </component>
+          <component id="1cc4d" class="javax.swing.JRadioButton" binding="degRadioButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <focusPainted value="false"/>
+              <font name="Calibri" size="18" style="0"/>
+              <foreground color="-1835273"/>
+              <opaque value="false"/>
+              <rolloverEnabled value="false"/>
+              <text value="Deg"/>
+            </properties>
+          </component>
+          <component id="87b17" class="javax.swing.JComboBox" binding="themeComboBox">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+              <font name="Calibri" size="18" style="0"/>
+              <model>
+                <item value="Default"/>
+                <item value="Sunny Delight"/>
+                <item value="Mint Fresh"/>
+                <item value="Pink Harmony"/>
+                <item value="Tropical Sunset"/>
+                <item value="Ocean Breeze"/>
+                <item value="Pastel Dream"/>
+                <item value="Forest Whisper"/>
+                <item value="Earthy Tones"/>
+                <item value="Berry Burst"/>
+                <item value="Dusky Hues"/>
+              </model>
+              <name value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup">
+      <member id="ec49d"/>
+      <member id="1cc4d"/>
+    </group>
+  </buttonGroups>
+</form>
