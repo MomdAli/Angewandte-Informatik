@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>ExcaliAI</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="ExcaliAI"/><meta property="og:description" content="/* let dirty=false; if(!ea.verifyMinimumPluginVersion || !ea.verifyMinimumPluginVersion(&amp;quot;2.0.12&amp;quot;)) { new Notice(&amp;quot;This script requires a newer version ..."/><meta property="og:image" content="https://momdali.github.io/Angewandte-Informatik/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="/* let dirty=false; if(!ea.verifyMinimumPluginVersion || !ea.verifyMinimumPluginVersion(&amp;quot;2.0.12&amp;quot;)) { new Notice(&amp;quot;This script requires a newer version ..."/><meta name="generator" content="Quartz"/><link href="../../../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Excalidraw/Scripts/Downloaded/ExcaliAI"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title"><a href="../../..">🪴 Angewandte Informatik</a></h1><div class="spacer mobile-only"></div><div class="search"><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="darkmode"><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;Excalidraw&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Excalidraw/Analysis&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Excalidraw/Analysis/Probeklausur&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Excalidraw/Analysis/Probeklausur/Formel&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Excalidraw/Scripts&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;Excalidraw/Scripts/Downloaded&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Excalidraw"><button class="folder-button"><span class="folder-title">Excalidraw</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Excalidraw"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Excalidraw/Analysis"><button class="folder-button"><span class="folder-title">Analysis</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Excalidraw/Analysis"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Excalidraw/Analysis/Probeklausur"><button class="folder-button"><span class="folder-title">Probeklausur</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Excalidraw/Analysis/Probeklausur"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Excalidraw/Analysis/Probeklausur/Formel"><button class="folder-button"><span class="folder-title">Formel</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Excalidraw/Analysis/Probeklausur/Formel"><li><a href="../../../Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_1" data-for="Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_1">Formelsammlung_1</a></li><li><a href="../../../Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_2" data-for="Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_2">Formelsammlung_2</a></li><li><a href="../../../Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_3" data-for="Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_3">Formelsammlung_3</a></li></ul></div></li><li><a href="../../../Excalidraw/Analysis/Probeklausur/Probe_Aufagbe5" data-for="Excalidraw/Analysis/Probeklausur/Probe_Aufagbe5">Probe_Aufagbe5</a></li><li><a href="../../../Excalidraw/Analysis/Probeklausur/Probe_Aufgabe1" data-for="Excalidraw/Analysis/Probeklausur/Probe_Aufgabe1">Probe_Aufgabe1</a></li><li><a href="../../../Excalidraw/Analysis/Probeklausur/Probe_Aufgabe2" data-for="Excalidraw/Analysis/Probeklausur/Probe_Aufgabe2">Probe_Aufgabe2</a></li><li><a href="../../../Excalidraw/Analysis/Probeklausur/Probe_Aufgabe4" data-for="Excalidraw/Analysis/Probeklausur/Probe_Aufgabe4">Probe_Aufgabe4</a></li><li><a href="../../../Excalidraw/Analysis/Probeklausur/Probe_Aufgabe6" data-for="Excalidraw/Analysis/Probeklausur/Probe_Aufgabe6">Probe_Aufgabe6</a></li></ul></div></li><li><a href="../../../Excalidraw/Analysis/diskrete_funktionen" data-for="Excalidraw/Analysis/diskrete_funktionen">diskrete_funktionen</a></li><li><a href="../../../Excalidraw/Analysis/Folgen_Übung" data-for="Excalidraw/Analysis/Folgen_Übung">Folgen_Übung</a></li><li><a href="../../../Excalidraw/Analysis/Funktionen" data-for="Excalidraw/Analysis/Funktionen">Funktionen</a></li><li><a href="../../../Excalidraw/Analysis/multivariat" data-for="Excalidraw/Analysis/multivariat">multivariat</a></li><li><a href="../../../Excalidraw/Analysis/Newton_Verfahren_Ex" data-for="Excalidraw/Analysis/Newton_Verfahren_Ex">Newton_Verfahren_Ex</a></li><li><a href="../../../Excalidraw/Analysis/Quiz-1" data-for="Excalidraw/Analysis/Quiz-1">Quiz 1</a></li><li><a href="../../../Excalidraw/Analysis/Regression" data-for="Excalidraw/Analysis/Regression">Regression</a></li><li><a href="../../../Excalidraw/Analysis/Substituieren" data-for="Excalidraw/Analysis/Substituieren">Substituieren</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Excalidraw/Scripts"><button class="folder-button"><span class="folder-title">Scripts</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Excalidraw/Scripts"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="Excalidraw/Scripts/Downloaded"><button class="folder-button"><span class="folder-title">Downloaded</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="Excalidraw/Scripts/Downloaded"><li><a href="../../../Excalidraw/Scripts/Downloaded/Auto-Draw-for-Pen" data-for="Excalidraw/Scripts/Downloaded/Auto-Draw-for-Pen">Auto Draw for Pen</a></li><li><a href="../../../Excalidraw/Scripts/Downloaded/Auto-Layout" data-for="Excalidraw/Scripts/Downloaded/Auto-Layout">Auto Layout</a></li><li><a href="../../../Excalidraw/Scripts/Downloaded/Elbow-connectors" data-for="Excalidraw/Scripts/Downloaded/Elbow-connectors">Elbow connectors</a></li><li><a href="../../../Excalidraw/Scripts/Downloaded/ExcaliAI" data-for="Excalidraw/Scripts/Downloaded/ExcaliAI">ExcaliAI</a></li><li><a href="../../../Excalidraw/Scripts/Downloaded/Expand-rectangles-horizontally-keep-text-centered" data-for="Excalidraw/Scripts/Downloaded/Expand-rectangles-horizontally-keep-text-centered">Expand rectangles horizontally keep text centered</a></li><li><a href="../../../Excalidraw/Scripts/Downloaded/Set-Grid" data-for="Excalidraw/Scripts/Downloaded/Set-Grid">Set Grid</a></li><li><a href="../../../Excalidraw/Scripts/Downloaded/Toggle-Grid" data-for="Excalidraw/Scripts/Downloaded/Toggle-Grid">Toggle Grid</a></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../Excalidraw/">Excalidraw</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../Excalidraw/Scripts/">Scripts</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../Excalidraw/Scripts/Downloaded/">Downloaded</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>ExcaliAI</a></div></nav><h1 class="article-title">ExcaliAI</h1><p show-comma="true" class="content-meta"><span>Jul 17, 2024</span><span>17 min read</span></p></div></div><article class="popover-hint"><p>/*</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A1vrSGBbWgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><img src="https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-draw-a-ui.jpg" alt/></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="js*/" data-theme="github-light github-dark"><code data-language="js*/" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>let dirty=false;</span></span>
+<span data-line> </span>
+<span data-line><span>if(!ea.verifyMinimumPluginVersion || !ea.verifyMinimumPluginVersion(&quot;2.0.12&quot;)) {</span></span>
+<span data-line><span>  new Notice(&quot;This script requires a newer version of Excalidraw. Please install the latest version.&quot;);</span></span>
+<span data-line><span>  return;</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>const outputTypes = {</span></span>
+<span data-line><span>  &quot;html&quot;: {</span></span>
+<span data-line><span>    instruction: &quot;Turn this into a single html file using tailwind. Return a single message containing only the html file in a codeblock.&quot;,</span></span>
+<span data-line><span>    blocktype: &quot;html&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;mermaid&quot;: {</span></span>
+<span data-line><span>    instruction: &quot;Return a single message containing only the mermaid diagram in a codeblock.&quot;,</span></span>
+<span data-line><span>    blocktype: &quot;mermaid&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;svg&quot;: {</span></span>
+<span data-line><span>    instruction: &quot;Return a single message containing only the SVG code in an html codeblock.&quot;,</span></span>
+<span data-line><span>    blocktype: &quot;svg&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;image-gen&quot;: {</span></span>
+<span data-line><span>    instruction: &quot;Return a single message with the generated image prompt in a codeblock&quot;,</span></span>
+<span data-line><span>    blocktype: &quot;image&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>    &quot;image-gen-silent&quot;: {</span></span>
+<span data-line><span>    instruction: &quot;Return a single message with the generated image prompt in a codeblock&quot;,</span></span>
+<span data-line><span>    blocktype: &quot;image-silent&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;image-edit&quot;: {</span></span>
+<span data-line><span>    instruction: &quot;&quot;,</span></span>
+<span data-line><span>    blocktype: &quot;image&quot;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>const systemPrompts = {</span></span>
+<span data-line><span>  &quot;Challenge my thinking&quot;: {</span></span>
+<span data-line><span>    prompt: `Your task is to interpret a screenshot of a whiteboard, translating its ideas into a Mermaid graph. The whiteboard will encompass thoughts on a subject. Within the mind map, distinguish ideas that challenge, dispute, or contradict the whiteboard content. Additionally, include concepts that expand, complement, or advance the user's thinking. Utilize the Mermaid graph diagram type and present the resulting Mermaid diagram within a code block. Ensure the Mermaid script excludes the use of parentheses ().`,</span></span>
+<span data-line><span>    type: &quot;mermaid&quot;,</span></span>
+<span data-line><span>    help: &quot;Translate your image and optional text prompt into a Mermaid mindmap. If there are conversion errors, edit the Mermaid script under 'More Tools'.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;Convert sketch to shapes&quot;: {</span></span>
+<span data-line><span>    prompt: `Given an image featuring various geometric shapes drawn by the user, your objective is to analyze the input and generate SVG code that accurately represents these shapes. Your output will be the SVG code enclosed in an HTML code block.`,</span></span>
+<span data-line><span>    type: &quot;svg&quot;,</span></span>
+<span data-line><span>    help: &quot;Convert selected scribbles into shapes; works better with fewer shapes. Experimental and may not produce good drawings.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;Create a simple Excalidraw icon&quot;: {</span></span>
+<span data-line><span>    prompt: `Given a description of an SVG image from the user, your objective is to generate the corresponding SVG code. Avoid incorporating textual elements within the generated SVG. Your output should be the resulting SVG code enclosed in an HTML code block.`,</span></span>
+<span data-line><span>    type: &quot;svg&quot;,</span></span>
+<span data-line><span>    help: &quot;Convert text prompts into simple icons inserted as Excalidraw elements. Expect only a text prompt. Experimental and may not produce good drawings.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  &quot;Create a stick figure&quot;: {</span></span>
+<span data-line><span>    prompt: &quot;You will receive a prompt from the user. Your task involves drawing a simple stick figure or a scene involving a few stick figures based on the user's prompt. Create the stickfigure based on the following style description. DO NOT add any detail, just use it AS-IS: Create a simple stick figure character with a large round head and a face in the style of sketchy caricatures. The stick figure should have a rudimentary body composed of straight lines representing the arms and legs. Hands and toes should be should be represented with round shapes, do not add details such as fingers or toes. Use fine lines, smooth curves, rounded shapes. The stick figure should retain a playful and childlike simplicity, reminiscent of a doodle someone might draw on the corner of a notebook page. Create a black and white drawing, a hand-drawn figure on white background.&quot;,</span></span>
+<span data-line><span>    type: &quot;image-gen&quot;,</span></span>
+<span data-line><span>    help: &quot;Send only the text prompt to OpenAI. Provide a detailed description; OpenAI will enrich your prompt automatically. To avoid it, start your prompt like this 'DO NOT add any detail, just use it AS-IS:'&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;Edit an image&quot;: {</span></span>
+<span data-line><span>    prompt: null,</span></span>
+<span data-line><span>    type: &quot;image-edit&quot;,</span></span>
+<span data-line><span>    help: &quot;Image elements will be used as the Image. Shapes on top of the image will be the Mask. Use the prompt to instruct Dall-e about the changes. Dall-e-2 model will be used.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;Generate an image from image and prompt&quot;: {</span></span>
+<span data-line><span>    prompt: &quot;Your task involves receiving an image and a textual prompt from the user. Your goal is to craft a detailed, accurate, and descriptive narrative of the image, tailored for effective image generation. Utilize the user-provided text prompt to inform and guide your depiction of the image. Ensure the resulting image remains text-free.&quot;,</span></span>
+<span data-line><span>    type: &quot;image-gen&quot;,</span></span>
+<span data-line><span>    help: &quot;Generate an image based on the drawing and prompt using ChatGPT-Vision and Dall-e. Provide a contextual text-prompt for accurate interpretation.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;Generate an image from prompt&quot;: {</span></span>
+<span data-line><span>    prompt: null,</span></span>
+<span data-line><span>    type: &quot;image-gen&quot;,</span></span>
+<span data-line><span>    help: &quot;Send only the text prompt to OpenAI. Provide a detailed description; OpenAI will enrich your prompt automatically. To avoid it, start your prompt like this 'DO NOT add any detail, just use it AS-IS:'&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;Generate an image to illustrate a quote&quot;: {</span></span>
+<span data-line><span>    prompt: &quot;Your task involves transforming a user-provided quote into a detailed and imaginative illustration. Craft a visual representation that captures the essence of the quote and resonates well with a broad audience. If the Author's name is provided, aim to establish a connection between the illustration and the Author. This can be achieved by referencing a well-known story from the Author, situating the image in the Author's era or setting, or employing other creative methods of association. Additionally, provide preferences for styling, such as the chosen medium and artistic direction, to guide the image creation process. Ensure the resulting image remains text-free. Your task output should comprise a descriptive and detailed narrative aimed at facilitating the creation of a captivating illustration from the quote.&quot;,</span></span>
+<span data-line><span>    type: &quot;image-gen&quot;,</span></span>
+<span data-line><span>    help: &quot;ExcaliAI will create an image prompt to illustrate your text input - a quote - with GPT, then generate an image using Dall-e. In case you include the Author's name, GPT will try to generate an image that in some way references the Author.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>   &quot;Generate 4 icon-variants based on input image&quot;: {</span></span>
+<span data-line><span>    prompt: &quot;Given a simple sketch and an optional text prompt from the user, your task is to generate a descriptive narrative tailored for effective image generation, capturing the style of the sketch. Utilize the text prompt to guide the description. Your objective is to instruct DALL-E to create a collage of four minimalist black and white hand-drawn pencil sketches in a 2x2 matrix format. Each sketch should convert the user's sketch into simple artistic SVG icons with transparent backgrounds. Ensure the resulting images remain text-free, maintaining a minimalist, easy-to-understand style, and omit framing borders. Only include a pencil in the drawing if it is explicitely metioned in the user prompt or included in the sketch.&quot;,</span></span>
+<span data-line><span>    type: &quot;image-gen-silent&quot;,</span></span>
+<span data-line><span>    help: &quot;Generate a collage of 4 icons based on the drawing using ChatGPT-Vision and Dall-e. You may provide a contextual text-prompt to improve accuracy of interpretation.&quot;</span></span>
+<span data-line><span>  }, </span></span>
+<span data-line><span>  &quot;Visual brainstorm&quot;: {</span></span>
+<span data-line><span>    prompt: &quot;Your objective is to interpret a screenshot of a whiteboard, creating an image aimed at sparking further thoughts on the subject. The whiteboard will present diverse ideas about a specific topic. Your generated image should achieve one of two purposes: highlighting concepts that challenge, dispute, or contradict the whiteboard content, or introducing ideas that expand, complement, or enrich the user's thinking. You have the option to include multiple tiles in the resulting image, resembling a sequence akin to a comic strip. Ensure that the image remains devoid of text.&quot;,</span></span>
+<span data-line><span>    type: &quot;image-gen&quot;,</span></span>
+<span data-line><span>    help: &quot;Use ChatGPT Visions and Dall-e to create an image based on your text prompt and image to spark new ideas.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>  &quot;Wireframe to code&quot;: {</span></span>
+<span data-line><span>    prompt: `You are an expert tailwind developer. A user will provide you with a low-fidelity wireframe of an application and you will return a single html file that uses tailwind to create the website. Use creative license to make the application more fleshed out. Write the necessary javascript code. If you need to insert an image, use placehold.co to create a placeholder image.`,</span></span>
+<span data-line><span>    type: &quot;html&quot;,</span></span>
+<span data-line><span>    help: &quot;Use GPT Visions to interpret the wireframe and generate a web application. YOu may copy the resulting code from the active embeddable's top left menu.&quot;</span></span>
+<span data-line><span>  },</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>const IMAGE_WARNING = &quot;The generated image is linked through a temporary OpenAI URL and will be removed in approximately 30 minutes. To save it permanently, choose 'Save image from URL to local file' from the Obsidian Command Palette.&quot;</span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>// Initialize values and settings</span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>let settings = ea.getScriptSettings();</span></span>
+<span data-line> </span>
+<span data-line><span>if(!settings[&quot;Agent's Task&quot;]) {</span></span>
+<span data-line><span>  settings = {</span></span>
+<span data-line><span>    &quot;Agent's Task&quot;: &quot;Wireframe to code&quot;,</span></span>
+<span data-line><span>    &quot;User Prompt&quot;: &quot;&quot;,</span></span>
+<span data-line><span>  };</span></span>
+<span data-line><span>  await ea.setScriptSettings(settings);</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>const OPENAI_API_KEY = ea.plugin.settings.openAIAPIToken;</span></span>
+<span data-line><span>if(!OPENAI_API_KEY || OPENAI_API_KEY === &quot;&quot;) {</span></span>
+<span data-line><span>  new Notice(&quot;You must first configure your API key in Excalidraw Plugin Settings&quot;);</span></span>
+<span data-line><span>  return;</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>let userPrompt = settings[&quot;User Prompt&quot;] ?? &quot;&quot;;</span></span>
+<span data-line><span>let agentTask = settings[&quot;Agent's Task&quot;];</span></span>
+<span data-line><span>let imageSize = settings[&quot;Image Size&quot;]??&quot;1024x1024&quot;;</span></span>
+<span data-line> </span>
+<span data-line><span>if(!systemPrompts.hasOwnProperty(agentTask)) {</span></span>
+<span data-line><span>  agentTask = Object.keys(systemPrompts)[0];</span></span>
+<span data-line><span>}</span></span>
+<span data-line><span>let imageModel, valideSizes;</span></span>
+<span data-line> </span>
+<span data-line><span>const setImageModelAndSizes = () => {</span></span>
+<span data-line><span>  imageModel = systemPrompts[agentTask].type === &quot;image-edit&quot;</span></span>
+<span data-line><span>    ? &quot;dall-e-2&quot;</span></span>
+<span data-line><span>    : ea.plugin.settings.openAIDefaultImageGenerationModel;</span></span>
+<span data-line><span>  validSizes = imageModel === &quot;dall-e-2&quot;</span></span>
+<span data-line><span>    ? [`256x256`, `512x512`, `1024x1024`]</span></span>
+<span data-line><span>    : (imageModel === &quot;dall-e-3&quot;</span></span>
+<span data-line><span>      ? [`1024x1024`, `1792x1024`, `1024x1792`]</span></span>
+<span data-line><span>      : [`1024x1024`])</span></span>
+<span data-line><span>  if(!validSizes.includes(imageSize)) {</span></span>
+<span data-line><span>    imageSize = &quot;1024x1024&quot;;</span></span>
+<span data-line><span>    dirty = true;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>}</span></span>
+<span data-line><span>setImageModelAndSizes();</span></span>
+<span data-line> </span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>// Generate Image Blob From Selected Excalidraw Elements</span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>const calculateImageScale = (elements) => {</span></span>
+<span data-line><span>  const bb = ea.getBoundingBox(elements);</span></span>
+<span data-line><span>  const size = (bb.width*bb.height);</span></span>
+<span data-line><span>  const minRatio = Math.sqrt(360000/size);</span></span>
+<span data-line><span>  const maxRatio = Math.sqrt(size/16000000);</span></span>
+<span data-line><span>  return minRatio > 1 </span></span>
+<span data-line><span>    ? minRatio</span></span>
+<span data-line><span>    : (</span></span>
+<span data-line><span>        maxRatio > 1 </span></span>
+<span data-line><span>        ? 1/maxRatio</span></span>
+<span data-line><span>        : 1</span></span>
+<span data-line><span>      );</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>const createMask = async (dataURL) => {</span></span>
+<span data-line><span>  return new Promise((resolve, reject) => {</span></span>
+<span data-line><span>    const img = new Image();</span></span>
+<span data-line> </span>
+<span data-line><span>    img.onload = () => {</span></span>
+<span data-line><span>      const canvas = document.createElement('canvas');</span></span>
+<span data-line><span>      canvas.width = img.width;</span></span>
+<span data-line><span>      canvas.height = img.height;</span></span>
+<span data-line> </span>
+<span data-line><span>      const ctx = canvas.getContext('2d');</span></span>
+<span data-line><span>      ctx.drawImage(img, 0, 0);</span></span>
+<span data-line> </span>
+<span data-line><span>      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);</span></span>
+<span data-line><span>      const data = imageData.data;</span></span>
+<span data-line><span>      </span></span>
+<span data-line><span>      for (let i = 0; i &lt; data.length; i += 4) {</span></span>
+<span data-line><span>        // If opaque (alpha > 0), make it transparent</span></span>
+<span data-line><span>        if (data[i + 3] > 0) {</span></span>
+<span data-line><span>          data[i + 3] = 0; // Set alpha to 0 (transparent)</span></span>
+<span data-line><span>        } else if (data[i + 3] === 0) {</span></span>
+<span data-line><span>          // If fully transparent, make it red</span></span>
+<span data-line><span>          data[i] = 255; // Red</span></span>
+<span data-line><span>          data[i + 1] = 0; // Green</span></span>
+<span data-line><span>          data[i + 2] = 0; // Blue</span></span>
+<span data-line><span>          data[i + 3] = 255; // make it opaque</span></span>
+<span data-line><span>        }</span></span>
+<span data-line><span>      }</span></span>
+<span data-line> </span>
+<span data-line><span>      ctx.putImageData(imageData, 0, 0);</span></span>
+<span data-line><span>      const maskDataURL = canvas.toDataURL();</span></span>
+<span data-line> </span>
+<span data-line><span>      resolve(maskDataURL);</span></span>
+<span data-line><span>    };</span></span>
+<span data-line> </span>
+<span data-line><span>    img.onerror = error => {</span></span>
+<span data-line><span>      reject(error);</span></span>
+<span data-line><span>    };</span></span>
+<span data-line> </span>
+<span data-line><span>    img.src = dataURL;</span></span>
+<span data-line><span>  });</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>//https://platform.openai.com/docs/api-reference/images/createEdit</span></span>
+<span data-line><span>//dall-e-2 image edit only works on square images</span></span>
+<span data-line><span>//if targetDalleImageEdit === true then the image and the mask will be returned in two separate dataURLs</span></span>
+<span data-line><span>let squareBB;</span></span>
+<span data-line> </span>
+<span data-line><span>const generateCanvasDataURL = async (view, targetDalleImageEdit=false) => {</span></span>
+<span data-line><span>  let PADDING = 5;</span></span>
+<span data-line><span>  await view.forceSave(true); //to ensure recently embedded PNG and other images are saved to file</span></span>
+<span data-line><span>  const viewElements = ea.getViewSelectedElements();</span></span>
+<span data-line><span>  if(viewElements.length === 0) {</span></span>
+<span data-line><span>    return {imageDataURL: null, maskDataURL: null} ;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>  ea.copyViewElementsToEAforEditing(viewElements, true); //copying the images objects over to EA for PNG generation</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  let maskDataURL;</span></span>
+<span data-line><span>  const loader = ea.getEmbeddedFilesLoader(false);</span></span>
+<span data-line><span>  let scale = calculateImageScale(ea.getElements());</span></span>
+<span data-line><span>  const bb = ea.getBoundingBox(viewElements);</span></span>
+<span data-line><span>  if(ea.getElements()</span></span>
+<span data-line><span>    .filter(el=>el.type===&quot;image&quot;)</span></span>
+<span data-line><span>    .some(el=>Math.round(el.width) === Math.round(bb.width) &amp;&amp; Math.round(el.height) === Math.round(bb.height))</span></span>
+<span data-line><span>  ) { PADDING = 0; }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  let exportSettings = {withBackground: true, withTheme: true};</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  if(targetDalleImageEdit) {</span></span>
+<span data-line><span>    PADDING = 0;  </span></span>
+<span data-line><span>    const strokeColor = ea.style.strokeColor;</span></span>
+<span data-line><span>    const backgroundColor = ea.style.backgroundColor;</span></span>
+<span data-line><span>    ea.style.backgroundColor = &quot;transparent&quot;;</span></span>
+<span data-line><span>    ea.style.strokeColor = &quot;transparent&quot;;</span></span>
+<span data-line><span>    let rectID;</span></span>
+<span data-line><span>    if(bb.height > bb.width) {</span></span>
+<span data-line><span>      rectID = ea.addRect(bb.topX-(bb.height-bb.width)/2, bb.topY,bb.height, bb.height);</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>    if(bb.width > bb.height) {</span></span>
+<span data-line><span>      rectID = ea.addRect(bb.topX, bb.topY-(bb.width-bb.height)/2,bb.width, bb.width);</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>    if(bb.height === bb.width) {</span></span>
+<span data-line><span>      rectID = ea.addRect(bb.topX, bb.topY, bb.width, bb.height);</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>    const rect = ea.getElement(rectID);</span></span>
+<span data-line><span>    squareBB = {topX: rect.x-PADDING, topY: rect.y-PADDING, width: rect.width + 2*PADDING, height: rect.height + 2*PADDING};</span></span>
+<span data-line><span>    ea.style.strokeColor = strokeColor;</span></span>
+<span data-line><span>    ea.style.backgroundColor = backgroundColor;</span></span>
+<span data-line><span>    ea.getElements().filter(el=>el.type === &quot;image&quot;).forEach(el=>{el.isDeleted = true});</span></span>
+<span data-line> </span>
+<span data-line><span>    dalleWidth = parseInt(imageSize.split(&quot;x&quot;)[0]);</span></span>
+<span data-line><span>    scale = dalleWidth/squareBB.width;</span></span>
+<span data-line><span>    exportSettings = {withBackground: false, withTheme: true};</span></span>
+<span data-line><span>    maskDataURL= await ea.createPNGBase64(</span></span>
+<span data-line><span>      null, scale, exportSettings, loader, &quot;light&quot;, PADDING</span></span>
+<span data-line><span>    );</span></span>
+<span data-line><span>    maskDataURL = await createMask(maskDataURL)</span></span>
+<span data-line><span>    ea.getElements().filter(el=>el.type === &quot;image&quot;).forEach(el=>{el.isDeleted = false});</span></span>
+<span data-line><span>    ea.getElements().filter(el=>el.type !== &quot;image&quot; &amp;&amp; el.id !== rectID).forEach(el=>{el.isDeleted = true});</span></span>
+<span data-line><span>  }</span></span>
+<span data-line> </span>
+<span data-line><span>  const imageDataURL = await ea.createPNGBase64(</span></span>
+<span data-line><span>    null, scale, exportSettings, loader, &quot;light&quot;, PADDING</span></span>
+<span data-line><span>  );</span></span>
+<span data-line><span>  ea.clear();</span></span>
+<span data-line><span>  return {imageDataURL, maskDataURL};</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>let {imageDataURL, maskDataURL} = await generateCanvasDataURL(ea.targetView, systemPrompts[agentTask].type === &quot;image-edit&quot;);</span></span>
+<span data-line> </span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>// Support functions - embeddable spinner and error</span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>const spinner = await ea.convertStringToDataURL(`</span></span>
+<span data-line><span>  &lt;html>&lt;head>&lt;style></span></span>
+<span data-line><span>    html, body {width: 100%; height: 100%; color: ${ea.getExcalidrawAPI().getAppState().theme === &quot;dark&quot; ? &quot;white&quot; : &quot;black&quot;};}</span></span>
+<span data-line><span>    body {display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem; overflow: hidden;}</span></span>
+<span data-line><span>    .Spinner {display: flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto;}</span></span>
+<span data-line><span>    .Spinner svg {animation: rotate 1.6s linear infinite; transform-origin: center center; width: 40px; height: 40px;}</span></span>
+<span data-line><span>    .Spinner circle {stroke: currentColor; animation: dash 1.6s linear 0s infinite; stroke-linecap: round;}</span></span>
+<span data-line><span>    @keyframes rotate {100% {transform: rotate(360deg);}}</span></span>
+<span data-line><span>    @keyframes dash {</span></span>
+<span data-line><span>      0% {stroke-dasharray: 1, 300; stroke-dashoffset: 0;}</span></span>
+<span data-line><span>      50% {stroke-dasharray: 150, 300; stroke-dashoffset: -200;}</span></span>
+<span data-line><span>      100% {stroke-dasharray: 1, 300; stroke-dashoffset: -280;}</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>  &lt;/style>&lt;/head>&lt;body></span></span>
+<span data-line><span>    &lt;div class=&quot;Spinner&quot;></span></span>
+<span data-line><span>      &lt;svg viewBox=&quot;0 0 100 100&quot;></span></span>
+<span data-line><span>        &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;46&quot; stroke-width=&quot;8&quot; fill=&quot;none&quot; stroke-miter-limit=&quot;10&quot;/></span></span>
+<span data-line><span>      &lt;/svg></span></span>
+<span data-line><span>    &lt;/div></span></span>
+<span data-line><span>    &lt;div>Generating...&lt;/div></span></span>
+<span data-line><span>  &lt;/body>&lt;/html>`);</span></span>
+<span data-line> </span>
+<span data-line><span>  const errorMessage = async (spinnerID, message) => {</span></span>
+<span data-line><span>    const error = &quot;Something went wrong! Check developer console for more.&quot;;</span></span>
+<span data-line><span>    const details = message ? `&lt;p>${message}&lt;/p>` : &quot;&quot;;</span></span>
+<span data-line><span>    const errorDataURL = await ea.convertStringToDataURL(`</span></span>
+<span data-line><span>      &lt;html>&lt;head>&lt;style></span></span>
+<span data-line><span>        html, body {height: 100%;}</span></span>
+<span data-line><span>        body {display: flex; flex-direction: column; align-items: center; justify-content: center; color: red;}</span></span>
+<span data-line><span>        h1, h3 {margin-top: 0;margin-bottom: 0.5rem;}</span></span>
+<span data-line><span>      &lt;/style>&lt;/head>&lt;body></span></span>
+<span data-line><span>        &lt;h1>Error!&lt;/h1></span></span>
+<span data-line><span>        &lt;h3>${error}&lt;/h3>${details}</span></span>
+<span data-line><span>      &lt;/body>&lt;/html>`);</span></span>
+<span data-line><span>    new Notice (error);</span></span>
+<span data-line><span>    ea.getElement(spinnerID).link = errorDataURL;</span></span>
+<span data-line><span>    ea.addElementsToView(false,true);</span></span>
+<span data-line><span>  }</span></span>
+<span data-line> </span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>// Utility to write Mermaid to dialog</span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>const EDITOR_LS_KEYS = {</span></span>
+<span data-line><span>  OAI_API_KEY: &quot;excalidraw-oai-api-key&quot;,</span></span>
+<span data-line><span>  MERMAID_TO_EXCALIDRAW: &quot;mermaid-to-excalidraw&quot;,</span></span>
+<span data-line><span>  PUBLISH_LIBRARY: &quot;publish-library-data&quot;,</span></span>
+<span data-line><span>};</span></span>
+<span data-line> </span>
+<span data-line><span>const setMermaidDataToStorage = (mermaidDefinition) => {</span></span>
+<span data-line><span>  try {</span></span>
+<span data-line><span>    window.localStorage.setItem(</span></span>
+<span data-line><span>      EDITOR_LS_KEYS.MERMAID_TO_EXCALIDRAW,</span></span>
+<span data-line><span>      JSON.stringify(mermaidDefinition)</span></span>
+<span data-line><span>    );</span></span>
+<span data-line><span>    return true;</span></span>
+<span data-line><span>  } catch (error) {</span></span>
+<span data-line><span>    console.warn(`localStorage.setItem error: ${error.message}`);</span></span>
+<span data-line><span>    return false;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>};</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>// Submit Prompt</span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>const generateImage = async(text, spinnerID, bb, silent=false) => {</span></span>
+<span data-line><span>  const requestObject = {</span></span>
+<span data-line><span>    text,</span></span>
+<span data-line><span>    imageGenerationProperties: {</span></span>
+<span data-line><span>      size: imageSize, </span></span>
+<span data-line><span>      //quality: &quot;standard&quot;, //not supported by dall-e-2</span></span>
+<span data-line><span>      n:1,</span></span>
+<span data-line><span>    },</span></span>
+<span data-line><span>  };</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  const result = await ea.postOpenAI(requestObject);</span></span>
+<span data-line><span>  console.log({result, json:result?.json});</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  if(!result?.json?.data?.[0]?.url) {</span></span>
+<span data-line><span>    await errorMessage(spinnerID, result?.json?.error?.message);</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  const spinner = ea.getElement(spinnerID)</span></span>
+<span data-line><span>  spinner.isDeleted = true;</span></span>
+<span data-line><span>  const imageID = await ea.addImage(spinner.x, spinner.y, result.json.data[0].url);</span></span>
+<span data-line><span>  const imageEl = ea.getElement(imageID);</span></span>
+<span data-line><span>  const revisedPrompt = result.json.data[0].revised_prompt;</span></span>
+<span data-line><span>  if(revisedPrompt &amp;&amp; !silent) {</span></span>
+<span data-line><span>    ea.style.fontSize = 16;</span></span>
+<span data-line><span>    const rectID = ea.addText(imageEl.x+15, imageEl.y + imageEl.height + 50, revisedPrompt, {</span></span>
+<span data-line><span>      width: imageEl.width-30,</span></span>
+<span data-line><span>      textAlign: &quot;center&quot;,</span></span>
+<span data-line><span>      textVerticalAlign: &quot;top&quot;,</span></span>
+<span data-line><span>      box: true,</span></span>
+<span data-line><span>    })</span></span>
+<span data-line><span>    ea.getElement(rectID).strokeColor = &quot;transparent&quot;;</span></span>
+<span data-line><span>    ea.getElement(rectID).backgroundColor = &quot;transparent&quot;;</span></span>
+<span data-line><span>    ea.addToGroup(ea.getElements().filter(el=>el.id !== spinnerID).map(el=>el.id));</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  await ea.addElementsToView(false, true, true);</span></span>
+<span data-line><span>  if(silent) return;</span></span>
+<span data-line><span>  ea.getExcalidrawAPI().setToast({</span></span>
+<span data-line><span>    message: IMAGE_WARNING,</span></span>
+<span data-line><span>    duration: 15000,</span></span>
+<span data-line><span>    closable: true</span></span>
+<span data-line><span>  });</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>const run = async (text) => {</span></span>
+<span data-line><span>  if(!text &amp;&amp; !imageDataURL) {</span></span>
+<span data-line><span>    new Notice(&quot;No prompt, aborting&quot;);</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line> </span>
+<span data-line><span>  const systemPrompt = systemPrompts[agentTask];</span></span>
+<span data-line><span>  const outputType = outputTypes[systemPrompt.type];</span></span>
+<span data-line><span>  const isImageGenRequest = outputType.blocktype === &quot;image&quot; || outputType.blocktype === &quot;image-silent&quot;;</span></span>
+<span data-line><span>  const isImageEditRequest = systemPrompt.type === &quot;image-edit&quot;;</span></span>
+<span data-line> </span>
+<span data-line><span>  if(isImageEditRequest) {</span></span>
+<span data-line><span>    if(!text) {</span></span>
+<span data-line><span>      new Notice(&quot;You must provide a text prompt with instructions for how the image should be modified&quot;);</span></span>
+<span data-line><span>      return;</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>    if(!imageDataURL || !maskDataURL) {</span></span>
+<span data-line><span>      new Notice(&quot;You must provide an image and a mask&quot;);</span></span>
+<span data-line><span>      return;</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  //place spinner next to selected elements</span></span>
+<span data-line><span>  const bb = ea.getBoundingBox(ea.getViewSelectedElements()); </span></span>
+<span data-line><span>  const spinnerID = ea.addEmbeddable(bb.topX+bb.width+100,bb.topY-(720-bb.height)/2,550,720,spinner);</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  //this block is in an async call using the isEACompleted flag because otherwise during debug Obsidian</span></span>
+<span data-line><span>  //goes black (not freezes, but does not get a new frame for some reason)</span></span>
+<span data-line><span>  //palcing this in an async call solves this issue</span></span>
+<span data-line><span>  //If you know why this is happening and can offer a better solution, please reach out to @zsviczian</span></span>
+<span data-line><span>  let isEACompleted = false;</span></span>
+<span data-line><span>  setTimeout(async()=>{</span></span>
+<span data-line><span>    await ea.addElementsToView(false,true);</span></span>
+<span data-line><span>    ea.clear();</span></span>
+<span data-line><span>    const embeddable = ea.getViewElements().filter(el=>el.id===spinnerID);</span></span>
+<span data-line><span>    ea.copyViewElementsToEAforEditing(embeddable);</span></span>
+<span data-line><span>    const els = ea.getViewSelectedElements();</span></span>
+<span data-line><span>    ea.viewZoomToElements(false, els.concat(embeddable));</span></span>
+<span data-line><span>    isEACompleted = true;</span></span>
+<span data-line><span>  });</span></span>
+<span data-line> </span>
+<span data-line><span>  if(isImageGenRequest &amp;&amp; !systemPrompt.prompt &amp;&amp; !isImageEditRequest) {</span></span>
+<span data-line><span>    generateImage(text,spinnerID,bb);</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  const requestObject = isImageEditRequest</span></span>
+<span data-line><span>  ? {</span></span>
+<span data-line><span>      ...imageDataURL ? {image: imageDataURL} : {},</span></span>
+<span data-line><span>      ...(text &amp;&amp; text.trim() !== &quot;&quot;) ? {text} : {},</span></span>
+<span data-line><span>      imageGenerationProperties: {</span></span>
+<span data-line><span>        size: imageSize, </span></span>
+<span data-line><span>        //quality: &quot;standard&quot;, //not supported by dall-e-2</span></span>
+<span data-line><span>        n:1,</span></span>
+<span data-line><span>        mask: maskDataURL,</span></span>
+<span data-line><span>      },</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>  : {</span></span>
+<span data-line><span>      ...imageDataURL ? {image: imageDataURL} : {},</span></span>
+<span data-line><span>      ...(text &amp;&amp; text.trim() !== &quot;&quot;) ? {text} : {},</span></span>
+<span data-line><span>      systemPrompt: systemPrompt.prompt,</span></span>
+<span data-line><span>      instruction: outputType.instruction,</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  //Get result from GPT</span></span>
+<span data-line><span>  const result = await ea.postOpenAI(requestObject);</span></span>
+<span data-line><span>  console.log({result, json:result?.json});</span></span>
+<span data-line> </span>
+<span data-line><span>  //checking that EA has completed. Because the postOpenAI call is an async await</span></span>
+<span data-line><span>  //I don't expect EA not to be completed by now. However the devil never sleeps.</span></span>
+<span data-line><span>  //This (the insomnia of the Devil) is why I have a watchdog here as well</span></span>
+<span data-line><span>  let counter = 0</span></span>
+<span data-line><span>  while(!isEACompleted &amp;&amp; counter++&lt;10) sleep(50);</span></span>
+<span data-line><span>  if(!isEACompleted) {</span></span>
+<span data-line><span>    await errorMessage(spinnerID, &quot;Unexpected issue with ExcalidrawAutomate&quot;);</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line> </span>
+<span data-line><span>  if(isImageEditRequest) {   </span></span>
+<span data-line><span>    if(!result?.json?.data?.[0]?.url) {</span></span>
+<span data-line><span>      await errorMessage(spinnerID, result?.json?.error?.message);</span></span>
+<span data-line><span>      return;</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>    </span></span>
+<span data-line><span>    const spinner = ea.getElement(spinnerID)</span></span>
+<span data-line><span>    spinner.isDeleted = true;</span></span>
+<span data-line><span>    const imageID = await ea.addImage(spinner.x, spinner.y, result.json.data[0].url);    </span></span>
+<span data-line><span>    await ea.addElementsToView(false, true, true);</span></span>
+<span data-line><span>    ea.getExcalidrawAPI().setToast({</span></span>
+<span data-line><span>      message: IMAGE_WARNING,</span></span>
+<span data-line><span>      duration: 15000,</span></span>
+<span data-line><span>      closable: true</span></span>
+<span data-line><span>    });</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line> </span>
+<span data-line><span>  if(!result?.json?.hasOwnProperty(&quot;choices&quot;)) {</span></span>
+<span data-line><span>    await errorMessage(spinnerID, result?.json?.error?.message);</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line> </span>
+<span data-line><span>  //exctract codeblock and display result</span></span>
+<span data-line><span>  let content = ea.extractCodeBlocks(result.json.choices[0]?.message?.content)[0]?.data;</span></span>
+<span data-line> </span>
+<span data-line><span>  if(!content) {</span></span>
+<span data-line><span>    await errorMessage(spinnerID);</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line> </span>
+<span data-line><span>  if(isImageGenRequest) {</span></span>
+<span data-line><span>    generateImage(content,spinnerID,bb,outputType.blocktype === &quot;image-silent&quot;);</span></span>
+<span data-line><span>    return;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  switch(outputType.blocktype) {</span></span>
+<span data-line><span>    case &quot;html&quot;:</span></span>
+<span data-line><span>      ea.getElement(spinnerID).link = await ea.convertStringToDataURL(content);</span></span>
+<span data-line><span>      ea.addElementsToView(false,true);</span></span>
+<span data-line><span>      break;</span></span>
+<span data-line><span>    case &quot;svg&quot;:</span></span>
+<span data-line><span>      ea.getElement(spinnerID).isDeleted = true;</span></span>
+<span data-line><span>      ea.importSVG(content);</span></span>
+<span data-line><span>      ea.addToGroup(ea.getElements().map(el=>el.id));</span></span>
+<span data-line><span>      if(ea.getViewSelectedElements().length>0) {</span></span>
+<span data-line><span>        ea.targetView.currentPosition = {x: bb.topX+bb.width+100, y: bb.topY};</span></span>
+<span data-line><span>      }</span></span>
+<span data-line><span>      ea.addElementsToView(true, false);</span></span>
+<span data-line><span>      break;</span></span>
+<span data-line><span>    case &quot;mermaid&quot;:</span></span>
+<span data-line><span>      if(content.startsWith(&quot;mermaid&quot;)) {</span></span>
+<span data-line><span>        content = content.replace(/^mermaid/,&quot;&quot;).trim();</span></span>
+<span data-line><span>      }</span></span>
+<span data-line> </span>
+<span data-line><span>      try {</span></span>
+<span data-line><span>        result = await ea.addMermaid(content);</span></span>
+<span data-line><span>        if(typeof result === &quot;string&quot;) {</span></span>
+<span data-line><span>          await errorMessage(spinnerID, &quot;Open [More Tools / Mermaid to Excalidraw] to manually fix the received mermaid script&lt;br>&lt;br>&quot; + result);</span></span>
+<span data-line><span>          return;</span></span>
+<span data-line><span>        }</span></span>
+<span data-line><span>      } catch (e) {</span></span>
+<span data-line><span>        ea.addText(0,0,content);</span></span>
+<span data-line><span>      }</span></span>
+<span data-line><span>      ea.getElement(spinnerID).isDeleted = true;</span></span>
+<span data-line><span>      ea.targetView.currentPosition = {x: bb.topX+bb.width+100, y: bb.topY-bb.height};</span></span>
+<span data-line><span>      await ea.addElementsToView(true, false);</span></span>
+<span data-line><span>      setMermaidDataToStorage(content);</span></span>
+<span data-line><span>      new Notice(&quot;Open More Tools/Mermaid to Excalidraw in the top tools menu to edit the generated diagram&quot;,8000);</span></span>
+<span data-line><span>      break;</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>// User Interface</span></span>
+<span data-line><span>// --------------------------------------</span></span>
+<span data-line><span>let previewDiv;</span></span>
+<span data-line><span>const fragWithHTML = (html) => createFragment((frag) => (frag.createDiv().innerHTML = html));</span></span>
+<span data-line><span>const isImageGenerationTask = () => systemPrompts[agentTask].type === &quot;image-gen&quot; || systemPrompts[agentTask].type === &quot;image-gen-silent&quot; || systemPrompts[agentTask].type === &quot;image-edit&quot;;</span></span>
+<span data-line><span>const addPreviewImage = () => {</span></span>
+<span data-line><span>  if(!previewDiv) return;</span></span>
+<span data-line><span>  previewDiv.empty();</span></span>
+<span data-line><span>  previewDiv.createEl(&quot;img&quot;,{</span></span>
+<span data-line><span>    attr: {</span></span>
+<span data-line><span>      style: `max-width: 100%;max-height: 30vh;`,</span></span>
+<span data-line><span>      src: imageDataURL,</span></span>
+<span data-line><span>    }</span></span>
+<span data-line><span>  });</span></span>
+<span data-line><span>  if(maskDataURL) {</span></span>
+<span data-line><span>    previewDiv.createEl(&quot;img&quot;,{</span></span>
+<span data-line><span>      attr: {</span></span>
+<span data-line><span>        style: `max-width: 100%;max-height: 30vh;`,</span></span>
+<span data-line><span>        src: maskDataURL,</span></span>
+<span data-line><span>      }</span></span>
+<span data-line><span>    });</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>const configModal = new ea.obsidian.Modal(app);</span></span>
+<span data-line><span>configModal.modalEl.style.width=&quot;100%&quot;;</span></span>
+<span data-line><span>configModal.modalEl.style.maxWidth=&quot;1000px&quot;;</span></span>
+<span data-line> </span>
+<span data-line><span>configModal.onOpen = async () => {</span></span>
+<span data-line><span>  const contentEl = configModal.contentEl;</span></span>
+<span data-line><span>  contentEl.createEl(&quot;h1&quot;, {text: &quot;ExcaliAI&quot;});</span></span>
+<span data-line> </span>
+<span data-line><span>  let systemPromptTextArea, systemPromptDiv, imageSizeSetting, imageSizeSettingDropdown, helpEl;</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  new ea.obsidian.Setting(contentEl)</span></span>
+<span data-line><span>    .setName(&quot;What would you like to do?&quot;)</span></span>
+<span data-line><span>    .addDropdown(dropdown=>{</span></span>
+<span data-line><span>      Object.keys(systemPrompts).forEach(key=>dropdown.addOption(key,key));</span></span>
+<span data-line><span>      dropdown</span></span>
+<span data-line><span>      .setValue(agentTask)</span></span>
+<span data-line><span>      .onChange(async (value) => {</span></span>
+<span data-line><span>        dirty = true;</span></span>
+<span data-line><span>        const prevTask = agentTask;</span></span>
+<span data-line><span>        agentTask = value;</span></span>
+<span data-line><span>        if(</span></span>
+<span data-line><span>          (systemPrompts[prevTask].type === &quot;image-edit&quot; &amp;&amp; systemPrompts[value].type !== &quot;image-edit&quot;) || </span></span>
+<span data-line><span>          (systemPrompts[prevTask].type !== &quot;image-edit&quot; &amp;&amp; systemPrompts[value].type === &quot;image-edit&quot;)</span></span>
+<span data-line><span>        ) {</span></span>
+<span data-line><span>          ({imageDataURL, maskDataURL} = await generateCanvasDataURL(ea.targetView, systemPrompts[value].type === &quot;image-edit&quot;));</span></span>
+<span data-line><span>          addPreviewImage();</span></span>
+<span data-line><span>          setImageModelAndSizes();</span></span>
+<span data-line><span>          while (imageSizeSettingDropdown.selectEl.options.length > 0) { imageSizeSettingDropdown.selectEl.remove(0); }</span></span>
+<span data-line><span>          validSizes.forEach(size=>imageSizeSettingDropdown.addOption(size,size));</span></span>
+<span data-line><span>          imageSizeSettingDropdown.setValue(imageSize);</span></span>
+<span data-line><span>        }</span></span>
+<span data-line><span>        imageSizeSetting.settingEl.style.display = isImageGenerationTask() ? &quot;&quot; : &quot;none&quot;;</span></span>
+<span data-line><span>        const prompt = systemPrompts[value].prompt;</span></span>
+<span data-line><span>        helpEl.innerHTML = `&lt;b>Help: &lt;/b>` + systemPrompts[value].help;</span></span>
+<span data-line><span>        if(prompt) {</span></span>
+<span data-line><span>          systemPromptDiv.style.display = &quot;&quot;;</span></span>
+<span data-line><span>          systemPromptTextArea.setValue(systemPrompts[value].prompt);</span></span>
+<span data-line><span>        } else {</span></span>
+<span data-line><span>          systemPromptDiv.style.display = &quot;none&quot;;</span></span>
+<span data-line><span>        }</span></span>
+<span data-line><span>      });</span></span>
+<span data-line><span>   })</span></span>
+<span data-line> </span>
+<span data-line><span>  helpEl = contentEl.createEl(&quot;p&quot;);</span></span>
+<span data-line><span>  helpEl.innerHTML = `&lt;b>Help: &lt;/b>` + systemPrompts[agentTask].help;</span></span>
+<span data-line> </span>
+<span data-line><span>  systemPromptDiv = contentEl.createDiv();</span></span>
+<span data-line><span>  systemPromptDiv.createEl(&quot;h4&quot;, {text: &quot;Customize System Prompt&quot;});</span></span>
+<span data-line><span>  systemPromptDiv.createEl(&quot;span&quot;, {text: &quot;Unless you know what you are doing I do not recommend changing the system prompt&quot;})</span></span>
+<span data-line><span>  const systemPromptSetting = new ea.obsidian.Setting(systemPromptDiv)</span></span>
+<span data-line><span>    .addTextArea(text => {</span></span>
+<span data-line><span>       systemPromptTextArea = text;</span></span>
+<span data-line><span>       const prompt = systemPrompts[agentTask].prompt;</span></span>
+<span data-line><span>       text.inputEl.style.minHeight = &quot;10em&quot;;</span></span>
+<span data-line><span>       text.inputEl.style.width = &quot;100%&quot;;</span></span>
+<span data-line><span>       text.setValue(prompt);</span></span>
+<span data-line><span>       text.onChange(value => {</span></span>
+<span data-line><span>         systemPrompts[value].prompt = value;</span></span>
+<span data-line><span>       });</span></span>
+<span data-line><span>       if(!prompt) systemPromptDiv.style.display = &quot;none&quot;;</span></span>
+<span data-line><span>    })</span></span>
+<span data-line><span>  systemPromptSetting.nameEl.style.display = &quot;none&quot;;</span></span>
+<span data-line><span>  systemPromptSetting.descEl.style.display = &quot;none&quot;;</span></span>
+<span data-line><span>  systemPromptSetting.infoEl.style.display = &quot;none&quot;;</span></span>
+<span data-line> </span>
+<span data-line><span>  contentEl.createEl(&quot;h4&quot;, {text: &quot;User Prompt&quot;});</span></span>
+<span data-line><span>  const userPromptSetting = new ea.obsidian.Setting(contentEl)</span></span>
+<span data-line><span>    .addTextArea(text => {</span></span>
+<span data-line><span>       text.inputEl.style.minHeight = &quot;10em&quot;;</span></span>
+<span data-line><span>       text.inputEl.style.width = &quot;100%&quot;;</span></span>
+<span data-line><span>       text.setValue(userPrompt);</span></span>
+<span data-line><span>       text.onChange(value => {</span></span>
+<span data-line><span>         userPrompt = value;</span></span>
+<span data-line><span>         dirty = true;</span></span>
+<span data-line><span>       })</span></span>
+<span data-line><span>    })</span></span>
+<span data-line><span>  userPromptSetting.nameEl.style.display = &quot;none&quot;;</span></span>
+<span data-line><span>  userPromptSetting.descEl.style.display = &quot;none&quot;;</span></span>
+<span data-line><span>  userPromptSetting.infoEl.style.display = &quot;none&quot;;</span></span>
+<span data-line> </span>
+<span data-line><span>  imageSizeSetting = new ea.obsidian.Setting(contentEl)</span></span>
+<span data-line><span>    .setName(&quot;Select image size&quot;)</span></span>
+<span data-line><span>    .setDesc(fragWithHTML(&quot;&lt;mark>⚠️ Important ⚠️&lt;/mark>: &quot; + IMAGE_WARNING))</span></span>
+<span data-line><span>    .addDropdown(dropdown=>{</span></span>
+<span data-line><span>      validSizes.forEach(size=>dropdown.addOption(size,size));</span></span>
+<span data-line><span>      imageSizeSettingDropdown = dropdown;</span></span>
+<span data-line><span>      dropdown</span></span>
+<span data-line><span>        .setValue(imageSize)</span></span>
+<span data-line><span>        .onChange(async (value) => {</span></span>
+<span data-line><span>          dirty = true;</span></span>
+<span data-line><span>          imageSize = value;</span></span>
+<span data-line><span>          if(systemPrompts[agentTask].type === &quot;image-edit&quot;) {</span></span>
+<span data-line><span>            ({imageDataURL, maskDataURL} = await generateCanvasDataURL(ea.targetView, true));</span></span>
+<span data-line><span>            addPreviewImage();</span></span>
+<span data-line><span>          }</span></span>
+<span data-line><span>        });</span></span>
+<span data-line><span>   })</span></span>
+<span data-line><span>   imageSizeSetting.settingEl.style.display = isImageGenerationTask() ? &quot;&quot; : &quot;none&quot;;</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  if(imageDataURL) {</span></span>
+<span data-line><span>    previewDiv = contentEl.createDiv({</span></span>
+<span data-line><span>      attr: {</span></span>
+<span data-line><span>        style: &quot;text-align: center;&quot;,</span></span>
+<span data-line><span>      }</span></span>
+<span data-line><span>    });</span></span>
+<span data-line><span>    addPreviewImage();</span></span>
+<span data-line><span>  } else {</span></span>
+<span data-line><span>    contentEl.createEl(&quot;h4&quot;, {text: &quot;No elements are selected from your canvas&quot;});</span></span>
+<span data-line><span>    contentEl.createEl(&quot;span&quot;, {text: &quot;Because there are no Excalidraw elements selected on the canvas, only the text prompt will be sent to OpenAI.&quot;});</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>  new ea.obsidian.Setting(contentEl)</span></span>
+<span data-line><span>    .addButton(button => </span></span>
+<span data-line><span>      button</span></span>
+<span data-line><span>      .setButtonText(&quot;Run&quot;)</span></span>
+<span data-line><span>      .onClick((event)=>{</span></span>
+<span data-line><span>        run(userPrompt); //Obsidian crashes otherwise, likely has to do with requesting an new frame for react</span></span>
+<span data-line><span>        configModal.close();</span></span>
+<span data-line><span>      })</span></span>
+<span data-line><span>    );</span></span>
+<span data-line><span>}</span></span>
+<span data-line> </span>
+<span data-line><span>configModal.onClose = () => {</span></span>
+<span data-line><span>  if(dirty) {</span></span>
+<span data-line><span>    settings[&quot;User Prompt&quot;] = userPrompt;</span></span>
+<span data-line><span>    settings[&quot;Agent's Task&quot;] = agentTask;</span></span>
+<span data-line><span>    settings[&quot;Image Size&quot;] = imageSize;</span></span>
+<span data-line><span>    ea.setScriptSettings(settings);</span></span>
+<span data-line><span>  }</span></span>
+<span data-line><span>}</span></span>
+<span data-line><span>  </span></span>
+<span data-line><span>configModal.open();</span></span></code></pre></figure></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+	c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+	v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+	s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true}"></div></div></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li>No backlinks found</li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.2.3</a> © 2024</p><ul><li><a href="https://github.com/MomdAli/Angewandte-Informatik">GitHub</a></li><li><a href="https://discord.gg/nwtQs3UMec">Discord Community</a></li></ul></footer></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">
+            const socket = new WebSocket('ws://localhost:3001')
+            // reload(true) ensures resources like images and scripts are fetched again in firefox
+            socket.addEventListener('message', () => document.location.reload(true))
+          </script><script src="../../../postscript.js" type="module"></script></html>
