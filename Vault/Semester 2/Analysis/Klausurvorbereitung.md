@@ -1,12 +1,15 @@
 ---
 enableToc: false
+date: 2024-07-17
+tags:
+  - Probeklausur
+  - Zusammenfassung
+  - Mathematik
 ---
 
 ## <font color="#de7802">Eigene Formelsammlung und Kurzskript</font>
 
-![[Formelsammlungg]]
-
-Hier ist Link zu [Kurzskript](Kurzskript.md)
+![[Formelsammlung]]
 
 ## <font color="#92d050">Folgen</font>
 

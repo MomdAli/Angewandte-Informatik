@@ -16,7 +16,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "momdali.github.io/Angewandte-Informatik",
-    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw/**.md"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
