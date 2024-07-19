@@ -1,6 +1,7 @@
 ---
 title: 🏡 Willkommen in meinem Dokumenten-Hub!
 enableToc: false
+publish: true
 ---
 
 Hallo zusammen! 👋
