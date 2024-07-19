@@ -4,6 +4,7 @@ tags:
   - Programmiertechnik
 enableToc: false
 date: 2024-07-19
+publish: true
 ---
 
 [[Klausur_SS18.pdf#page=2&height=400|{Klausur 18}]]

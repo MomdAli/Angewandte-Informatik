@@ -5,6 +5,7 @@ tags:
   - Probeklausur
   - Zusammenfassung
   - Mathematik
+publish: true
 ---
 
 ## <font color="#de7802">Eigene Formelsammlung und Kurzskript</font>

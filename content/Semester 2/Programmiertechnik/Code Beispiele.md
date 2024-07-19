@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 ```java
 public interface FrequencyTable<T> extends Iterable<Element<T>>{
 
