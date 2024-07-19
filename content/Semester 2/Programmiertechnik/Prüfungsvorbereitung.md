@@ -4,9 +4,11 @@ tags:
   - Probeklausur
   - Zusammenfassung
 date: 2024-07-19
+enableToc: false
 ---
 
 ## <font color="#ffc000">Grundlagen</font>
+
 ### <font color="#8db3e2">Was ist der Unterschied zwischen Referenztypen und primitive Datentypen?</font>
 Referenz zeigt auf Adresse vom Objekt und primitive Datentypen enthält den Wert und ist Objektunabhängig. 
 
@@ -43,7 +45,7 @@ tiere[1] = new Katze();
 Eine Schnittstelle in der Programmiersprache Java ist ein abstrakter Typ, der verwendet wird, um ein Verhalten zu deklarieren, das Klassen implementieren müssen. Sie ähneln Protokollen. Schnittstellen werden mit dem Schlüsselwort **„interface“** deklariert und dürfen nur Methodensignaturen und Konstanten Deklarationen enthalten.
 
 > [!Example]- Beispiel
-> ![[Codes#^83b2b2]]
+> ![[Code Beispiele#^83b2b2]]
 
 ### <font color="#8db3e2">Was ist eine abstrakte Klasse?</font>
 Abstrakte Klassen sind **Klassen, die als Oberklassen dienen und selbst nicht zur Bildung von Objekten herangezogen werden können**. Sie werden oft verwendet, um Eigenschaften und Fähigkeiten einer allgemeinen Typgruppe zu definieren, deren abgeleitete Unterklassen diese dann weiter spezifizieren.
@@ -136,10 +138,10 @@ Eine immutable Klasse ist eine Klasse, deren Instanzen nach ihrer Erstellung nic
 ### <font color="#8db3e2">Listen </font>
 
 > [!Example]- Array List
-> ![[Codes#^dcdb5c]]
+> ![[Code Beispiele#^dcdb5c]]
 
 > [!Example]- Linked List 
-> ![[Codes#^e760e1]]
+> ![[Code Beispiele#^e760e1]]
 
 ---
 ## <font color="#ffc000">Generische Datentypen und Iteratoren</font>

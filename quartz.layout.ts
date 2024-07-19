@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/MomdAli/Angewandte-Informatik",
-      "Discord Community": "https://discord.gg/nwtQs3UMec",
+      "Discord Server": "https://discord.gg/nwtQs3UMec",
     },
   }),
 }
@@ -32,7 +32,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    //Component.Backlinks(),
   ],
 }
 

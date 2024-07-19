@@ -60,11 +60,8 @@ Entdecke mehr in [[Ressourcen]].
 ## 📧 Kontakt
 Wenn du Fragen, Kommentare oder einfach nur Hallo sagen möchtest, zögere nicht, dich zu melden!
 
-[Github](https://github.com/MomdAli/Angewandte-Informatik)
-[Discord](https://discord.gg/nwtQs3UMec)
-
 Viel Spaß beim Stöbern! 😊
 
 ---
 
-*Letzte Aktualisierung: [[2024-07-18]]*
+*Letzte Aktualisierung: **2024-07-18***
