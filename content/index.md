@@ -9,8 +9,8 @@ Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Proj
 
 ## 📂 Unterlagen
 
-1. [[Semester 2/Analysis/Prüfungsvorbereitung|Analysis]]
-2. [[Semester 2/Programmiertechnik/Prüfungsvorbereitung|Programmiertechnik 2]]
+1. [[../Vault/Semester 2/Analysis/Prüfungsvorbereitung|Analysis]]
+2. [[../Vault/Semester 2/Programmiertechnik/Prüfungsvorbereitung|Programmiertechnik 2]]
 %%
 ## 🛠️ Vorgestellte Projekte
 Schau dir einige der coolsten Dinge an, an denen ich arbeite:
@@ -64,4 +64,4 @@ Viel Spaß beim Stöbern! 😊
 
 ---
 
-*Letzte Aktualisierung: **2024-07-18***
+*Letzte Aktualisierung: **2024-07-19***
