@@ -1,3 +1,11 @@
+---
+tags:
+  - Programmiertechnik
+  - Probeklausur
+  - Zusammenfassung
+date: 2024-07-19
+---
+
 ## <font color="#ffc000">Grundlagen</font>
 ### <font color="#8db3e2">Was ist der Unterschied zwischen Referenztypen und primitive Datentypen?</font>
 Referenz zeigt auf Adresse vom Objekt und primitive Datentypen enthält den Wert und ist Objektunabhängig. 
