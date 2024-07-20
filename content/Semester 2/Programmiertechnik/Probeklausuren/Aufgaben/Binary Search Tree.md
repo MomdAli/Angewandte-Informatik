@@ -3,6 +3,8 @@ publish: true
 tags:
   - Programmiertechnik
   - Probeklausur
+enableToc: false
+date: 2024-07-20
 ---
 ## <font color="#ffc000">WS 18 Aufgabe 5</font>
 **a)**
@@ -50,5 +52,23 @@ private boolean equalsR(Node l, Node r) {
 		return equalsR(l.left, r.left) && equalsR(l.right, r.right);
 	
 	return false;
+}
+```
+
+**b)**
+```java
+public List<Integer> collect(Predicate<Integer> pred) {
+	List<Integer> l = new LinkedLIst<>();
+	collectR(root, l, pred);
+	return l;
+}
+
+private void collectR(Node p, List<Ineteger> l, Predicate<Integer> pred) {
+	if (p != null && pred.test(p.data))
+		l.add(p.data);
+	if (p != null) {
+		collectR(p.left, l, pred);
+		collectR(p.right, l, pred);
+	}
 }
 ```
