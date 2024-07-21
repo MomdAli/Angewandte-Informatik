@@ -32,9 +32,8 @@ public Set<String> getAlleGeschwister(String kind) {
 **c)**
 ```java
 public boolean istTanteVon(String x, String y) {
-	Set<String> tanten = getAlleGeschwister(mutterVonKind.get(y));
-	return tanten.contains(x);
+	return getAlleGeschwister(mutterVonKind.get(y))
+		.contains(x);
 }
 ```
 
-## <font color="#71e9ac">Aufgabe 7</font>

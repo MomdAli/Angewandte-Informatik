@@ -113,21 +113,25 @@ add: O(n)
 **a)**
 ```java
 public static Map<String, Set<Integer>> list2Map(List<Pruefung> l) {
-	Map<String, Set<Integer>> map = l.stream()
-		.collect(Collectors.groupingBy(x -> x.name, TreeMap::new, 
-			Collectors.mapping(x -> x.pruefNr, Collectors.toSet())));
+	Map<String, Set<Integer>> map = new TreeMap<>();
+	for (Pruefung p : l) {
+		/*if (!map.containsKey(l.name))
+			map.put(p.name, new HashSet<>());*/
+		map.putIfAbsent(p.name, new HashSet<>()))
+		map.get(p.name).add(p.pruefNr);
+	}
 	return map;
 }
 ```
 
 **b)**
 ```java
-public static List<Pruefung> map2List(Map<String, Set<integer>> s2n) {
-	List<Pruefung> l = s2n.entrySet().stream()
-		.flatMap(set -> set.getValue().stream()
-			.map(v -> new Pruefung(set.getKey(), v))
-		).toList()
-	return l;
+public static List<Pruefung> map2List(Map<String, Set<Integer>> s2n){
+	return s2n.entrySet().stream()
+		.flatMap(entry -> 
+			entry.getValue().stream()
+			.map(set -> new Pruefung(entry.getKey(), set)))
+		.toList();
 }
 ```
 

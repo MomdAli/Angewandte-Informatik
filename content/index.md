@@ -12,6 +12,7 @@ Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Proj
 
 1. [[Semester 2/Analysis/Klausurvorbereitung|Analysis]]
 2. [[Semester-2/Programmiertechnik/]]
+3. #Excalidraw
 %%
 ## 🛠️ Vorgestellte Projekte
 Schau dir einige der coolsten Dinge an, an denen ich arbeite:
