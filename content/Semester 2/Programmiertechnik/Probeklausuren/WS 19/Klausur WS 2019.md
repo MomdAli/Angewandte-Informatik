@@ -4,6 +4,10 @@ date: 2024-07-20
 tags:
   - Probeklausur
   - Programmiertechnik
+cssclasses:
+  - purpleRed
+  - wideTable
+  - leftAlign
 ---
 ## Aufgabe 1
 ![[Aufagbe 1.png]]
@@ -39,6 +43,7 @@ last = last.next;
 | 3   | 1   |     | 6   | 8   |     |     |     |     |     |     |     |
 | 1   | 3   |     | 6   | 8   |     |     |     |     |     |     |     |
 | 1   | 3   | 4   | 6   | 8   | 8   | 10  | 11  | 12  | 13  | 16  | 20  |
+
 ![[Aufgabe 3.png]]
 
 ## Aufgabe 4
