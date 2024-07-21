@@ -138,7 +138,7 @@ public static Map<Integer, Set<String>> invertMap(Map<String, Set<Integer>> s2n)
 	
 	s2n.forEach((key, valueSet) -> {
 		valueSet.forEach(value -> {
-			invertedMap.computeIfAbsent(value, k -> HashSet<>().add(key))
+			invertedMap.computeIfAbsent(value, k -> new HashSet<>()).add(key)
 		});
 	});
 	return invertedMap
@@ -146,6 +146,17 @@ public static Map<Integer, Set<String>> invertMap(Map<String, Set<Integer>> s2n)
 ```
 
 **d)**
-```Console
+```Excel
+{Anton=[14100, 14120], Maier=[14100, 14150], Mueller=[14160, 14100, 14150, 14120], Zimmer=[14100]}
 
+[name=Anton, pruefNr=14100, name=Anton, pruefNr=14120, name=Maier, pruefNr=14100, name=Maier, pruefNr=14150, name=Mueller, pruefNr=14160, name=Mueller, pruefNr=14100, name=Mueller, pruefNr=14150, name=Mueller, pruefNr=14120, name=Zimmer, pruefNr=14100]
+ 
+{14160=[Mueller], 14100=[Anton, Mueller, Zimmer, Maier], 14150=[Mueller, Maier], 14120=[Anton, Mueller]}
 ```
+
+**e)**
+Schleife: O(n)
+TreeMap: O(log) 
+-> also O(n, O(log))
+
+![[Complexity.png]]
