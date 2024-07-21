@@ -182,7 +182,7 @@ a {
     }
 
     & .sidebar.left {
-      left: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth);
+      left: 8%;
       @media all and (max-width: $fullPageWidth) {
         gap: 0;
         align-items: center;
@@ -212,7 +212,7 @@ a {
   }
 
   & .page-header {
-    margin: $topSpacing auto 0 auto;
+    margin: $topSpacing 0 0 0;
     @media all and (max-width: $fullPageWidth) {
       margin-top: 2rem;
     }
@@ -220,9 +220,9 @@ a {
 
   & .center,
   & footer {
-    margin-left: auto;
+    margin-left: 33%;
     margin-right: auto;
-    width: $pageWidth;
+    width: calc(0.6 * $fullPageWidth);
     @media all and (max-width: $fullPageWidth) {
       width: initial;
       margin-left: 0;
