@@ -34,6 +34,7 @@ List<Car> sedanCars = cars.stream().filter(c -> c.type.equals("sedan")).toList()
 The filter method accepts a predicate as a parameter which means if the result of the lambda expression returns true or false. But before we use filter we have to use the `.stream()` method which converts the list object to a stream object which takes the elements and allows using Java Stream APIs. After filtering the list we have to convert it back to a List\<Car\> Object using the `.toList()` method. However you can also use `.collect(Collectors.toList())`.
 
 
+---
 ### <font color="#92d050">Well how about converting the type of the Stream?</font>
 Using map:
 ```java
@@ -49,6 +50,8 @@ and as a result it converts the type of the list from the type T to type R.
 > If we try to use the `.filter()` operation now the method would filter only Strings because of the output of the `.map()` operation which converted the List from Cars to Strings.
 
 
+---
+
 ### <font color="#92d050">And how do we extract the list of both the make and the model of each Car?</font>
 One way we can do it is to map the list and instead of converting it to a `String` object we convert it to a `List<String>` Object:
 ```java
@@ -57,7 +60,7 @@ List<List<String>> carMakeModelList = cars.stream()
 ```
 
 > [!Example]
-`[Audi, A5, Mercedes, E-Class]`
+> `[Audi, A5, Mercedes, E-Class]`
 
 However we don't want that, we want to have it as a `List<String>` object so to do this we have to use the `.flatMap()` operator:
 ```java
@@ -115,6 +118,8 @@ public static <T>
 the `.partitionungBy()` method looks like this where it accepts a predicate as a parameter and has the type T as an input with a map of Boolean and a list of type T.
 
 
+---
+
 ### <font color="#92d050">Let's partition the cars in a more complex way:</font>
 
 ```java
@@ -132,4 +137,4 @@ Collector<T, ?, Map<K, D>> groupingBy(Function<? super T, ? extends K> classifie
     }
 ```
 
-All credits goes to this [video](https://www.youtube.com/watch?v=2StXP1XaU04)
+All credits goes to this ![video](https://www.youtube.com/watch?v=2StXP1XaU04)
