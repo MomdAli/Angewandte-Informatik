@@ -46,7 +46,7 @@ The map method accepts a 'Function' object named mapper as a parameter which acc
 and as a result it converts the type of the list from the type T to type R.
 
 > [!Tip] 
-If we try to use the `.filter()` operation now the method would filter only Strings because of the output of the `.map()` operation which converted the List from Cars to Strings.
+> If we try to use the `.filter()` operation now the method would filter only Strings because of the output of the `.map()` operation which converted the List from Cars to Strings.
 
 
 ### <font color="#92d050">And how do we extract the list of both the make and the model of each Car?</font>
