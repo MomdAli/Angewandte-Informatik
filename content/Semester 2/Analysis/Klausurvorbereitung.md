@@ -8,10 +8,6 @@ tags:
 publish: true
 ---
 
-## <font color="#de7802">Eigene Formelsammlung und Kurzskript</font>
-
-![[Formelsammlung]]
-
 ## <font color="#92d050">Folgen</font>
 
 Die geordnete Menge aller Werte der Folge bezeichnen wir mit:

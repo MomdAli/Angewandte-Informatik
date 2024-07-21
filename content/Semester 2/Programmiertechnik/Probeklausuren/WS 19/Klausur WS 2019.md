@@ -123,11 +123,10 @@ public static Map<String, Set<Integer>> list2Map(List<Pruefung> l) {
 **b)**
 ```java
 public static List<Pruefung> map2List(Map<String, Set<integer>> s2n) {
-	List<Pruefung> l = new LinkedList();
-	s2n.forEach((key, values) -> {
-		for (int v : values)
-			l.add(new Pruefung(key, v));
-	}) 
+	List<Pruefung> l = s2n.entrySet().stream()
+		.flatMap(set -> set.getValue().stream()
+			.map(v -> new Pruefung(set.getKey(), v))
+		).toList()
 	return l;
 }
 ```
@@ -135,7 +134,18 @@ public static List<Pruefung> map2List(Map<String, Set<integer>> s2n) {
 **c)**
 ```java
 public static Map<Integer, Set<String>> invertMap(Map<String, Set<Integer>> s2n) {
-	Map<Integer, Set<String>> map = s2n.stream()
-		.collect(Collectors.groupingBy(x -> x))
+	Map<Integer, Set<String>> invertedMap = new HashMap<>();
+	
+	s2n.forEach((key, valueSet) -> {
+		valueSet.forEach(value -> {
+			invertedMap.computeIfAbsent(value, k -> HashSet<>().add(key))
+		});
+	});
+	return invertedMap
 }
+```
+
+**d)**
+```Console
+
 ```
