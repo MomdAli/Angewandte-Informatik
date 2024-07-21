@@ -151,7 +151,16 @@ public Set<String> getRestaurants(String pers) {
 ```
 
 **d)**
-
+```java
+public Set<String> top10() {
+	return isLikedBy.entrySet().stream()
+			.sorted((res1, res2) 
+				-> res1.getValue().size() - res2.getValue().size())
+			.limit(10)
+			.map(entry -> entry.getKey())
+			.collect(Collectors.toSet());
+}
+```
 
 ---
 
@@ -168,3 +177,39 @@ Messwert[typ="Temp", plz="78464", wert=30.0]
 ```java
 mLst.replaceAll(x -> incr.apply(x, 1.1));
 ```
+**d)**
+```java
+boolean tempIntervall = mLst.stream()
+		.filter(m -> m.type.equals("Temp"))
+		.allMatch(m -> m.wert >= a && m.wert <= b);
+		
+System.out.println(tempIntervall);
+```
+**e)**
+```java
+Optional<Messwert> w = mLst.stream()
+		.filter(x -> x.typ.equals("CO2"))
+		.max((x1, x2) -> (int) (x1.wert - x2.wert));
+System.out.println(w.get().plz);
+```
+**f)**
+```java
+plz:78364:78464:78362:78462:78464:78567
+```
+**g)**
+```java
+{CO2=[78364, 78362, 78462, 78464], Temp=[78464, 78567]}
+```
+
+## <font color="#71e9ac">Aufgabe 8)</font>
+**a)**
+Es prüft ob das Element e in der Liste t gibt.
+
+**b)**
+O(n)
+
+**c)**
+.contains(e)
+
+**d)**
+T(log n)
