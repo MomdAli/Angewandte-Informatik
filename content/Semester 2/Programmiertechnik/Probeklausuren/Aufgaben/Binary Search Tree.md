@@ -6,7 +6,7 @@ tags:
 enableToc: false
 date: 2024-07-20
 ---
-## <font color="#ffc000">WS 18 Aufgabe 5</font>
+## WS 18 Aufgabe 5
 **a)**
 ![[Zeichen_ws18.png]]
 **b)**
@@ -42,7 +42,7 @@ private int containsR(int x, Node p) {
 }
 ```
 
-## <font color="#ffc000">WS 19 Aufgabe 5</font>
+## WS 19 Aufgabe 5
 **a)**
 ```java
 private boolean equalsR(Node l, Node r) {

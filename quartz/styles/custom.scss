@@ -1,3 +1,43 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+$background-color_1: #dfc76c;
+$background-color_2: #df706c;
+$background-color_3: #6c87df;
+
+table {
+	a[href="#high-Y"] {
+		display: none;
+	}
+	a[href="#high-R"] {
+		display: none;
+	}
+	a[href="#high-B"] {
+		display: none;
+	}
+	a[href="#T"] {
+		display: none;
+	}
+	&:has(a[href="#T"]) {
+		border: 1px solid black;
+		& th, & td { border-collapse: collapse;
+		padding: 8px;
+	}
+}
+& {
+	td {
+            &:has(a[href="#high-Y"]) {
+                background-color: $background-color_1;
+                font-weight: bold;
+		    }
+            &:has(a[href="#high-R"]) {
+                background-color: $background-color_2;
+                font-weight: bold;
+		    }
+		    &:has(a[href="#high-B"]) {
+                background-color: $background-color_3;
+                font-weight: bold;
+            }
+        }
+    }
+}
