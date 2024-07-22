@@ -1,5 +1,4 @@
 ---
-publish: true
 tags:
   - Programmiertechnik
   - Probeklausur

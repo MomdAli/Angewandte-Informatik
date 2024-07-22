@@ -1,5 +1,4 @@
 ---
-publish: true
 date: 2024-07-20
 tags:
   - Probeklausur

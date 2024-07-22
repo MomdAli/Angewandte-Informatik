@@ -1,5 +1,4 @@
 ---
-publish: true
 date: 2024-07-21
 tags:
   - Probeklausur
@@ -86,16 +85,16 @@ private int heightR(Node p) {
 **c)**
 ```java
 public List<Integer> collect(Predicate<Integer> pred) {
-	List<Integer> l = List.of();
+	List<Integer> l = new ArrayList<>();
 	collectR(root, pred, l);
 	return l;
 }
 
 private void collectR(Node p, Predicate<Integer> pred, List<Integer> l) {
 	if (p != null) {
-		if (pred.test(p.data))
-			l.add(p.data)
 		collectR(p.left, pred, l);
+		if (pred.test(p.data))
+			l.add(p.data);
 		collectR(p.right, pred, l);
 	}
 }
@@ -131,7 +130,7 @@ public Set<String> getLikes(String res) {
 1. Möglichkeit
 ```java
 public Set<String> getRestaurants(String pers) {
-	Set<String> s = Set.of();
+	Set<String> s = new HashSet<>();
 	for (Map.Entry<String, Set<String> entry : isLikedBy.entrySet()) {
 		if (entry.getValue().contains(pers))
 			s.add(entry.getKey());
@@ -213,3 +212,6 @@ O(n)
 
 **d)**
 T(log n)
+
+
+

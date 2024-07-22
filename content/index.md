@@ -1,7 +1,5 @@
 ---
 title: 🏡 Willkommen in meinem Dokumenten-Hub!
-enableToc: false
-publish: true
 ---
 
 Hallo zusammen! 👋
@@ -12,7 +10,7 @@ Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Proj
 
 1. [[Semester 2/Analysis/Klausurvorbereitung|Analysis]]
 2. [[Semester-2/Programmiertechnik/]]
-3. #Excalidraw
+3. [[Semester 2 Unterlagen]]
 %%
 ## 🛠️ Vorgestellte Projekte
 Schau dir einige der coolsten Dinge an, an denen ich arbeite:
