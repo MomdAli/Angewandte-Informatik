@@ -58,7 +58,7 @@ List<List<String>> carMakeModelList = cars.stream()
 			.map(c -> List.of(c.make, c.mopdel)).toList();
 ```
 
-> [!Example]
+> [!example]
 > `[Audi, A5, Mercedes, E-Class]`
 
 However we don't want that, we want to have it as a `List<String>` object so to do this we have to use the `.flatMap()` operator:
