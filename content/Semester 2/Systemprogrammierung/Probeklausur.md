@@ -114,3 +114,79 @@ Also: $4 + 4 + 8 + 1 + 7 = 24$ Bytes
 
 ---
 ## <font color="#e97144">Aufgabe 3</font>
+
+**a)**
+
+> [!warning] Wichtig
+> - In header **ifndef**, **define** und **endif** nicht vergessen
+> - In header files nur öffentliche Funktionen und Variablen.  
+> - Funktionennamen mit Klassennamen definieren
+> - Eingabeparameter immer `const`
+> - In Quelldatei (`.c`) **include header** nicht vergessen
+> - In Quelldateien befinden sich **private** Funktionen
+> - `static` heißt privat, also static in c ≠ static in java
+
+```c title="quadrat.h"
+#ifndef QUADRAT_H
+#define QUADRAT_H
+
+double quadrat_flaeche(const double seitenlaenge);
+
+#endif
+```
+
+```c title="quadrat.c" 
+#include "quadrat.h"
+
+static double zumquadrat(const double d) {
+	return d * d;
+}
+
+double quadrat_flaeche(const double seitenlaenge) {
+	return zumquadrat(seitenlaenge);
+}
+```
+
+```c title="wuerfel.h"
+#ifndef WUERFEL_H
+#define WUERFEL_H
+
+double wuerfel_oberflaeche(const double kantenlaenge);
+double wuerfel_volumen(const double kantenlaenge);
+
+#endif
+```
+
+```c title="wuerfel.c"
+#include "wuerfel.h"
+#include "quadrat.h"
+
+double wuerfel_oberflaeche(const double kantenlaenge) {
+	return quadrat_flaeche(kantenlaenge) * 6;
+}
+
+double wuerfel_volumen(const double kantenlaenge) {
+	return quadrat_flaeche(kantenlaenge) * kantenlaenge;
+}
+```
+
+**b)**
+```c title="wuerfel_test.c"
+#include <stdio.h>
+#include "wuerfel.h"
+
+int main(int argc, char *argv[]) {
+	double k;
+	if (argc < 2 || sscanf(argv[1], "%lf", &k) == 0) {
+		printf("falsche eingabe!");
+		return 1;
+	}
+	
+	double f = wuerfel_oberflaeche(k);
+	double v = wuerfel_volumen(k);
+	printf("kantenlaenge %f, Oberflaeche %f, Volumen %f\n", k, f, v);
+	
+	return 0;
+}
+```
+
