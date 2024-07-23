@@ -107,16 +107,15 @@ Also: $4 + 4 + 8 + 1 + 7 = 24$ Bytes
 ---
 ## <font color="#e97144">Aufgabe 2</font>
 
-|                                       | <font color="#ffc000">Eingabeparameter</font>                                     | <font color="#92d050">Ausgabeparameter</font>                                                                                                                                                                                                          |
-| ------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **<font color="#76923c">Erklärung</font>**                         | **Eingabeparameter** sind Werte, die einer Funktion beim Aufruf übergeben werden. | **Ausgabeparameter** sind Parameter, die verwendet werden, um Ergebnisse oder Ausgaben aus einer Funktion herauszugeben. Dies geschieht typischerweise durch die Übergabe von Zeigern oder Referenzen, die von der Funktion modifiziert werden können. |
-| <font color="#31859b">Beispiel</font> | ```int add(int zahl){ return zahl + zahl; }{:c}```                                | `void add(int a, int b, int* res) { *res = a + b;}{:c}`                                                                                                                                                                                                |
+|                                            | <font color="#ffc000">Eingabeparameter</font>                                     | <font color="#92d050">Ausgabeparameter</font>                                                                                                                                                                                                          |
+| ------------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **<font color="#76923c">Erklärung</font>** | **Eingabeparameter** sind Werte, die einer Funktion beim Aufruf übergeben werden. | **Ausgabeparameter** sind Parameter, die verwendet werden, um Ergebnisse oder Ausgaben aus einer Funktion herauszugeben. Dies geschieht typischerweise durch die Übergabe von Zeigern oder Referenzen, die von der Funktion modifiziert werden können. |
+| <font color="#31859b">Beispiel</font>      | ```int add(int zahl){ return zahl + zahl; }{:c}```                                | `void add(int a, int b, int* res) { *res = a + b;}{:c}`                                                                                                                                                                                                |
 
 ---
 ## <font color="#e97144">Aufgabe 3</font>
 
 **a)**
-
 > [!warning] Wichtig
 > - In header **ifndef**, **define** und **endif** nicht vergessen
 > - In header files nur öffentliche Funktionen und Variablen.  
@@ -130,7 +129,7 @@ Also: $4 + 4 + 8 + 1 + 7 = 24$ Bytes
 #ifndef QUADRAT_H
 #define QUADRAT_H
 
-double quadrat_flaeche(const double seitenlaenge);
+double quadrat_flaeche(const double);
 
 #endif
 ```
@@ -138,11 +137,13 @@ double quadrat_flaeche(const double seitenlaenge);
 ```c title="quadrat.c" 
 #include "quadrat.h"
 
-static double zumquadrat(const double d) {
+static double zumquadrat(const double d) 
+{
 	return d * d;
 }
 
-double quadrat_flaeche(const double seitenlaenge) {
+double quadrat_flaeche(const double seitenlaenge) 
+{
 	return zumquadrat(seitenlaenge);
 }
 ```
@@ -151,8 +152,8 @@ double quadrat_flaeche(const double seitenlaenge) {
 #ifndef WUERFEL_H
 #define WUERFEL_H
 
-double wuerfel_oberflaeche(const double kantenlaenge);
-double wuerfel_volumen(const double kantenlaenge);
+double wuerfel_oberflaeche(const double);
+double wuerfel_volumen(const double);
 
 #endif
 ```
@@ -161,11 +162,13 @@ double wuerfel_volumen(const double kantenlaenge);
 #include "wuerfel.h"
 #include "quadrat.h"
 
-double wuerfel_oberflaeche(const double kantenlaenge) {
+double wuerfel_oberflaeche(const double kantenlaenge) 
+{
 	return quadrat_flaeche(kantenlaenge) * 6;
 }
 
-double wuerfel_volumen(const double kantenlaenge) {
+double wuerfel_volumen(const double kantenlaenge) 
+{
 	return quadrat_flaeche(kantenlaenge) * kantenlaenge;
 }
 ```
@@ -175,9 +178,11 @@ double wuerfel_volumen(const double kantenlaenge) {
 #include <stdio.h>
 #include "wuerfel.h"
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) 
+{
 	double k;
-	if (argc < 2 || sscanf(argv[1], "%lf", &k) == 0) {
+	if (sscanf(argv[1], "%lf", &k) == 0) 
+	{
 		printf("falsche eingabe!");
 		return 1;
 	}
@@ -190,3 +195,109 @@ int main(int argc, char *argv[]) {
 }
 ```
 
+**c)**
+Das C-Programm greift auf `argv[1]` zu, um das Argument zu lesen. Wenn das Programm jedoch ohne Argumente gestartet wird, ist `argc` gleich 1 und `argv[1]` existiert nicht. Der Zugriff auf `argv[1]` führt zu einem nicht definierten Verhalten, das in der Regel einen Absturz (Segmentation Fault) des Programms zur Folge hat.
+
+---
+## <font color="#e97144">Aufagabe 4</font>
+
+```c 
+#include <string.h>
+
+int main(int argc, char *argv[]) 
+{
+	if (argv != 3)
+		return 1;
+	
+	const char* s = argv[1];
+	const char* t = argv[2];
+	
+	char* st = malloc(strlen(argv[1]) + strlen(argv[2] + 1))
+	strcpy(st, s);
+	strcat(st, t);
+	
+	free(st);
+	
+	return 0;
+}
+```
+
+---
+## <font color="#e97144">Aufgabe 5</font>
+
+**a)**
+```c++ configurationHere
+~fuzzy() = default; // destructor
+fuzzy(const fuzzy&) = default; // copy constructor
+fuzzy& operator=(const fuzzy&) = default; // copy assignment operator
+fuzzy(fuzzy&&) = default; // move constructor
+fuzzy& operator=(fuzzy&&) = default; // move assignment operator
+```
+
+Grund für `= default`:
+- Da `truth` ein einfacher Datentyp (`double`) ist, funktioniert die Standardkopie und Verschieben korrekt.
+- Da `truth` keine komplexen Ressourcen wie dynamischen Speicher oder Datei-Handles enthält, ist der Standard-Destruktor ausreichend.
+
+**b)**
+```c++ showLineNumbers wrap=true
+int main () 
+{
+	const fuzzy eher_ja{ 0.8 };
+	const fuzzy eher nein = ! eher ja;
+	fuzzy f;
+	f = eher ja || false;
+}
+```
+
+- Zeile 3:
+	- `explicit fuzzy(double)`  
+- Zeile 4:
+	- `fuzzy(fuzzy&&)`
+	- `fuzzy operator!()`  
+- Zeile 5:
+	- `fuzzy()`  
+- Zeile 6:
+	- `fuzzy(fuzzy&&)`
+	- `fuzzy(bool)`
+	- `friend fuzzy operator||(const fuzzy&, const fuzzy&)`
+- Zeile 7:
+	- `~fuzzy()` für f, eher_ja, eher_nein, false, und beide von move Konstruktor erstellten Objekte. Also 6 Destrokturen.
+
+**c)**
+```c++
+friend std::ostream& operator<<(std::ostream& os, const fuzzy& f) 
+{
+	os << f.truth; return os; 
+}
+```
+
+**d)**
+```c++
+#include <array>
+
+std::array<fuzzy, 4> a;
+```
+In modernem C++ sollte man stattdessen `std::array` oder `std::vector` verwenden. Der Grund dafür ist, dass diese Container mehr Funktionalität und Sicherheit bieten als rohe Arrays. Sie verwalten ihre eigene Speicherverwaltung und bieten Methoden zur Größenabfrage, Bounds-Checking und mehr
+
+---
+## <font color="#e97144">Aufagbe 6</font>
+##### [[Makefile|Makefile cheatsheet]]
+
+```makefile
+PDFLATEX = pdflatex
+TARGETS = hello.pdf
+RM = rm -f
+
+%.pdf: %.tex
+	$(PDFLATEX) $<
+
+.PHONY: all clean
+all: $(TARGETS)
+clean: $(RM) $(TARGETS) $(TARGETS:.pdf=.aux) $(TARGETS:.pdf=.log) 
+```
+
+---
+## <font color="#e97144">Aufgabe 7</font>
+**POSIX-Funktionen** melden Fehler durch Rückgabewerte und die globale Variable `errno`. Es ist wichtig, nach jedem kritischen Funktionsaufruf die Rückgabewerte zu überprüfen und ***bei Fehlern `errno` auszuwerten***, um den genauen Fehler zu bestimmen und geeignete Maßnahmen zu ergreifen.  
+Wenn eine POSIX-Funktion einen Fehler meldet, wird die globale Variable `errno` auf einen Fehlercode gesetzt, der den spezifischen Fehler beschreibt.  
+`errno` muss direkt nach dem fehlerhaften Funktionsaufruf überprüft werden, da nachfolgende Funktionsaufrufe `errno` überschreiben können. 

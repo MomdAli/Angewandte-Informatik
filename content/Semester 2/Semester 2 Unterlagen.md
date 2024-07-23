@@ -12,3 +12,5 @@ aliases:
 	- [[Semester 2/Programmiertechnik/Klausurvorbereitung|Klausurvorbereitung]]
 - [[Semester-2/Analysis/]]
 	- [[Semester 2/Analysis/Klausurvorbereitung|Klausurvorbereitung]]
+- [[Semester-2/Systemprogrammierung/]]
+	- [[Semester-2/Systemprogrammierung/Probeklausur]]

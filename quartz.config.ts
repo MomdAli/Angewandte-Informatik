@@ -45,7 +45,7 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688", // markdown highlighted text background
         },
         darkMode: {
-          light: "#231a1a",       // page background
+          light: "#17151f",       // page background
           lightgray: "#393639",   // borders
           gray: "#646464",        // graph links, heavier borders
           darkgray: "#d4d4d4",    // body text
@@ -67,16 +67,16 @@ const config: QuartzConfig = {
       Plugin.SyntaxHighlighting({
         theme: {
           light: "material-theme-lighter",
-          dark: "dracula",
+          dark: "synthwave-84",
         },
-        keepBackground: false,
+        keepBackground: true,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false}),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({ renderEngine: "mathjax" }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
