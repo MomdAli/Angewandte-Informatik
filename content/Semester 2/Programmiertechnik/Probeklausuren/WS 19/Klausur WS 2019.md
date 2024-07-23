@@ -7,9 +7,11 @@ cssclasses:
   - purpleRed
   - wideTable
   - leftAlign
+excalidraw-autoexport: true
+excalidraw-export-dark: true
 ---
 ## Aufgabe 1
-![[Aufagbe 1.png]]
+![[Aufagbe 1.excalidraw.svg]]
 
 ## Aufgabe 2
 **a)**
@@ -43,7 +45,7 @@ last = last.next;
 | 1   | 3   |     | 6   | 8   |     |     |     |     |     |     |     |
 | 1   | 3   | 4   | 6   | 8   | 8   | 10  | 11  | 12  | 13  | 16  | 20  |
 
-![[Aufgabe 3.png]]
+![[Aufgabe 3.excalidraw.svg]]
 
 ## Aufgabe 4
 **a)**

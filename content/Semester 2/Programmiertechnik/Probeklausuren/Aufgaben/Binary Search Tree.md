@@ -7,7 +7,7 @@ date: 2024-07-20
 ---
 ## WS 18 Aufgabe 5
 **a)**
-![[Zeichen_ws18.png]]
+![[Zeichen_ws18.excalidraw.svg]]
 **b)**
 ```java
 private Node insertR(int x, Node p) {

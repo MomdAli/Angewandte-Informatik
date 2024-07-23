@@ -16,7 +16,13 @@ const config: QuartzConfig = {
     },
     locale: "de-DE",
     baseUrl: "momdali.github.io/Angewandte-Informatik",
-    ignorePatterns: ["private", "Templates", ".obsidian", "Excalidraw"],
+    ignorePatterns: [
+        "private",
+        "Templates",
+        ".obsidian",
+        "Excalidraw",
+        "**/*.excalidraw.md"
+      ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -60,8 +66,8 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "material-theme-lighter",
+          dark: "dracula",
         },
         keepBackground: false,
       }),
