@@ -108,6 +108,7 @@ a {
 }
 
 .desktop-only {
+  height: 100%;
   display: initial;
   @media all and (max-width: $fullPageWidth) {
     display: none;
@@ -169,6 +170,7 @@ a {
       top: 0;
       width: $sidePanelWidth;
       margin-top: $topSpacing;
+      height: 100%;
       box-sizing: border-box;
       padding: 0 2rem 0 0.5rem;
       position: fixed;
@@ -182,7 +184,7 @@ a {
     }
 
     & .sidebar.left {
-      width: 30rem;
+      width: 17rem;
       left: 4rem;
       @media all and (max-width: $fullPageWidth) {
         gap: 0;
@@ -507,8 +509,9 @@ div:has(> .overflow) {
 
 ul.overflow,
 ol.overflow {
-  max-height: 450;
+  max-height: calc(100vh - (3 * $topSpacing + 10rem));
   overflow-y: auto;
+  overflow-x: auto;
 
   // clearfix
   content: "";

@@ -142,7 +142,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 
 #explorer-end {
   // needs height so IntersectionObserver gets triggered
-  height: 4px;
+  height: 8px;
   // remove default margin from li
   margin: 0;
 }
