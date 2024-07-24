@@ -39,6 +39,11 @@ haus* e;
 
 - weisen Sie zum Schluss allen Variablen die in der Grafik gezeigten Werte zu:
 ```c
+#include <stdlib>
+...
+...
+...
+
 a = 1;
 b = &a;
 
@@ -195,6 +200,8 @@ int main(int argc, char *argv[])
 }
 ```
 
+
+
 **c)**
 Das C-Programm greift auf `argv[1]` zu, um das Argument zu lesen. Wenn das Programm jedoch ohne Argumente gestartet wird, ist `argc` gleich 1 und `argv[1]` existiert nicht. Der Zugriff auf `argv[1]` führt zu einem nicht definierten Verhalten, das in der Regel einen Absturz (Segmentation Fault) des Programms zur Folge hat.
 
@@ -202,17 +209,15 @@ Das C-Programm greift auf `argv[1]` zu, um das Argument zu lesen. Wenn das Progr
 ## <font color="#e97144">Aufagabe 4</font>
 
 ```c 
-#include <string.h>
+#include <string.h> // strcpy, strcat
+#include <stdlib.h> // malloc, free
 
 int main(int argc, char *argv[]) 
-{
-	if (argv != 3)
-		return 1;
-	
+{	
 	const char* s = argv[1];
 	const char* t = argv[2];
 	
-	char* st = malloc(strlen(argv[1]) + strlen(argv[2] + 1))
+	char* st = (char*) malloc(strlen(s) + strlen(t) + 1);
 	strcpy(st, s);
 	strcat(st, t);
 	
@@ -226,11 +231,11 @@ int main(int argc, char *argv[])
 ## <font color="#e97144">Aufgabe 5</font>
 
 **a)**
-```c++ configurationHere
+```cpp configurationHere
 ~fuzzy() = default; // destructor
 fuzzy(const fuzzy&) = default; // copy constructor
-fuzzy& operator=(const fuzzy&) = default; // copy assignment operator
 fuzzy(fuzzy&&) = default; // move constructor
+fuzzy& operator=(const fuzzy&) = default; // copy assignment operator
 fuzzy& operator=(fuzzy&&) = default; // move assignment operator
 ```
 
@@ -239,7 +244,7 @@ Grund für `= default`:
 - Da `truth` keine komplexen Ressourcen wie dynamischen Speicher oder Datei-Handles enthält, ist der Standard-Destruktor ausreichend.
 
 **b)**
-```c++ showLineNumbers wrap=true
+```cpp showLineNumbers wrap=true
 int main () 
 {
 	const fuzzy eher_ja{ 0.8 };
@@ -264,7 +269,7 @@ int main ()
 	- `~fuzzy()` für f, eher_ja, eher_nein, false, und beide von move Konstruktor erstellten Objekte. Also 6 Destrokturen.
 
 **c)**
-```c++
+```cpp
 friend std::ostream& operator<<(std::ostream& os, const fuzzy& f) 
 {
 	os << f.truth; return os; 
@@ -272,7 +277,7 @@ friend std::ostream& operator<<(std::ostream& os, const fuzzy& f)
 ```
 
 **d)**
-```c++
+```cpp
 #include <array>
 
 std::array<fuzzy, 4> a;
