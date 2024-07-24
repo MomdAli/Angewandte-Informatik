@@ -9,7 +9,7 @@ aliases:
   - Probe
   - Probe-Sysprog
   - Systemprogrammierung-Probeklausur
-cssclasses: []
+cssclasses:
 ---
 [[SYPR-Probeklausur.pdf|Link zu Probeklausur]]
 
