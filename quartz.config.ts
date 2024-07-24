@@ -45,15 +45,15 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688", // markdown highlighted text background
         },
         darkMode: {
-          light: "#17151f",       // page background
+          light: "#212129",       // page background
           lightgray: "#393639",   // borders
           gray: "#646464",        // graph links, heavier borders
-          darkgray: "#d4d4d4",    // body text
-          dark: "#ebebec",        // header text and icons
+          darkgray: "#F5F4ED",    // body text
+          dark: "#FFF6B4",        // header text and icons
           secondary: "#7b97aa",   // link colour, current graph node
           tertiary: "#84a59d",    // hover states and visited graph nodes
           highlight: "rgba(143, 159, 169, 0.15)", // internal link background
-          textHighlight: "#b3aa0288", // markdown highlighted text background
+          textHighlight: "#10f49166", // markdown highlighted text background
         },
       },
     },
@@ -66,10 +66,10 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "material-theme-lighter",
-          dark: "synthwave-84",
+          light: "min-light",
+          dark: "dracula",
         },
-        keepBackground: true,
+        keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false}),
       Plugin.GitHubFlavoredMarkdown(),

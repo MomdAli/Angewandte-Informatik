@@ -2,15 +2,15 @@
 tags:
   - Probeklausur
   - Programmiertechnik
-enableToc: false
 date: 2024-07-19
+title: Klausur SS 18
 ---
  
 [[Klausur_SS18.pdf#page=2&height=400|{Klausur 18}]]
 
 ## Aufgabe 1
 **a)**
-![[Aufgabe_1a.png]]
+![[Aufgabe_1a.excalidraw.svg]]
 **b)**
 ```
 5, 3, 2,
@@ -60,7 +60,7 @@ do {
 |           |           |           |           |           |           |           | 7  |     10     |            |            |
 |           |           |           |           |           |           | 6  |           | 10  |            |            |
 
-## Aufage 4
+## Aufgabe 4
 **a)**
 ```java
 public boolean contains(int x) {
@@ -119,9 +119,9 @@ public boolean startsWith(List l) {
 }
 ```
 
-### Aufgabe 5
+## Aufgabe 5
 **a)**
-![[Aufgabe_5a.png]]
+![[Aufgabe_5a.excalidraw.svg]]
 
 b)
 ```java
@@ -139,9 +139,4 @@ public void recursivePrint(int n, Node r) {
 		recursivePrint(n + 1, p);
 	}
 }
-```
-
-**c)**
-```java
-
 ```

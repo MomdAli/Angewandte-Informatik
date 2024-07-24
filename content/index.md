@@ -1,17 +1,15 @@
 ---
-title: 🏡 Willkommen in meinem Dokumenten-Hub!
+title: 🌳 Mohammed's zweites Gehirn 🧠
 ---
 
 Hallo zusammen! 👋
 
-Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Projekte und Sammlungen speichere. Egal, ob du hier bist, um zu erkunden, zu lernen oder einfach nur neugierig bist, ich freue mich, dass du vorbeischaust. Hier ist ein kurzer Leitfaden, der dir hilft, dich in meinem Hub zurechtzufinden.
+Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Projekte und Sammlungen speichere. Egal, ob du hier bist, um zu erkunden, zu lernen oder einfach nur neugierig bist, ich freue mich, dass du vorbeischaust.
 
 ## 📂 Unterlagen
 
-1. [[Semester 2/Analysis/Klausurvorbereitung|Analysis]]
-2. [[Semester-2/Programmiertechnik/|Programmiertechnik]]
-3. [[Semester-2/Systemprogrammierung/|Systemprogrammierung]]
-4. [[Semester 2 Unterlagen]]
+1. [[Semester 2 Unterlagen]]
+2. [[tags/]]
 %%
 ## 🛠️ Vorgestellte Projekte
 Schau dir einige der coolsten Dinge an, an denen ich arbeite:
@@ -62,7 +60,3 @@ Entdecke mehr in [[Ressourcen]].
 Wenn du Fragen, Kommentare oder einfach nur Hallo sagen möchtest, zögere nicht, dich zu melden!
 
 Viel Spaß beim Stöbern! 😊
-
----
-
-*Letzte Aktualisierung: **2024-07-19***

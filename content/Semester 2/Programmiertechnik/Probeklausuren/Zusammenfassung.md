@@ -4,7 +4,13 @@ tags:
   - Zusammenfassung
   - Probeklausur
   - Programmiertechnik
-title: Zusammenfassung von Programmiertechnik
+title: Zusammenfassung
+aliases:
+  - Zsmfsng
+  - zusammenfassung_programmiertechnik
+  - zusammenfassung-programmiertechnik
+  - zusammenfassung-prog
+  - zusammenfassung_prog
 ---
 
 ### 1. Binäre Bäume und verkettete Listen

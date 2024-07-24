@@ -7,10 +7,13 @@ aliases:
 ---
 
 - [[Semester-2/Programmiertechnik/]]
-	- [[Java Stream Collection]]
-	- [[Semester-2/Programmiertechnik/Probeklausuren]]
-	- [[Semester 2/Programmiertechnik/Klausurvorbereitung|Klausurvorbereitung]]
+	- [[Klausuren]]
+	- [[Code Beispiele]]
+	- [[Zusammenfassung]]
 - [[Semester-2/Analysis/]]
 	- [[Semester 2/Analysis/Klausurvorbereitung|Klausurvorbereitung]]
 - [[Semester-2/Systemprogrammierung/]]
-	- [[Semester-2/Systemprogrammierung/Probeklausur]]
+	- [[Probeklausur]]
+	- [[Klausur 20]]
+	- [[Makefile]]
+	- [[Semester 2/Systemprogrammierung/Spickzettel|Spickzettel]]

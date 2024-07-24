@@ -50,7 +50,7 @@ d.zimmer = 109;
 d.art = "Hoersaal";
 d.gebaeude = 'C';
 
-e = malloc(sizeof(haus));
+e = (haus*) malloc(sizeof(haus));
 e->zimmer = 124;
 e->art = "Buero";
 e->gebaeude = 'F';
