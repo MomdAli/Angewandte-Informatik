@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "de-DE",
-    baseUrl: "momdali.github.io/Angewandte-Informatik",
+    baseUrl: "momdali.de",
     ignorePatterns: [
         "private",
         "Templates",

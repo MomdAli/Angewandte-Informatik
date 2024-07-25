@@ -206,16 +206,16 @@ int main()
 - Zeile 3:
 	- `explicit fuzzy(double)` ~
 - Zeile 4:
-	- `fuzzy operator!() const`
-	- `fuzzy(fuzzy&&) = default;` ~~
+	- `fuzzy operator!() const` ~
+	- `fuzzy(fuzzy&&) = default;` ~
 - Zeile 5:
-	- `fuzzy() = default`~
+	- `fuzzy() = default` ~
 - Zeile 6:
-	- `friend fuzzy operator&&(const fuzz&, const fuzzy&)`
-	- `fuzzy& operator=(fuzzy&&) = default` ~
+	- `friend fuzzy operator&&(const fuzz&, const fuzzy&)` ~
+	- `fuzzy& operator=(fuzzy&&) = default` 
 - Zeile 7:
-	- `fuzzy(boolean)`~
-	- `friend fuzzy operator||(const fuzz&, const fuzzy&)`~
+	- `fuzzy(boolean)` ~
+	- `friend fuzzy operator||(const fuzz&, const fuzzy&)` ~
 	- `fuzzy& operator=(fuzzy&&) = default`
 - Zeile 8:
 	- `fuzzy(boolean)`~
@@ -242,14 +242,14 @@ Man sollte `std::array` verwenden, weil es sicherer ist, mehr Funktionalität bi
 AUFGABE = aufgabe5
 
 %.gz: %
-	gzip -f $^
+	gzip -f $<
 
 .PHONY: all clean
 
 all: $(AUFGABE).tar.gz
 
 clean: 
-	rm -f $(AUFGABE).tar $(AUFGABE).tar.gz
+	rm -f $(AUFGABE).tar.gz
 
 $(AUFGABE).tar: $(AUFGABE) lib$(AUFGABE).so $(AUFGABE).pdf
 	tar cf $@ $^
