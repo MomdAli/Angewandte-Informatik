@@ -248,23 +248,23 @@ Grund für `= default`:
 int main () 
 {
 	const fuzzy eher_ja{ 0.8 };
-	const fuzzy eher nein = ! eher ja;
+	const fuzzy eher nein = !eher ja;
 	fuzzy f;
 	f = eher ja || false;
 }
 ```
 
 - Zeile 3:
-	- `explicit fuzzy(double)`  
+	- `explicit fuzzy(double);`  
 - Zeile 4:
-	- `fuzzy(fuzzy&&)`
-	- `fuzzy operator!()`  
+	- `fuzzy operator!();`
+	- `fuzzy(fuzzy&&) = default;`
 - Zeile 5:
-	- `fuzzy()`  
+	- `fuzzy();`
 - Zeile 6:
-	- `fuzzy(fuzzy&&)`
-	- `fuzzy(bool)`
-	- `friend fuzzy operator||(const fuzzy&, const fuzzy&)`
+	- `fuzzy(bool);`
+	- `friend fuzzy operator||(const fuzzy&, const fuzzy&);`
+	- `fuzzy& operator=(fuzzy&&) = default;`
 - Zeile 7:
 	- `~fuzzy()` für f, eher_ja, eher_nein, false, und beide von move Konstruktor erstellten Objekte. Also 6 Destrokturen.
 

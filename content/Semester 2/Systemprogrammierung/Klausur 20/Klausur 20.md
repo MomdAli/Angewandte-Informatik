@@ -176,6 +176,7 @@ char *strchr(const char *s, char c)
 ## <font color="#e97144">Aufgabe 4</font>
 
 **a)**
+Da diese Klasse nur ein privates Mitglied `double truth` enthält und keine speziellen Anforderungen für Kopieren, Zuweisen oder Zerstören hat, sind die vom Compiler bereitgestellten Implementierungen ausreichend und korrekt.
 ```cpp 
 ~fuzzy() = default; //destructor
 fuzzy(const fuzzy&) = default; // copy constructor
@@ -185,6 +186,7 @@ fuzzy& operator=(fuzzy&&) = default; // move assignment constructor
 ```
 
 **b)**
+Erklärung von [[C++ Constructors|Constructors in C++]]
 ```cpp showLineNumbers
 int main()
 {
@@ -199,21 +201,35 @@ int main()
 ```
 
 - Zeile 3:
-	- `explicit fuzzy(double)`
+	- `explicit fuzzy(double)` ~
 - Zeile 4:
-	- `fuzzy& operator=(fuzzy&&) = default`
 	- `fuzzy operator!() const`
+	- `fuzzy(fuzzy&&) = default;` ~~
 - Zeile 5:
-	- `fuzzy() = default`
+	- `fuzzy() = default`~
 - Zeile 6:
-	- `fuzzy& operator=(fuzzy&&) = default`
 	- `friend fuzzy operator&&(const fuzz&, const fuzzy&)`
+	- `fuzzy& operator=(fuzzy&&) = default` ~
 - Zeile 7:
+	- `fuzzy(boolean)`~
+	- `friend fuzzy operator||(const fuzz&, const fuzzy&)`~
 	- `fuzzy& operator=(fuzzy&&) = default`
-	- `friend fuzzy operator||(const fuzz&, const fuzzy&)`
-	- `fuzzy(boolean)`
 - Zeile 8:
-	- `explicit fuzzy(double)`
+	- `fuzzy(boolean)`~
 	- `fuzzy& operator=(fuzzy&&) = default`
 - Zeile 9:
-	- `~fuzzy() = default` für eher_ja, eher_nein, 
+	- `~fuzzy() = default` für 8 Objekte!
+
+**c)**
+```cpp
+friend std::ostream& operator<<(std::ostream&, const fuzzy&);
+```
+
+**d)**
+```cpp
+std::array<fuzzy, 4> a;
+```
+Man sollte `std::array` verwenden, weil es sicherer ist, mehr Funktionalität bietet und besser mit der C++-Standardbibliothek integriert ist als ein C-Array.
+
+---
+## <font color="#e97144">Aufgabe 5</font>
