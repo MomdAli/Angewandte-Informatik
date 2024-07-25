@@ -288,17 +288,20 @@ In modernem C++ sollte man stattdessen `std::array` oder `std::vector` verwenden
 ## <font color="#e97144">Aufagbe 6</font>
 ##### [[Makefile|Makefile cheatsheet]]
 
-```makefile
+```makefile title="Makefile"
 PDFLATEX = pdflatex
-TARGETS = hello.pdf
+DATEI = HELLO
 RM = rm -f
 
 %.pdf: %.tex
 	$(PDFLATEX) $<
 
 .PHONY: all clean
-all: $(TARGETS)
-clean: $(RM) $(TARGETS) $(TARGETS:.pdf=.aux) $(TARGETS:.pdf=.log) 
+
+all: $(DATEI).pdf
+
+clean:
+	$(RM) $(DATEI).pdf $(DATEI).aux $(DATEI).log
 ```
 
 ---
