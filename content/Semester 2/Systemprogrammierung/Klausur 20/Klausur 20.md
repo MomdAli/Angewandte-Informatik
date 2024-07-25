@@ -99,6 +99,7 @@ int increment(const int n, int *ergebnis)
 	} 
 	
 	*ergebnis = n + 1;
+	return 0;
 }
 
 int leftshift(const int n, int *ergebnis) 
@@ -111,6 +112,7 @@ int leftshift(const int n, int *ergebnis)
 	} 
 	
 	*ergebnis = m;
+	return 0;
 }
 ```
 
@@ -194,12 +196,13 @@ int main()
 	const fuzzy eher_nein = !eher_ja;
 	fuzzy unklar;
 	unklar = eher_ja && eher_nein;
-	unklar = eher ka || false;
+	unklar = eher_ja || false;
 	unklar = 42.0;
 	return 0;
 }
 ```
 
+==Lösung:==
 - Zeile 3:
 	- `explicit fuzzy(double)` ~
 - Zeile 4:
@@ -233,3 +236,21 @@ Man sollte `std::array` verwenden, weil es sicherer ist, mehr Funktionalität bi
 
 ---
 ## <font color="#e97144">Aufgabe 5</font>
+
+[[Makefile|Makefile Cheatsheet]]
+```makefile showLineNumbers
+AUFGABE = aufgabe5
+
+%.gz: %
+	gzip -f $^
+
+.PHONY: all clean
+
+all: $(AUFGABE).tar.gz
+
+clean: 
+	rm -f $(AUFGABE).tar $(AUFGABE).tar.gz
+
+$(AUFGABE).tar: $(AUFGABE) lib$(AUFGABE).so $(AUFGABE).pdf
+	tar cf $@ $^
+```
