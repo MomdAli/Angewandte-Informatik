@@ -78,34 +78,34 @@ e->gebaeude = 'F';
 **b)**
 ### <font color="#71e9ac">Ohne Ausrichtung/Padding</font>
 #### ILP32:
-Zimmer: (int) 4 Bytes
-Art: (pointer) 4 Bytes
-Gebaeude: (char) 1 byte
+Zimmer: (int) 4 Bytes  
+Art: (pointer) 4 Bytes  
+Gebaeude: (char) 1 byte  
 
-Also: $4 + 4 + 1 = 9$ Bytes
+Also: $4 + 4 + 1 = 9$ Bytes  
 
 #### LP64:
-Zimmer: (int) 4 Bytes
-Art: (pointer) 8 Bytes
-Gebaeude: (char) 1 Byte
+Zimmer: (int) 4 Bytes  
+Art: (pointer) 8 Bytes  
+Gebaeude: (char) 1 Byte  
 
 Also: $4 + 8 + 1 = 13$ Bytes
 
 ### <font color="#71e9ac">Mit Ausrichtung/Padding</font>
 #### ILP32:
-Zimmer: (int) 4 Bytes
-Art: (pointer) 4 Bytes
-Gebaeude: (char) 1 Byte
-Padding: 3 Bytes
+Zimmer: (int) 4 Bytes  
+Art: (pointer) 4 Bytes  
+Gebaeude: (char) 1 Byte  
+Padding: 3 Bytes  
 
 Also: $4 + 4 + 1 + 3 = 12$ Bytes
 
 #### LP64:
-Zimmer: (int) 4 Bytes
-Padding nach Zimmer: 4 Bytes
-Art: (pointer) 8 Bytes
-Gebaeude: (char) 1 Byte
-Padding nach Gebaeude: 7 Bytes
+Zimmer: (int) 4 Bytes  
+Padding nach Zimmer: 4 Bytes  
+Art: (pointer) 8 Bytes  
+Gebaeude: (char) 1 Byte  
+Padding nach Gebaeude: 7 Bytes  
 
 Also: $4 + 4 + 8 + 1 + 7 = 24$ Bytes
 
@@ -200,8 +200,6 @@ int main(int argc, char *argv[])
 }
 ```
 
-
-
 **c)**
 Das C-Programm greift auf `argv[1]` zu, um das Argument zu lesen. Wenn das Programm jedoch ohne Argumente gestartet wird, ist `argc` gleich 1 und `argv[1]` existiert nicht. Der Zugriff auf `argv[1]` führt zu einem nicht definierten Verhalten, das in der Regel einen Absturz (Segmentation Fault) des Programms zur Folge hat.
 
@@ -255,15 +253,15 @@ int main ()
 ```
 
 - Zeile 3:
-	- `explicit fuzzy(double);`  
+	- `explicit fuzzy(double);`  ~
 - Zeile 4:
-	- `fuzzy operator!();`
-	- `fuzzy(fuzzy&&) = default;`
+	- `fuzzy operator!();` ~
+	- `fuzzy(fuzzy&&) = default;` ~
 - Zeile 5:
-	- `fuzzy();`
+	- `fuzzy();` ~
 - Zeile 6:
-	- `fuzzy(bool);`
-	- `friend fuzzy operator||(const fuzzy&, const fuzzy&);`
+	- `fuzzy(bool);` ~
+	- `friend fuzzy operator||(const fuzzy&, const fuzzy&);` ~
 	- `fuzzy& operator=(fuzzy&&) = default;`
 - Zeile 7:
 	- `~fuzzy()` für f, eher_ja, eher_nein, false, und beide von move Konstruktor erstellten Objekte. Also 6 Destrokturen.

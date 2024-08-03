@@ -5,7 +5,6 @@ aliases:
   - Semester-2
   - Unterlagen-Semester-2
 ---
-![[Semester_2_Banner.png]]
 - [[Semester-2/Programmiertechnik/]]
 - [[Semester-2/Analysis/]]
 - [[Semester-2/Systemprogrammierung/]]
