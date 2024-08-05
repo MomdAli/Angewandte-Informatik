@@ -1,4 +1,14 @@
-# Quartz v4
+![[content/Assets/Images/Banner.png]]
+Hallo zusammen! 👋
+
+Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Projekte und Sammlungen speichere. Egal, ob du hier bist, um zu erkunden, zu lernen oder einfach nur neugierig bist, ich freue mich, dass du vorbeischaust.
+
+## 📧 Kontakt
+Wenn du Fragen, Kommentare oder einfach nur Hallo sagen möchtest, zögere nicht, dich zu melden!
+
+Viel Spaß beim Stöbern! 😊
+
+## Quartz v4
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
