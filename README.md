@@ -1,4 +1,3 @@
-![[content/Assets/Images/Banner.png]]
 Hallo zusammen! 👋
 
 Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Projekte und Sammlungen speichere. Egal, ob du hier bist, um zu erkunden, zu lernen oder einfach nur neugierig bist, ich freue mich, dass du vorbeischaust.
