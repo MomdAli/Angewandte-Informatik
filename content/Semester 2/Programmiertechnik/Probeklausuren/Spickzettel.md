@@ -3,6 +3,7 @@ date: 2024-07-21
 tags:
   - Probeklausur
   - Programmiertechnik
+  - Java
 ---
 Java Stream API
 

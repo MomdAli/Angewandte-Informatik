@@ -3,6 +3,7 @@ date: 2024-07-21
 tags:
   - Probeklausur
   - Programmiertechnik
+  - Java
 ---
 ## <font color="#71e9ac">Aufgabe 6</font>
 

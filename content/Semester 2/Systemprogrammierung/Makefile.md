@@ -2,6 +2,7 @@
 title: Makefile cheatsheet
 tags:
   - Systemprogrammierung
+  - Makefile
 date: 2024-07-23
 aliases:
   - make

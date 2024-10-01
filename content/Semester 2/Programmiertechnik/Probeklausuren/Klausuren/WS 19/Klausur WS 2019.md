@@ -3,6 +3,7 @@ date: 2024-07-20
 tags:
   - Probeklausur
   - Programmiertechnik
+  - Java
 cssclasses:
   - purpleRed
   - wideTable

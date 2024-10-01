@@ -57,6 +57,11 @@ Nützliche Links und Tools, die ich wertvoll finde:
 Entdecke mehr in [[Ressourcen]].
 %%
 ## 📧 Kontakt
+
+🗣️ [[https://discord.gg/nwtQs3UMec|Discord Server]]
+✉️ [[mohammedali.alsaiaf@gmail.com|Email]]
+
+
 Wenn du Fragen, Kommentare oder einfach nur Hallo sagen möchtest, zögere nicht, dich zu melden!
 
 Viel Spaß beim Stöbern! 😊

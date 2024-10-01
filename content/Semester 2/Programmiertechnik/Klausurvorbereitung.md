@@ -3,6 +3,7 @@ tags:
   - Programmiertechnik
   - Probeklausur
   - Zusammenfassung
+  - Java
 date: 2024-07-19
 enableToc: false
 ---

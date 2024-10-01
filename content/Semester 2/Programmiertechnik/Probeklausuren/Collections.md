@@ -3,6 +3,7 @@ date: 2024-07-20
 tags:
   - Probeklausur
   - Programmiertechnik
+  - Java
 ---
 ## <font color="#de7802">Let's say we have a List of Cars and we want to filter it using Java Stream API, this is how we do it:</font>
 

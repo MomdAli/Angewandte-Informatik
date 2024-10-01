@@ -1,5 +1,4 @@
 ---
-enableToc: false
 date: 2024-07-17
 tags:
   - Probeklausur

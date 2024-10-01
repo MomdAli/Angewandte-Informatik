@@ -2,6 +2,7 @@
 tags:
   - Probeklausur
   - Programmiertechnik
+  - Java
 date: 2024-07-19
 title: Klausur SS 18
 ---

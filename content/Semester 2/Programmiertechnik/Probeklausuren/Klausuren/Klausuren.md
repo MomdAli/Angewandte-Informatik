@@ -3,6 +3,7 @@ title: 📜Klausuren
 tags:
   - Probeklausur
   - Programmiertechnik
+  - Java
 date: 2024-07-24
 aliases:
   - klausur

@@ -3,6 +3,8 @@ title: 🧑🏼‍💻 Probeklausur
 tags:
   - Probeklausur
   - Systemprogrammierung
+  - CPP
+  - C
 date: 
 aliases:
   - Probeklausur-Systemprogrammierung
