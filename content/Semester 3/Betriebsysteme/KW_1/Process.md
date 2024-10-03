@@ -16,7 +16,7 @@ cssclasses:
 ### Definition: 
 A process is **an instance of a program running in a computer**. It is close in meaning to task , a term used in some operating systems. In UNIX and some other operating systems, a process is started when a program is initiated (either by a user entering a shell command or by another program).
 
-### how does operating system provide the illusion of many cpus?
+### how does operating system provide the illusion of many CPUs?
 The OS provides this abstraction by **virtualizing the CPU**. By running one process, then stopping it and running another, and so forth, the OS can promote the illusion that many virtual CPUs exist when in fact there is only one physical CPU (or a few). This basic technique is known as **time sharing** of the CPU.
 
 > [!tip] 
