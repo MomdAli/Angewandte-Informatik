@@ -17,30 +17,36 @@ Run process-run.py with the following flags: -l 5:100,5:100. What should the CPU
 ### Answer:
 The runtime should be 100% as the CPU doesn't waste time on waiting for other process and instead it instantly starts the next one.
 
+
 ### Question 2:
 Now run with these flags: ./process-run.py -l 4:100,1:0. These flags specify one process with 4 instructions (all to use the CPU), and one that simply issues an I/O and waits for it to be done. How long does it take to complete both processes? Use -c and -p to find out if you were right.
 ### Answer:
 It takes a total of 11 time. first it ran process 0 4 times at the beginning and then when it was done, it called I/O once then the process was blocked for a total of 5 unit times, and then it ran I/O_end. So calling I/O and ending it took a total of 2 unit times.
+
 
 ### Question 3:
 Switch the order of the processes: -l 1:0,4:100. What happens now? Does switching the order matter? Why? (As always, use -c and -p to see if you were right)
 ### Answer:
 So now that the process calls I/O, when it is in the block state it runs the second process while the first process is in the blocked state saving more times running. It took a total of 7 unit times.
 
+
 ### Question 4:
 We’ll now explore some of the other flags. One important flag is -S, which determines how the system reacts when a process issues an I/O. With the flag set to SWITCH ON END, the system will NOT switch to another process while one is doing I/O, instead waiting until the process is completely finished. What happens when you run the following two processes (-l 1:0,4:100 -c -S SWITCH ON END), one doing I/O and the other doing CPU work?
 ### Answer:
 Both should have the same total time because the CPU runs the processes asynchronously.
+
 
 ### Question 5:
 Now, run the same processes, but with the switching behavior set to switch to another process whenever one is WAITING for I/O (-l 1:0,4:100 -c -S SWITCH ON IO). What happens now? Use -c and -p to confirm that you are right.
 ### Answer:
 It behaves as it use to be before changing the flag. My assumption is that it is the default flag.
 
+
 ### Question 6:
 One other important behavior is what to do when an I/O completes. With -I IO RUN LATER, when an I/O completes, the process that issued it is not necessarily run right away; rather, whatever was running at the time keeps running. What happens when you run this combination of processes? (./process-run.py -l 3:0,5:100,5:100,5:100 -S SWITCH ON IO -c -p -I IO RUN LATER) Are system resources being effectively utilized?
 ### Answer:
 No, because the first I/O finishes and waits for all other processes to finish until it starts the next I/O. 
+
 
 ### Question 7:
 Now run the same processes, but with -I IO RUN IMMEDIATE set, which immediately runs the process that issued the I/O. How does this behaviour differ? Why might running a process that just completed an I/O again be a good idea?
