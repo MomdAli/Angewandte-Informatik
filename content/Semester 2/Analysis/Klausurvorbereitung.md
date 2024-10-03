@@ -184,7 +184,7 @@ $$
 > $$
 > \normalsize \int u(x)v'(x) \, dx = u(x)v(x) - \int u'(x)v(x) \, dx 
 > $$
->wo $u'(x)$ der "einfache Funktion zum ableiten" ist
+>wo $u(x)$ der "einfache Funktion zum ableiten" ist
 >> [!Example] Beispiel
 >>$$
 >>\normalsize

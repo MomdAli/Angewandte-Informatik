@@ -1,17 +1,13 @@
 ---
-title: Homework
+title: Homework Chapter 4
 tags:
   - Homework
   - Betriebsysteme
   - Python
 date: 2024-10-03
 aliases:
-  - homeworkkw1
-  - homework_kw_1
-  - hw_kw_1
-  - hw_1
-  - homework1
-  - homework_1
+  - Homework_Chapter_4
+  - HW4
 cssclasses:
   - purpleRed
   - wideTable

@@ -1,12 +1,12 @@
 ---
-title: Prozess
+title: Process
 tags:
   - Betriebsysteme
-  - Zusammenfassung
 date: 2024-10-01
 aliases:
   - Prozesse
   - process
+  - Prozess
 cssclasses:
 ---
 
@@ -57,5 +57,5 @@ The section also provides an example of a process structure in the xv6 kernel, s
 > 
 > • Processes exist in one of many different **process states**, including running, ready to run, and blocked. Different events (e.g., getting scheduled or descheduled, or waiting for an I/O to complete) transition a process from one of these states to the other. 
 > 
-> • A **process list ** contains information about all processes in the system. Each entry is found in what is sometimes called a **process control block (PCB)**, which is really just a structure that contains information about a specific process.
+> • A **process list** contains information about all processes in the system. Each entry is found in what is sometimes called a **process control block (PCB)**, which is really just a structure that contains information about a specific process.
 
