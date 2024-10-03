@@ -32,7 +32,6 @@ Every operating system need to able to **create** a process, **destroy** a proce
 3. **I/O Setup**: In systems like UNIX, the OS sets up standard input, output, and error file descriptors for the process, enabling easy interaction with the terminal.
 4. **Starting Execution**: Finally, the OS starts the program by transferring control of the CPU to the process, beginning execution at the entry point (typically the `main()` function).
 
-
 ### **Process States**: the text outlines the three main states a process can be in during its lifecycle:
 1. **Running**: The process is actively executing instructions on the CPU.
 2. **Ready**: The process is prepared to run but is waiting for CPU allocation by the operating system.
@@ -42,7 +41,7 @@ Every operating system need to able to **create** a process, **destroy** a proce
 
 The operating system moves processes between these states depending on the CPU's availability and external events like I/O completion. The transitions between these states are managed by the OS scheduler, which decides which process should be running at any given time to maximize system efficiency.
 
-### ==**Data Structures**==: discusses how operating systems manage processes using specific data structures. The key points are:
+### **Data Structures**: discusses how operating systems manage processes using specific data structures. The key points are:
 
 1. **Tracking Process Information**: The OS needs to track various details about each process, such as its current state, memory usage, CPU registers, and I/O activities. This is done using a data structure called the **Process Control Block (PCB)** or **process descriptor**, which stores all relevant information about each process.
 2. **Process List**: The OS maintains a **process list**, which contains all the PCBs for active processes. This list helps the OS manage which processes are running, ready to run, or blocked. For example, if a process is waiting for I/O, it will be marked as "blocked" in this list, and the OS will know when to wake it up once the I/O operation is complete.
@@ -53,7 +52,10 @@ The section also provides an example of a process structure in the xv6 kernel, s
 
 > [!summary] KEY PROCESS TERMS
 > • The **process** is the major OS abstraction of a running program. At any point in time, the process can be described by its state: the contents of memory in its **address space**, the contents of CPU registers (including the **program counter** and **stack pointer**, among others), and information about I/O (such as open files which can be read or written). 
+> 
 > • The **process API** consists of calls programs can make related to processes. Typically, this includes creation, destruction, and other useful calls. 
+> 
 > • Processes exist in one of many different **process states**, including running, ready to run, and blocked. Different events (e.g., getting scheduled or descheduled, or waiting for an I/O to complete) transition a process from one of these states to the other. 
+> 
 > • A **process list ** contains information about all processes in the system. Each entry is found in what is sometimes called a **process control block (PCB)**, which is really just a structure that contains information about a specific process.
 
