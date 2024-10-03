@@ -13,6 +13,8 @@ aliases:
   - homework1
   - homework_1
 cssclasses:
+  - purpleRed
+  - wideTable
 ---
 ### Question 1: 
 Run process-run.py with the following flags: -l 5:100,5:100. What should the CPU utilization be (e.g., the percent of time the CPU is in use?) Why do you know this? Use the -c and -p flags to see if you were right.
@@ -73,3 +75,11 @@ This allows the current CPU-bound process to continue running uninterrupted, pot
 This leads to more efficient use of CPU resources because the CPU will continue running another process while waiting for I/O-bound processes to complete their I/O operations.
 - **`-S SWITCH ON END`**:
 This may lead to wasted CPU time when the process is blocked on I/O, reducing overall efficiency.
+
+
+| Flag S        | Flag I        | Time (Seed 1) | Time (Seed 2) | Time (Seed 3) | Average Time |
+| ------------- | ------------- | ------------- | ------------- |:-------------:|:------------:|
+| SWITCH ON IO  | RUN IMMEDIATE | 15            | 16            |      17       |      16      |
+| SWITCH ON IO  | RUN LATER     | 15            | 16            |      18       |     16.3     |
+| SWITCH ON END | RUN IMMEDIATE | 18            | 30            |      24       |      24      |
+| SWITCH ON END | RUN LATER     | 18            | 30            |      24       |      24      |
