@@ -9,7 +9,8 @@ Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Proj
 ## 📂 Unterlagen
 
 1. [[Semester 2 Unterlagen]]
-2. [[tags/]]
+2. [[Semester 3 Unterlagen]]
+3. [[tags/]]
 %%
 ## 🛠️ Vorgestellte Projekte
 Schau dir einige der coolsten Dinge an, an denen ich arbeite:
