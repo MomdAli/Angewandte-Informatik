@@ -9,3 +9,27 @@
     position: relative;
     width: 100%;
 }
+
+img:not(.Logo) {
+	cursor:zoom-in;}
+
+img:active:not(.Logo) {
+	cursor:zoom-out;
+	display:block;
+	z-index:100;
+	position:fixed;
+  max-height:100% !important;
+  max-width:100% !important;
+  height:100% !important;
+  width:100% !important;
+  object-fit: contain;
+  margin:0 auto !important;
+  text-align:center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:var(--background-primary);
+}
