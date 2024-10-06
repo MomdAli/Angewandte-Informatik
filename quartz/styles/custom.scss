@@ -1,5 +1,5 @@
 @use "./base.scss";
-@use "quartz-themes";
+@import "../styles/quartz-themes/index";
 
 // put your custom CSS here!
 * pre>code {
