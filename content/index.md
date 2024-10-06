@@ -2,14 +2,15 @@
 title: 🌳 Mohammed's zweites Gehirn 🧠
 ---
 ![[Banner.png]]
-Hallo zusammen! 👋
+**Willkommen in meinem zweiten Gehirn!**
 
-Willkommen in meiner kleinen Ecke des Internets, wo ich all meine Gedanken, Projekte und Sammlungen speichere. Egal, ob du hier bist, um zu erkunden, zu lernen oder einfach nur neugierig bist, ich freue mich, dass du vorbeischaust.
+Hey, ich bin Mohammed und das hier ist mein digitales Gedächtnis. Hier sammle ich alles, was ich lerne, entdecke oder einfach nicht vergessen will. Ob's um Informatik, interessante Konzepte oder einfach nur random Gedanken geht – hier landet alles.
+
+Schau dich um, vielleicht findest du auch was, das dich interessiert oder dir beim Lernen hilft. Lass uns zusammen ein bisschen schlauer werden! 😄
 
 ## 📂 Unterlagen
 
-1. [[Semester 2 Unterlagen]]
-2. [[Semester 3 Unterlagen]]
+1. [[Studium]]
 3. [[tags/]]
 %%
 ## 🛠️ Vorgestellte Projekte
@@ -60,6 +61,7 @@ Entdecke mehr in [[Ressourcen]].
 ## 📧 Kontakt
 
 🗣️ [[https://discord.gg/nwtQs3UMec|Discord Server]]
+
 ✉️ [[mohammedali.alsaiaf@gmail.com|Email]]
 
 
