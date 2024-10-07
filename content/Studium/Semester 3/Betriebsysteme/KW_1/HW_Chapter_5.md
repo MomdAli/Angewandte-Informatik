@@ -104,7 +104,7 @@ In this homework, you are to gain some familiarity with the process management A
 Write a program that calls fork(). Before calling fork(), have the main process access a variable (e.g., x) and set its value to something (e.g., 100). What value is the variable in the child process? What happens to the variable when both the child and parent change the value of x?
 
 ### Answer:
-```c Title="q1.c" showLineNumbers
+```c title="q1.c" showLineNumbers
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -146,3 +146,141 @@ Each process has their own `x` variable and when changing it, it doesn't affect 
 
 ### Question 2:
 Write a program that opens a file (with the open() system call) and then calls fork() to create a new process. Can both the child and parent access the file descriptor returned by open()? What happens when they are writing to the file concurrently, i.e., at the same time?
+
+### Answer:
+```c title="q2.c"
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/wait.h>
+
+int main(int argc, char *argv[])
+{
+    // O_CREAT: create file if it does not exist
+    // O_WRONLY: open file for writing only
+    // O_TRUNC: truncate file if it exists
+    // S_IRWXU: read, write, execute for owner
+    int fd = open("./test.txt", O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU);
+
+    if (fd == -1) {
+        fprintf(stderr, "open failed\n");
+        exit(1);
+    }
+
+    int rc = fork();
+    if (rc < 0) {
+        fprintf(stderr, "fork failed\n");
+        exit(1);
+    } else if (rc == 0) { // child
+        printf("child (pid: %d) is writing to test.txt\n", getpid());
+        write(fd, "Child was here.\n", 16);
+    } else { // parent
+        printf("parent (pid: %d) is writing to test.txt\n", getpid());
+        write(fd, "Parent was here.\n", 17);
+    }
+
+    close(fd);
+
+    return 0;
+}
+```
+
+#### Output:
+```console title="test.txt"
+Parent was here.
+Child was here.
+```
+
+- Both parent and child processes can access the same file descriptor after `fork()`.
+- When they write to the file concurrently, the writes can interleave if both processes write at the same time.
+- File writes are not automatically synchronized between processes, so without explicit synchronization mechanisms, data from one process can overwrite or mix with data from the other process.
+
+
+### Question 3:
+Write another program using fork(). The child process should print “hello”; the parent process should print “goodbye”. You should try to ensure that the child process always prints first; can you do this without calling wait() in the parent?
+
+### Answer:
+```c title="q3.c" {14}
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[])
+{
+    int rc = fork();
+    if (rc < 0) {
+        fprintf(stderr, "fork failed\n");
+        exit(1);
+    } else if (rc == 0) { // child
+        printf("hello\n");
+    } else { // parent
+        sleep(1);
+        printf("goodbye\n");
+    }
+
+    return 0;
+}
+```
+
+#### Output:
+```frame="terminal"
+hello
+goodbye
+```
+
+The parent process doesn't explicitly wait for the child to complete using `wait()`, but instead uses a small delay `sleep(1)` to let the child process print first. 
+
+### Question 4:
+Write a program that calls fork() and then calls some form of exec() to run the program /bin/ls. See if you can try all of the variants of exec(), including (on Linux) execl(), execle(), execlp(), execv(), execvp(), and execvpe(). Why do you think there are so many variants of the same basic call?
+
+### Answer:
+> [!summary]-
+> ![[Exec Family]]
+
+### Question 5:
+Now write a program that uses wait() to wait for the child process to finish in the parent. What does wait() return? What happens if you use wait() in the child?
+
+### Answer:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+int main(int argc, char *argv[])
+{
+    int rc = fork();
+
+    if (rc < 0) {
+        fprintf(stderr, "fork failed\n");
+        exit(1);
+    } else if (rc == 0) { // child
+        int rc_wait;
+        if ((rc_wait = wait(NULL)) < 0) {
+            fprintf(stderr, "wait failed\n");
+            exit(1);
+        }
+        printf("Child hello\n");
+    } else { // parent
+        printf("Parent hello\n");
+    }
+    
+    return 0;
+}
+```
+**`wait()`** returns the process ID (PID) of the child process that finished. If there's an error, it returns `-1` and sets `errno` accordingly.
+
+#### Output:
+```console
+Parent hello
+wait failed
+```
+
+If you call `wait()` in the **child process**, it will fail because the child has no child processes to wait for. In this case, `wait()` will return `-1`.
+
+
+### Question 6:
+Write a slight modification of the previous program, this time using waitpid() instead of wait(). When would waitpid() be useful?
+### Answer:
+**`waitpid()`**: This function allows more control over which child process to wait for. Unlike `wait()`, which waits for _any_ child process, `waitpid()` lets you specify a particular process to wait for, using the child's process ID (`pid`).

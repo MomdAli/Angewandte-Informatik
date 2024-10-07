@@ -4,7 +4,6 @@
 #include <string.h>
 #include <fcntl.h>
 #include <sys/wait.h>
-#include <linux/stat.h>
 #include <sys/stat.h>
 
 int main(int argc, char *argv[])
