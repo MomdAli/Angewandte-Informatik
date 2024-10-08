@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 int main(int argc, char *argv[])
 {
     int x = 100;
 
     int rc = fork();
+
     if (rc < 0) {
         fprintf(stderr, "fork failed\n");
         exit(1);
@@ -16,7 +18,8 @@ int main(int argc, char *argv[])
         x = 50;
         printf("after changing x: %d\n", x);
     } else { // parent
-        printf("parent pid: %d\n", getpid());
+        wait(NULL);
+        printf("parent pid: %d, parent of %d\n", getpid(), rc);
         printf("before Changing x: %d\n", x);
         x = 25;
         printf("after Changing x: %d\n", x);

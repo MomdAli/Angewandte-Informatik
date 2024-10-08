@@ -1,8 +1,8 @@
 ---
-title: 🌳 Mohammed's zweites Gehirn 🧠
+title: 🌳 Mohammed's Second Brain🧠
 ---
 ![[Banner.png]]
-**Willkommen in meinem zweiten Gehirn!**
+**Welcome to my second brain!**
 
 Hey, ich bin Mohammed und das hier ist mein digitales Gedächtnis. Hier sammle ich alles, was ich lerne, entdecke oder einfach nicht vergessen will. Ob's um Informatik, interessante Konzepte oder einfach nur random Gedanken geht – hier landet alles.
 

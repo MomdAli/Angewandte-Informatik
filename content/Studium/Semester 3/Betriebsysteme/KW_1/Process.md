@@ -42,6 +42,15 @@ Every operating system need to able to **create** a process, **destroy** a proce
 
 The operating system moves processes between these states depending on the CPU's availability and external events like I/O completion. The transitions between these states are managed by the OS scheduler, which decides which process should be running at any given time to maximize system efficiency.
 
+### **PCB** (Process Control Block):
+- ****Pointer:**** It is a stack pointer that is required to be saved when the process is switched from one state to another to retain the current position of the process.
+- ****Process state:**** It stores the respective state of the process.
+- ****Process number:**** Every process is assigned a unique id known as process ID or PID which stores the process identifier.
+- ****Program counter:**** [Program Counter](https://www.geeksforgeeks.org/what-is-program-counter/) stores the counter, which contains the address of the next instruction that is to be executed for the process.
+- ****Register:**** [Registers](https://www.geeksforgeeks.org/different-classes-of-cpu-registers/) in the PCB, it is a data structure. When a processes is running and it’s time slice expires, the current value of process specific registers would be stored in the PCB and the process would be swapped out. When the process is scheduled to be run, the register values is read from the PCB and written to the CPU registers. This is the main purpose of the registers in the PCB.
+- ****Memory limits:**** This field contains the information about [memory management system](https://www.geeksforgeeks.org/memory-management-in-operating-system/) used by the operating system. This may include page tables, segment tables, etc.
+- ****List of Open files:**** This information includes the list of files opened for a process.
+
 ### **Data Structures**: discusses how operating systems manage processes using specific data structures. The key points are:
 
 1. **Tracking Process Information**: The OS needs to track various details about each process, such as its current state, memory usage, CPU registers, and I/O activities. This is done using a data structure called the **Process Control Block (PCB)** or **process descriptor**, which stores all relevant information about each process.
