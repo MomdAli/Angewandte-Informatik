@@ -11,7 +11,8 @@ Schau dich um, vielleicht findest du auch was, das dich interessiert oder dir be
 ## 📂 Unterlagen
 
 1. [[Studium]]
-3. [[tags/]]
+2. [[tags/]]
+3. #excalidraw 
 %%
 ## 🛠️ Vorgestellte Projekte
 Schau dir einige der coolsten Dinge an, an denen ich arbeite:
