@@ -99,3 +99,114 @@ img:active:not(.Logo) {
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
+
+// * Transclusion Embed Header
+:root .center {
+  --h2-embed-color: #ffc777;
+  --h3-embed-color: #c3e88d;
+  --h4-embed-color: #86e1fc;
+  --h5-embed-color: #82aaff;
+  --h6-embed-color: #c099ff;
+  .transclude {
+    // 1 embed deep
+    h1 {
+      font-size: 1.4rem;
+      margin-top: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.12rem;
+      margin-top: 1.62rem;
+      margin-bottom: 1rem;
+    }
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      color: var(--h2-embed-color);
+    }
+    h2 {
+      color: var(--h3-embed-color);
+    }
+    h3 {
+      color: var(--h4-embed-color);
+    }
+    h4 {
+      color: var(--h5-embed-color);
+    }
+    h5 {
+      color: var(--h6-embed-color);
+    }
+    .transclude {
+      // 2 embeds deep
+      h1 {
+        font-size: 1.12rem;
+        margin-top: 1.62rem;
+        margin-bottom: 1rem;
+      }
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        color: var(--h3-embed-color);
+      }
+      h2 {
+        color: var(--h4-embed-color);
+      }
+      h3 {
+        color: var(--h5-embed-color);
+      }
+      h4 {
+        color: var(--h6-embed-color);
+      }
+    .transclude {
+        // 3 embeds deep
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: 1rem;
+          margin-top: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          color: var(--h4-embed-color);
+        }
+        h2 {
+          color: var(--h5-embed-color);
+        }
+        h3 {
+          color: var(--h6-embed-color);
+        }
+        .transclude {
+          // 4 embeds deep
+          h1 {
+            color: var(--h5-embed-color);
+          }
+          h2 {
+            color: var(--h6-embed-color);
+          }
+          .transclude {
+            // 5+ embeds deep
+            h1 {
+              color: var(--h6-embed-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
