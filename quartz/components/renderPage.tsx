@@ -150,7 +150,7 @@ export function renderPage(
           node.children = [
             {
               type: "element",
-              tagName: "h2",
+              tagName: "h1",
               properties: {},
               children: [
                 {

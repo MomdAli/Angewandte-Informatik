@@ -36,5 +36,5 @@ In modern systems, the way the OS tries to handle such malfeasance is to simple 
 ### Context-Switching:
 Process A is running and then is interrupted by the timer interrupt. The hardware saves its registers (onto its kernel stack) and enters the *Kernel Mode*. In the timer interrupt handler, the Os decides to switch from running process A to process B. At that point, it calls the switch() routine, which carefully saves current register values (into the process structure of A), restores the registers of process B, and then switches contexts, specifically by changing the **stack pointer** to use B's registers and starts running it.
 
-### baby proofing:
+### Baby proofing:
 First (during boot time) setting up the trap handler and and storing an interrupt timer, and then by only running processes in a restricted mode. By doing so, the OS can feel quite assured that processes can run efficiently, only requiring OS intervention to perform privileged operations or when they have monopolized the CPU for too long and thus need to be switched out.
