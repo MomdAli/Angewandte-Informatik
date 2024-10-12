@@ -110,7 +110,7 @@ img:active:not(.Logo) {
   .transclude {
     // 1 embed deep
     h1 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin-top: 1.9rem;
       margin-bottom: 1rem;
     }
@@ -145,7 +145,7 @@ img:active:not(.Logo) {
     .transclude {
       // 2 embeds deep
       h1 {
-        font-size: 1.12rem;
+        font-size: 1.4rem;
         margin-top: 1.62rem;
         margin-bottom: 1rem;
       }
@@ -178,7 +178,7 @@ img:active:not(.Logo) {
         h4,
         h5,
         h6 {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           margin-top: 1.5rem;
           margin-bottom: 1rem;
         }
@@ -195,6 +195,7 @@ img:active:not(.Logo) {
           // 4 embeds deep
           h1 {
             color: var(--h5-embed-color);
+            font-size: 1.1rem;
           }
           h2 {
             color: var(--h6-embed-color);
@@ -202,6 +203,7 @@ img:active:not(.Logo) {
           .transclude {
             // 5+ embeds deep
             h1 {
+              font-size: 1rem;
               color: var(--h6-embed-color);
             }
           }
