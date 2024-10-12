@@ -5,11 +5,9 @@ date:
 aliases: 
 cssclasses:
 ---
-## ==Links zu Dateien==
+![[Analysis]]
+![[Programmiertechnik]]
+![[Systemprogrammierung]]
+![[Betriebssysteme]]
 
-- #Semester-2 
-	- #Mathematik
-	- #Programmiertechnik 
-	- #Systemprogrammierung 
-- #Semester-3
-	- #Betriebsysteme
+![[Software Engineering]]

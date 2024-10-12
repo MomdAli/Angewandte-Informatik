@@ -1,8 +1,9 @@
 ---
 title: Process API
 tags:
-  - Betriebsysteme
+  - Betriebssysteme
   - Semester-3
+  - C
 date: 
 aliases:
   - Prozess_API

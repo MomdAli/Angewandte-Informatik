@@ -1,8 +1,9 @@
 ---
 title: Exec
 tags:
-  - Betriebsysteme
+  - Betriebssysteme
   - C
+  - Semester-3
 date: 2024-10-07
 aliases: 
 cssclasses:

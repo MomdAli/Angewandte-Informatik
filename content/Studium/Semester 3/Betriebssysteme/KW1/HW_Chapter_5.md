@@ -1,7 +1,7 @@
 ---
 title: Homework Chapter 5
 tags:
-  - Betriebsysteme
+  - Betriebssysteme
   - Homework
   - Python
   - Semester-3

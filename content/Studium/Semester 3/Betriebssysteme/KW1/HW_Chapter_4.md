@@ -2,7 +2,7 @@
 title: Homework Chapter 4
 tags:
   - Homework
-  - Betriebsysteme
+  - Betriebssysteme
   - Python
   - Semester-3
 date: 2024-10-03

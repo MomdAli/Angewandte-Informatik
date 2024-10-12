@@ -1,7 +1,7 @@
 ---
 title: Process
 tags:
-  - Betriebsysteme
+  - Betriebssysteme
   - Semester-3
 date: 2024-10-01
 aliases:
@@ -69,3 +69,4 @@ The section also provides an example of a process structure in the xv6 kernel, s
 > 
 > • A **process list** contains information about all processes in the system. Each entry is found in what is sometimes called a **process control block (PCB)**, which is really just a structure that contains information about a specific process.
 
+More about Process API [[Process_API|here]].
