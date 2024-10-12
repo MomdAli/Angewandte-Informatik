@@ -5,9 +5,5 @@ date:
 aliases: 
 cssclasses:
 ---
-![[Analysis]]
-![[Programmiertechnik]]
-![[Systemprogrammierung]]
-![[Betriebssysteme]]
-
-![[Software Engineering]]
+![[Semester 2]]
+![[Semester 3]]

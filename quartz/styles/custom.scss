@@ -11,8 +11,14 @@
     width: 100%;
 }
 
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
 img:not(.Logo) {
-	cursor:zoom-in;}
+	cursor:zoom-in;
+}
 
 img:active:not(.Logo) {
 	cursor:zoom-out;

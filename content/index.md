@@ -10,8 +10,8 @@ Schau dich um, vielleicht findest du auch was, das dich interessiert oder dir be
 
 ## 📂 Unterlagen
 
-1. [[Studium]]
-2. [[tags/]]
+![[Studium]]
+ [[tags/]]
 
 ## 📧 Kontakt
 
