@@ -107,7 +107,6 @@ a {
 }
 
 .desktop-only {
-  height: 100%;
   display: initial;
   @media all and ($mobile) {
     display: none;
@@ -182,25 +181,18 @@ a {
     & .sidebar {
       gap: 2rem;
       top: 0;
-      width: $sidePanelWidth;
-      margin-top: $topSpacing;
-      height: 100%;
       box-sizing: border-box;
-      padding: 0 2rem 0 0.5rem;
-      position: fixed;
-      @media all and (max-width: $fullPageWidth) {
-        position: initial;
-        flex-direction: row;
-        padding: 0;
-        width: initial;
-        margin-top: 2rem;
-      }
+      padding: $topSpacing 2rem 2rem 2rem;
+      display: flex;
+      height: 100vh;
+      position: sticky;
     }
 
     & .sidebar.left {
-      width: 17rem;
-      left: 4rem;
-      @media all and (max-width: $fullPageWidth) {
+      z-index: 1;
+      grid-area: grid-sidebar-left;
+      flex-direction: column;
+      @media all and ($mobile) {
         gap: 0;
         align-items: center;
         position: initial;
@@ -252,19 +244,24 @@ a {
       grid-area: grid-center;
     }
 
-  & .page-header {
-    margin: $topSpacing 0 0 0;
-    @media all and (max-width: $fullPageWidth) {
-      margin-top: 2rem;
+    & footer {
+      grid-area: grid-footer;
     }
 
-  & .center,
-  & footer {
-    margin-left: 30%;
-    margin-right: auto;
-    width: calc(0.6 * $fullPageWidth);
-    @media all and (max-width: $fullPageWidth) {
-      width: initial;
+    & .center,
+    & footer {
+      max-width: 100%;
+      min-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      @media all and ($desktop) {
+        margin-right: 0;
+      }
+      @media all and ($mobile) {
+        margin-left: 0;
+      }
+    }
+    & footer {
       margin-left: 0;
     }
   }
@@ -547,9 +544,8 @@ div:has(> .overflow) {
 
 ul.overflow,
 ol.overflow {
-  max-height: calc(100vh - (3 * $topSpacing + 10rem));
+  max-height: 100%;
   overflow-y: auto;
-  overflow-x: auto;
 
   // clearfix
   content: "";
