@@ -76,3 +76,6 @@ A <font color="#d99694">context switch</font> happens when the OS stops one proc
 - <font color="#d99694">Nested Interrupt Handling</font>: The OS must be careful when interrupts occur during other interrupts or system calls. One strategy is to **disable further interrupts** while handling the current interrupt to avoid confusion. However, modern systems may also allow interrupt **prioritization**, where higher-priority interrupts can pre-empt lower-priority ones.
 - <font color="#d99694">Saving State Carefully</font>: When an interrupt or system call occurs, the hardware (like the CPU) automatically saves certain critical registers (such as the **program counter**) onto the process’s kernel stack. This allows the OS to handle the interrupt or system call and then resume the interrupted process at the exact point it left off.
 - <font color="#d99694">Context Switching Code</font>: The OS’s context-switching code, which runs in kernel mode, is written very carefully to ensure all necessary registers are saved before switching to another process. When switching back, the saved context is restored so that the process can continue as if nothing happened.
+
+
+##### Next chapter: [[Scheduling]]

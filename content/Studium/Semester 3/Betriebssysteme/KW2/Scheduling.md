@@ -84,4 +84,7 @@ In real-world systems, jobs perform I/O operations. The scheduler must ensure th
 
 ## Limitations and Future Scheduling Strategies
 
-A fundamental limitation of most schedulers is that they require knowledge of job lengths, which is typically unavailable in real-world systems. To address this, future algorithms like **Multi-Level Feedback Queue (MLFQ)** will predict future job behavior based on historical execution patterns, providing a more dynamic and efficient scheduling mechanism.
+A fundamental limitation of most schedulers is that they require knowledge of job lengths, which is typically unavailable in real-world systems. To address this, future algorithms like [[Multi-Level Feedback Queue (MLFQ)]] will predict future job behavior based on historical execution patterns, providing a more dynamic and efficient scheduling mechanism.
+
+
+##### Next chapter: [[Multi-Level Feedback Queue (MLFQ)]]

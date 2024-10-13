@@ -9,7 +9,7 @@ date: 2024-10-13
 aliases: 
 cssclasses:
 ---
-This program, scheduler.py, allows you to see how different schedulers perform under scheduling metrics such as response time, turnaround time, and total wait time. See the README for details.
+This program, scheduler.py, allows you to see how different schedulers perform under [[Scheduling]] metrics such as response time, turnaround time, and total wait time. See the README for details.
 ## Question 1:
 Compute the response time and turnaround time when running three jobs of length 200 with the SJF and FIFO schedulers.
 ### Answer:
@@ -67,7 +67,7 @@ $\overline w = 133$
 $\overline r = 133$
 $\overline t = 333$
 
-## Question 2:
+## Question 3:
 Now do the same, but also with the RR scheduler and a time-slice of 1.
 
 ### Answer:
