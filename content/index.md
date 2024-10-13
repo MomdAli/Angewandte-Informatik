@@ -1,6 +1,7 @@
 ---
 title: 🌳 Mohammed's Second Brain🧠
 ---
+
 ![[Banner.png]]
 **Welcome to my second brain!**
 
