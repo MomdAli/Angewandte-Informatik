@@ -5,11 +5,16 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.RecentNotes({
+      showTags: false,
+      limit: 3,
+    }),
+  ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/MomdAli/Angewandte-Informatik",
+      "Discord Server": "https://discord.gg/nwtQs3UMec",
     },
   }),
 }
