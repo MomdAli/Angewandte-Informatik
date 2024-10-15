@@ -1,9 +1,10 @@
 ---
 title: 
-tags: 
+tags:
+  - Informatik
 date: 2024-10-12
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 - [[Studium/Semester 2/Systemprogrammierung/Probe/Probeklausur]]
 - [[C++ Constructors]]

@@ -5,9 +5,10 @@ tags:
   - C
   - Assembly
   - Semester-3
+  - Informatik
 date: 2024-10-12
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 ## How to efficiently virtualize the CPU with control?
 ### What is Direct Execution?

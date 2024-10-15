@@ -5,11 +5,12 @@ tags:
   - Homework
   - Python
   - Semester-3
+  - Informatik
 date: 2024-10-03
 aliases:
   - HW5
   - Homework5
-cssclasses:
+cssclasses: 
 ---
 ## <font color="#71e9ac">Simulation</font>
 This simulation homework focuses on `fork.py`, a simple process creation simulator that shows how processes are related in a single “familial” tree. Read the relevant README for details about how to run the simulator.

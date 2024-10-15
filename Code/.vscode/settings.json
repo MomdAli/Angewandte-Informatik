@@ -4,7 +4,8 @@
         "*.shader": "UnityShader",
         "unistd.h": "c",
         "stdio.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "x86intrin.h": "c"
     },
     "C_Cpp.default.compilerPath": "/usr/bin/gcc-11"
 }

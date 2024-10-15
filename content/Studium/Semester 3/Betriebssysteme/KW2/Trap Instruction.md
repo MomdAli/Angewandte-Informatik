@@ -4,12 +4,13 @@ tags:
   - Betriebssysteme
   - Assembly
   - Semester-3
+  - Informatik
 date: 2024-10-13
 aliases:
   - trap
   - traps
   - trap-instruction
-cssclasses:
+cssclasses: 
 ---
 The **trap instruction** is a key mechanism that enables the operating system (OS) to handle privileged operations securely and efficiently. It is fundamental in allowing the OS to virtualize the CPU and manage hardware resources while keeping control over user processes. Here's a detailed breakdown of what the **trap instruction** is, how it works, and why it's important:
 

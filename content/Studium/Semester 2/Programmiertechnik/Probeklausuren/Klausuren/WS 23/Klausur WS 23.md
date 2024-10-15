@@ -5,6 +5,7 @@ tags:
   - Programmiertechnik
   - Java
   - Semester-2
+  - Informatik
 ---
 
 ## <font color="#71e9ac">Aufgabe 4</font>

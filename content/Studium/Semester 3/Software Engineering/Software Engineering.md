@@ -1,9 +1,10 @@
 ---
 title: 
-tags: 
+tags:
+  - Informatik
 date: 2024-10-12
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 
 - [[0. Scala]]

@@ -4,9 +4,10 @@ tags:
   - Software-Engineering
   - Scala
   - Semester-3
+  - Informatik
 date: 2024-10-14
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 ## Concept: 
 In _Echo Relics_, two players (or teams) compete to gather ancient artifacts on a mysterious, ever-shifting map. The twist is that every action you take leaves an "echo" behind—a ghostly version of your past moves that either helps or hinders future actions. The objective is to collect the most valuable relics while managing the echoes of your past moves.

@@ -1,9 +1,10 @@
 ---
 title: 
-tags: 
+tags:
+  - Informatik
 date: ""
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 - <font color="#bb9af7">Kalenderwoche 1</font>
 	- [[Exec Family]]

@@ -6,6 +6,7 @@ tags:
   - Programmiertechnik
   - Java
   - Semester-2
+  - Informatik
 title: Zusammenfassung
 aliases:
   - Zsmfsng

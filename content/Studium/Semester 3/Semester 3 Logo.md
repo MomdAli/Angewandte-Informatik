@@ -2,6 +2,7 @@
 excalidraw-plugin: parsed
 tags:
   - excalidraw
+  - Informatik
 excalidraw-export-transparent: true
 draft: true
 ---

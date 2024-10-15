@@ -4,6 +4,7 @@ tags:
   - Systemprogrammierung
   - Makefile
   - Semester-2
+  - Informatik
 date: 2024-07-23
 aliases:
   - make

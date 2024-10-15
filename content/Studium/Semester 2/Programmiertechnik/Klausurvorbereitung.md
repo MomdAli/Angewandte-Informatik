@@ -5,6 +5,7 @@ tags:
   - Zusammenfassung
   - Java
   - Semester-2
+  - Informatik
 date: 2024-07-19
 enableToc: false
 ---

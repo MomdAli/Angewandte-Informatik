@@ -4,6 +4,7 @@ tags:
   - Probeklausur
   - Programmiertechnik
   - Java
+  - Informatik
 date: 2024-07-24
 aliases:
   - klausur

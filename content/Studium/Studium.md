@@ -1,9 +1,10 @@
 ---
 title: Studium 🎓
-tags: []
+tags:
+  - Informatik
 date: 
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 ![[Semester 2]]
 ![[Semester 3]]

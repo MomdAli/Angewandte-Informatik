@@ -1,9 +1,10 @@
 ---
 title: 
-tags: 
+tags:
+  - Informatik
 date: 
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 ![[Semester 3 Logo.svg|600]]
 

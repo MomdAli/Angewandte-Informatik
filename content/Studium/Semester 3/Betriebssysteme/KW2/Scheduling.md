@@ -3,9 +3,10 @@ title: Scheduling
 tags:
   - Betriebssysteme
   - Semester-3
+  - Informatik
 date: 2024-10-13
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 ## Overview
 

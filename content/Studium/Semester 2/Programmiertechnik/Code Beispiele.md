@@ -1,3 +1,7 @@
+---
+tags:
+  - Informatik
+---
 
 ```java
 public interface FrequencyTable<T> extends Iterable<Element<T>>{

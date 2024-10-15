@@ -5,6 +5,7 @@ tags:
   - Programmiertechnik
   - Java
   - Semester-2
+  - Informatik
 cssclasses:
   - purpleRed
   - wideTable

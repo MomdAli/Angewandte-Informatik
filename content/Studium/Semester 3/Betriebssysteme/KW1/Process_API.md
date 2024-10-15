@@ -4,12 +4,13 @@ tags:
   - Betriebssysteme
   - Semester-3
   - C
+  - Informatik
 date: 
 aliases:
   - Prozess_API
   - ProzessAPI
   - ProcessAPI
-cssclasses:
+cssclasses: 
 ---
 
 ### The **Process API**:

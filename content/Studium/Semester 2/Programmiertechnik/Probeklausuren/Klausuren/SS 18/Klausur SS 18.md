@@ -4,6 +4,7 @@ tags:
   - Programmiertechnik
   - Java
   - Semester-2
+  - Informatik
 date: 2024-07-19
 title: Klausur SS 18
 ---

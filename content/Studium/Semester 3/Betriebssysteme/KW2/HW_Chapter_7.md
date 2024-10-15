@@ -5,9 +5,10 @@ tags:
   - Homework
   - Semester-3
   - Python
+  - Informatik
 date: 2024-10-13
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 This program, scheduler.py, allows you to see how different schedulers perform under [[Scheduling]] metrics such as response time, turnaround time, and total wait time. See the README for details.
 ## Question 1:

@@ -2,6 +2,7 @@
 excalidraw-plugin: parsed
 tags:
   - excalidraw
+  - Informatik
 excalidraw-export-embed-scene: true
 excalidraw-export-dark: false
 ---

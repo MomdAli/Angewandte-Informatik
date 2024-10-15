@@ -3,12 +3,13 @@ title: Process
 tags:
   - Betriebssysteme
   - Semester-3
+  - Informatik
 date: 2024-10-01
 aliases:
   - Prozesse
   - process
   - Prozess
-cssclasses:
+cssclasses: 
 ---
 
 > [!attention]

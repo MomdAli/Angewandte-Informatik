@@ -6,13 +6,14 @@ tags:
   - CPP
   - C
   - Semester-2
+  - Informatik
 date: 
 aliases:
   - Probeklausur-Systemprogrammierung
   - Probe
   - Probe-Sysprog
   - Systemprogrammierung-Probeklausur
-cssclasses:
+cssclasses: 
 ---
 [[SYPR-Probeklausur.pdf|Link zu Probeklausur]]
 

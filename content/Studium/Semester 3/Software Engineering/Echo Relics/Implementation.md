@@ -5,9 +5,10 @@ tags:
   - Scala
   - UML
   - Semester-3
+  - Informatik
 date: 2024-10-14
 aliases: 
-cssclasses:
+cssclasses: 
 ---
 ### **Main Components of the Diagram:**
 

@@ -4,6 +4,7 @@ tags:
   - Probeklausur
   - Java
   - Semester-2
+  - Informatik
 enableToc: false
 date: 2024-07-20
 ---

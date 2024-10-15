@@ -5,6 +5,7 @@ tags:
   - Betriebssysteme
   - Python
   - Semester-3
+  - Informatik
 date: 2024-10-03
 aliases:
   - Homework_Chapter_4

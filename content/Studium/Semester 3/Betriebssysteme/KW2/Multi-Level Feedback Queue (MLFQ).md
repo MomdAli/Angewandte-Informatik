@@ -3,10 +3,11 @@ title: MLFQ
 tags:
   - Betriebssysteme
   - Semester-3
+  - Informatik
 date: 2024-10-13
 aliases:
   - Multi-Level Feedback Queue
-cssclasses:
+cssclasses: 
 ---
 ## Overview
 
