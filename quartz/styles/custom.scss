@@ -3,12 +3,12 @@
 
 // put your custom CSS here!
 * pre>code {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 * iframe {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 img[alt~="center"] {
@@ -16,28 +16,29 @@ img[alt~="center"] {
   margin: 0 auto;
 }
 
+// Image zoom
 img:not(.Logo) {
-	cursor:zoom-in;
+  cursor: zoom-in;
 }
 
 img:active:not(.Logo) {
-	cursor:zoom-out;
-	display:block;
-	z-index:100;
-	position:fixed;
-  max-height:100% !important;
-  max-width:100% !important;
-  height:100% !important;
-  width:100% !important;
+  cursor: zoom-out;
+  display: block;
+  z-index: 100;
+  position: fixed;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
   object-fit: contain;
-  margin:0 auto !important;
-  text-align:center;
+  margin: 0 auto !important;
+  text-align: center;
   top: 50%;
   transform: translateY(-50%);
-  padding:0;
-  left:0;
-  right:0;
-  bottom:0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #000000be;
 }
 
@@ -55,14 +56,14 @@ img:active:not(.Logo) {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
-  font-family: "RM Neue",sans-serif;
+  font-family: "RM Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   padding: 10px 21px;
   text-align: center;
   text-transform: none;
-  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  transition: color .13s ease-in-out, background .13s ease-in-out, opacity .13s ease-in-out, box-shadow .13s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -79,11 +80,11 @@ img:active:not(.Logo) {
 .button-2 {
   background-color: #c2fbd7;
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -96,7 +97,7 @@ img:active:not(.Logo) {
 }
 
 .button-2:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
 
@@ -107,18 +108,22 @@ img:active:not(.Logo) {
   --h4-embed-color: #86e1fc;
   --h5-embed-color: #82aaff;
   --h6-embed-color: #c099ff;
+
   .transclude {
+
     // 1 embed deep
     h1 {
       font-size: 1.6rem;
       margin-top: 1.9rem;
       margin-bottom: 1rem;
     }
+
     h2 {
       font-size: 1.4rem;
       margin-top: 1.62rem;
       margin-bottom: 1rem;
     }
+
     h3,
     h4,
     h5,
@@ -127,28 +132,36 @@ img:active:not(.Logo) {
       margin-top: 1.5rem;
       margin-bottom: 1rem;
     }
+
     h1 {
       color: var(--h2-embed-color);
     }
+
     h2 {
       color: var(--h3-embed-color);
     }
+
     h3 {
       color: var(--h4-embed-color);
     }
+
     h4 {
       color: var(--h5-embed-color);
     }
+
     h5 {
       color: var(--h6-embed-color);
     }
+
     .transclude {
+
       // 2 embeds deep
       h1 {
         font-size: 1.4rem;
         margin-top: 1.62rem;
         margin-bottom: 1rem;
       }
+
       h2,
       h3,
       h4,
@@ -158,19 +171,25 @@ img:active:not(.Logo) {
         margin-top: 1.5rem;
         margin-bottom: 1rem;
       }
+
       h1 {
         color: var(--h3-embed-color);
       }
+
       h2 {
         color: var(--h4-embed-color);
       }
+
       h3 {
         color: var(--h5-embed-color);
       }
+
       h4 {
         color: var(--h6-embed-color);
       }
-    .transclude {
+
+      .transclude {
+
         // 3 embeds deep
         h1,
         h2,
@@ -182,25 +201,33 @@ img:active:not(.Logo) {
           margin-top: 1.5rem;
           margin-bottom: 1rem;
         }
+
         h1 {
           color: var(--h4-embed-color);
         }
+
         h2 {
           color: var(--h5-embed-color);
         }
+
         h3 {
           color: var(--h6-embed-color);
         }
+
         .transclude {
+
           // 4 embeds deep
           h1 {
             color: var(--h5-embed-color);
             font-size: 1.1rem;
           }
+
           h2 {
             color: var(--h6-embed-color);
           }
+
           .transclude {
+
             // 5+ embeds deep
             h1 {
               font-size: 1rem;

@@ -1,12 +1,15 @@
 ---
-title: 
+title: Semester 3
 tags:
   - Informatik
-date: 
+date: 2024-10-12
 aliases: 
-cssclasses: 
+cssclasses:
 ---
 ![[Semester 3 Logo.svg|600]]
 
 ![[Betriebssysteme]]
+
 ![[Software Engineering]]
+
+![[Theoretische Grundlagen der Informatik]]
