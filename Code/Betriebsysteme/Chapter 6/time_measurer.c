@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <x86intrin.h>
 
-#define ITERATIONS 10000000
+#define ITERATIONS 1000
 
 int main()
 {
@@ -20,9 +20,9 @@ int main()
 
     end = __rdtsc();
 
-    double avg_time = (end - start) / ITERATIONS;
+    uint64_t avg_time = (end - start) / ITERATIONS;
 
-    printf("Average time per system call: %.6f microseconds\n", avg_time);
+    printf("Average time per system call: %lu microseconds\n", avg_time);
 
     return 0;
 }

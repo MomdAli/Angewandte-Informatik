@@ -17,13 +17,13 @@ const config: QuartzConfig = {
     locale: "de-DE",
     baseUrl: "momdali.de",
     ignorePatterns: [
-        "private",
-        "Templates",
-        ".obsidian",
-        "Excalidraw",
-        "**/*.excalidraw.md"
-      ],
-    defaultDateType: "modified",
+      "private",
+      "Templates",
+      ".obsidian",
+      "Excalidraw",
+      "**/*.excalidraw.md"
+    ],
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -62,7 +62,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "filesystem"],
+        priority: ["frontmatter", "git", "filesystem"],
       }),
       Plugin.SyntaxHighlighting({
         theme: {
@@ -71,7 +71,7 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: true}),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: true }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
