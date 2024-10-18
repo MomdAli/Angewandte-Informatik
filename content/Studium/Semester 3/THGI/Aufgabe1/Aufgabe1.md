@@ -8,4 +8,4 @@ date: 2024-10-17
 aliases: 
 cssclasses:
 ---
-![[Aufgabe1.excalidraw.svg]]
+![[Aufgabe1.excalidraw]]
