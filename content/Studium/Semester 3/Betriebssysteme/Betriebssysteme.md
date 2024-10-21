@@ -19,3 +19,8 @@ cssclasses:
 	- [[Multi-Level Feedback Queue (MLFQ)]]
 	- [[HW_Chapter_7|Homework 7]]
 	- [[HW_Chapter_8| Homework 8]]
+- <font color="#bb9af7">Kalenderwoche 3</font>
+	- [[Address Spaces]]
+	- [[Memory API]]
+	- [[HW_Chapter_13|Homework 13]]
+	- [[HW_Chapter_14|Homework 14]]

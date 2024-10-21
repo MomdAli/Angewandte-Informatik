@@ -102,3 +102,5 @@ By learning from a job’s past behavior, MLFQ ensures both efficient CPU utiliz
 - Rule 5: Periodically boost all jobs to the highest priority to prevent starvation.
 
 MLFQ is widely used in modern operating systems like BSD Unix, Solaris, and Windows due to its flexibility and effectiveness in handling diverse workloads.
+
+##### Next chapter: [[Address Spaces]] 
