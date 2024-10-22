@@ -3,6 +3,9 @@ excalidraw-plugin: parsed
 tags:
   - excalidraw
   - Informatik
+  - Software-Engineering
+  - Scala
+  - UML
 excalidraw-export-transparent: true
 draft: true
 excalidraw-export-dark: true
