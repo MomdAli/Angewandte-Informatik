@@ -1,13 +1,7 @@
 ---
-title: Address Spaces
-tags:
-  - Betriebssysteme
-  - Semester-3
-  - Informatik
-date: 2024-10-21
-aliases: 
-cssclasses:
+{"title":"Address Spaces","tags":["Betriebssysteme","Semester-3","Informatik"],"date":"2024-10-21","aliases":null,"cssclasses":null,"publish":true,"path":"Studium/Semester 3/Betriebssysteme/KW3/Address Spaces.md","permalink":"/studium/semester-3/betriebssysteme/kw-3/address-spaces/","PassFrontmatter":true}
 ---
+
 
 ## Early Systems
 
@@ -34,7 +28,32 @@ cssclasses:
 
 Virtual memory is a memory management technique that provides an idealized abstraction of the storage resources that are actually available on a given machine, which creates the illusion to users of a very large (main) memory. 
 
-![[Memory_Layout.svg|center]]
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+<div class="markdown-embed-title">
+
+# center
+
+</div>
+
+
+
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+
+# Excalidraw Data
+## Text Elements
+Code 
+Data 
+Heap 
+Stack 
+Low address 
+high address 
+
+
+</div></div>
+
 ### Transparency
 
 One major goal of a virtual memory system is to provide transparency to the user. This means that the user does not need to know about the actual physical memory layout of the system. The user can simply assume that there is a large amount of memory available to them, and the system will take care of mapping their virtual addresses to physical addresses.
@@ -55,4 +74,4 @@ Virtual memory systems also provide protection between processes. Each process h
 
 Virtual memory systems use address translation to map virtual addresses to physical addresses. This allows the system to provide the illusion of a large amount of memory to the user, while actually using a smaller amount of physical memory. The translation process is handled by the hardware, which uses a page table to map virtual addresses to physical addresses.
 
-##### Next chapter: [[Memory API]] 
+##### Next chapter: [[Studium/Semester 3/Betriebssysteme/KW3/Memory API\|Memory API]] 
