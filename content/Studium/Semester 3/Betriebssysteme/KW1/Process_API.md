@@ -5,15 +5,15 @@ tags:
   - Semester-3
   - C
   - Informatik
-date: 
+date: 2024-10-01
 aliases:
   - Prozess_API
   - ProzessAPI
   - ProcessAPI
-cssclasses: 
+cssclasses:
 ---
 
-### The **Process API**:
+### The Process API:
 interlude introduces the fundamental system calls for process creation and management in UNIX systems: `fork()`, `exec()`, and `wait()`. These system calls enable process creation and control, allowing for effective multitasking and process coordination within an operating system.
 
 - **`fork()`**: This system call is used to create a new process, known as the child process, which is almost an identical copy of the calling (parent) process. Both parent and child processes resume execution from the point where `fork()` was called, but they can be differentiated because `fork()` returns a different value in each process. The parent gets the child’s process ID, while the child receives a return value of zero.
