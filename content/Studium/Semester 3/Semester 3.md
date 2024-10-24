@@ -12,6 +12,6 @@ cssclasses:
 
 ![[Software Engineering]]
 
-![[Theoretische Grundlagen der Informatik]]
+![[THGI]]
 
 ![[SSS]]

@@ -1,11 +1,11 @@
 ---
-title: Aufgabe1
+title: Aufgabe 2
 tags:
   - THGI
   - Semester-3
   - Informatik
-date: 2024-10-17
+date: 2024-10-23
 aliases: 
 cssclasses:
 ---
-![[Aufgabe1.excalidraw.svg]]
+![[Aufgabe2.svg]]

@@ -1,0 +1,1 @@
+cat filename.svg | inkscape --pipe --export-filename=outputname.pdf
