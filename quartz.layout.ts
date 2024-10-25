@@ -80,8 +80,7 @@ export const defaultListPageLayout: PageLayout = {
       title: "=> Explore",
       folderClickBehavior: "collapse",
       folderDefaultState: "collapsed",
-      useSavedState: false,
-      filterFn: (node) => node.name !== "Studium"
+      filterFn: (node) => !node.displayName.startsWith("📜") && !(["tags"].includes(node.name)),
     })),
   ],
   right: [],
