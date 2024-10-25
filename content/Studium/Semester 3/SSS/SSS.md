@@ -1,5 +1,5 @@
 ---
-title: Signale, Systeme und Sensoren
+title: 📜 Signale, Systeme und Sensoren
 tags:
   - SSS
   - Informatik

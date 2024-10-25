@@ -1,5 +1,5 @@
 ---
-title: Theoretische Grundlagen der Informatik
+title: 📜 Theoretische Grundlagen der Informatik
 tags:
   - Informatik
   - THGI

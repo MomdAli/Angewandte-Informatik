@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     locale: "de-DE",
     baseUrl: "momdali.de",
     ignorePatterns: [
-      "private",
+      "Private",
       "Templates",
       ".obsidian",
       "Excalidraw",

@@ -1,5 +1,5 @@
 ---
-title: 
+title: 📜 Analysis
 tags:
   - Mathematik
 date: 2024-10-12

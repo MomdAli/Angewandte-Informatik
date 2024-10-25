@@ -1,5 +1,5 @@
 ---
-title: 📜Klausuren
+title: 📜 Klausuren
 tags:
   - Probeklausur
   - Programmiertechnik

@@ -1,10 +1,10 @@
 ---
-title: 
+title: 📜 Programmiertechnik
 tags:
   - Informatik
 date: 
 aliases: 
-cssclasses: 
+cssclasses:
 ---
 ![[Klausuren|Klausuren]]
 - [[Binary Search Tree]]
