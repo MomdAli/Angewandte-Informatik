@@ -32,7 +32,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.Explorer({
+      title: "Explore a",
+      folderClickBehavior: "collapse",
+      folderDefaultState: "collapsed",
+      filterFn: (node) => !node.displayName.startsWith("📜") && !(["tags"].includes(node.name)),
+    })),
   ],
   right: [
     Component.Graph({
