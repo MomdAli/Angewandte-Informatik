@@ -29,7 +29,7 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
-        body: "DM Sans",
+        body: "Noto Sans",
         code: "JetBrains Mono",
       },
       colors: {
@@ -66,8 +66,8 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "min-light",
-          dark: "dracula",
+          light: "catppuccin-latte",
+          dark: "catppuccin-macchiato",
         },
         keepBackground: false,
       }),
