@@ -36,7 +36,7 @@ export const defaultContentPageLayout: PageLayout = {
 			title: "Explore",
 			folderClickBehavior: "collapse",
 			folderDefaultState: "collapsed",
-			filterFn: (node) => !node.displayName.startsWith("📜") && !(["tags"].includes(node.name))
+			filterFn: (node) => !node.displayName.startsWith("📜") && !(["tags", "Templates"].includes(node.name))
 				&& !node.file?.frontmatter?.explorer?.valueOf(),
 		})),
 	],
@@ -86,7 +86,7 @@ export const defaultListPageLayout: PageLayout = {
 			title: "Explore",
 			folderClickBehavior: "collapse",
 			folderDefaultState: "collapsed",
-			filterFn: (node) => !node.displayName.startsWith("📜") && !(["tags"].includes(node.name))
+			filterFn: (node) => !node.displayName.startsWith("📜") && !(["tags", "Templates"].includes(node.name))
 				&& !node.file?.frontmatter?.explorer?.valueOf(),
 		})),
 	],

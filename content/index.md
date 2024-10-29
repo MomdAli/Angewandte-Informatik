@@ -15,7 +15,7 @@ Schau dich um, vielleicht findest du auch was, das dich interessiert oder dir be
 
 ## 📧 Kontakt
 
-🗣️ [[https://discord.gg/nwtQs3UMec|Discord Server]] <br>✉️ mohammedali.alsaiaf@gmail.com
+🗣️ [[https://discord.gg/nwtQs3UMec|Discord Server]] <br>✉️ [mohammedali.alsaiaf@gmail.com](mailto:mohammedali.alsaiaf@gmail.com)
 
 
 Wenn du Fragen, Kommentare oder einfach nur Hallo sagen möchtest, zögere nicht, dich zu melden!

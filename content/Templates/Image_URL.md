@@ -1,4 +1,8 @@
-
+---
+tags:
+  - template
+draft: true
+---
 <center>
 <img src="" 
 alt=""

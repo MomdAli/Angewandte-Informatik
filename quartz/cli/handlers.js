@@ -426,7 +426,7 @@ export async function handleBuild(argv) {
         build(clientRefresh)
       })
   } else {
-    await build(() => {})
+    await build(() => { })
     ctx.dispose()
   }
 }
