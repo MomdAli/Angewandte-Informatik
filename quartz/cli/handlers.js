@@ -420,6 +420,10 @@ export async function handleBuild(argv) {
     console.log("hint: exit with ctrl+c")
     chokidar
       .watch(["**/*.ts", "**/*.tsx", "**/*.scss", "package.json"], {
+        persistent: true,
+        cwd: argv.directory,
+        useFsEvents: true,
+        atomic: true,
         ignoreInitial: true,
       })
       .on("all", async () => {
