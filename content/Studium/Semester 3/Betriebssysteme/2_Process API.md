@@ -13,7 +13,7 @@ aliases:
 cssclasses:
 ---
 
-> [!Summary]
+> [!Info]
 > This is a summary of the fifth chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter covers the fundamental system calls for process creation and management in UNIX systems, including `fork()`, `exec()`, and `wait()`. These system calls enable process creation, control, and synchronization, allowing for effective multitasking and process coordination within an operating system.
 
 ### The Process API:
@@ -45,4 +45,4 @@ These APIs form the backbone of process management in UNIX-like systems, offerin
 > 
 > • A superuser can control all processes (and indeed do many other things); this role should be assumed infrequently and with caution for security reasons.
 
-##### Next chapter: [[3. Limited Direct Execution]]
+##### Next chapter: [[3_Limited Direct Execution]]

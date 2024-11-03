@@ -9,7 +9,7 @@ aliases:
 cssclasses:
 ---
 
-> [!Summary]
+> [!Info]
 > This is a summary of the ninth chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter covers the concept of address spaces in operating systems, including the layout of a process's address space, virtual memory, and the benefits of using virtual memory. Key topics include transparency, demand paging, efficient memory use, protection, and address translation.
 
 ## Early Systems
@@ -58,4 +58,4 @@ Virtual memory systems also provide protection between processes. Each process h
 
 Virtual memory systems use address translation to map virtual addresses to physical addresses. This allows the system to provide the illusion of a large amount of memory to the user, while actually using a smaller amount of physical memory. The translation process is handled by the hardware, which uses a page table to map virtual addresses to physical addresses.
 
-##### Next chapter: [[7. Memory API]] 
+##### Next chapter: [[7_Memory API]] 

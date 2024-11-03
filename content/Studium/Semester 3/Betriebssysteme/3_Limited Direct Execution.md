@@ -11,7 +11,7 @@ aliases:
 cssclasses:
 ---
 
-> [!Summary]
+> [!Info]
 > This is a summary of the sixth chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter covers the concept of limited direct execution, which allows user programs to run directly on the CPU while ensuring the operating system retains control over privileged operations. Key topics include system calls, traps, kernel mode, user mode, and context switching.
 
 ## How to efficiently virtualize the CPU with control?
@@ -83,4 +83,4 @@ A <font color="#d99694">context switch</font> happens when the OS stops one proc
 - <font color="#d99694">Context Switching Code</font>: The OS’s context-switching code, which runs in kernel mode, is written very carefully to ensure all necessary registers are saved before switching to another process. When switching back, the saved context is restored so that the process can continue as if nothing happened.
 
 
-##### Next chapter: [[4. Scheduling]]
+##### Next chapter: [[4_Scheduling]]

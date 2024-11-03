@@ -1,7 +1,5 @@
 ---
 title: 
 tags: 
-date: 
-aliases: 
-cssclasses:
+date:
 ---

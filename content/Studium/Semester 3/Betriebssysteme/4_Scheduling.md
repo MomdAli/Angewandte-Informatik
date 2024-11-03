@@ -9,7 +9,7 @@ aliases:
 cssclasses:
 ---
 
-> [!Summary]
+> [!Info]
 > This is a summary of the seventh chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter covers CPU scheduling, a critical function of an operating system that determines the order in which processes are executed on the CPU. Key concepts include scheduling metrics, algorithms (FIFO, SJF, STCF, RR), and trade-offs in scheduling policies.
 
 ## Overview
@@ -92,4 +92,4 @@ In real-world systems, jobs perform I/O operations. The scheduler must ensure th
 A fundamental limitation of most schedulers is that they require knowledge of job lengths, which is typically unavailable in real-world systems. To address this, future algorithms like [[5. MLFQ]] will predict future job behavior based on historical execution patterns, providing a more dynamic and efficient scheduling mechanism.
 
 
-##### Next chapter: [[5. MLFQ]]
+##### Next chapter: [[5_MLFQ]]

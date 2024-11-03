@@ -10,7 +10,7 @@ aliases:
 cssclasses:
 ---
 
-> [!Summary]
+> [!Info]
 > This is a summary of the eighth chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter covers the Multi-Level Feedback Queue (MLFQ) scheduling algorithm, which dynamically adjusts job priorities based on observed behavior. Key concepts include priority changes, priority boosting, and challenges like starvation and gaming the system.
 
 ## Overview
@@ -106,4 +106,4 @@ By learning from a job’s past behavior, MLFQ ensures both efficient CPU utiliz
 
 MLFQ is widely used in modern operating systems like BSD Unix, Solaris, and Windows due to its flexibility and effectiveness in handling diverse workloads.
 
-##### Next chapter: [[6. Address Spaces]] 
+##### Next chapter: [[6_Address Spaces]] 

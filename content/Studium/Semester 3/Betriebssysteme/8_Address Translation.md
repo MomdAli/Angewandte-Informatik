@@ -8,7 +8,7 @@ date: 2024-11-02
 aliases: 
 cssclasses:
 ---
-> [!Summary]
+> [!Info]
 > This is a summary of the 15th chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter introduces address translation, a key concept in virtualizing memory to provide each process with an isolated address space. Address translation uses hardware to map virtual addresses to physical addresses, ensuring efficient memory use and protection between processes.
 
 ## Introduction to Address Translation
@@ -72,4 +72,4 @@ For a more specific example, a process with base set to 16 KB and bounds set to 
 This summary provides an in-depth look at address translation, highlighting the base-and-bounds model's ability to virtualize memory efficiently while offering control and protection. Future advancements, such as segmentation and paging, aim to address its limitations, particularly around memory utilization and scalability.
 
 
-##### Next Chapter: 
+##### Next Chapter: [[9_Segmentation]]

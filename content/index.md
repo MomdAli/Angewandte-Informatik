@@ -1,5 +1,6 @@
 ---
 title: 🌳 Mohammed's Second Brain🧠
+date: 2024-07-16
 ---
 ![[Banner.png]]
 **Welcome to my second brain!**
@@ -10,8 +11,8 @@ Schau dich um, vielleicht findest du auch was, das dich interessiert oder dir be
 
 ## 📂 Unterlagen
 
-![[Studium]]
- [[tags/]]
+- [[Studium]]
+-  [[tags/]]
 
 ## 📧 Kontakt
 
