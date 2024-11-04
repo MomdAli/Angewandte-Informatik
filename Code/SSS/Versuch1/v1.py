@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 green = '#89de56'
 red = '#e44a83'
 yellow = '#e4c94a'
@@ -12,8 +13,8 @@ def read_csv_file(filename, skip_header=1000, num_samples=1000):
         filename,
         delimiter=';',
         skip_header=skip_header,
-        converters={0: lambda s: float(s.decode().replace(',', '.')),
-                    1: lambda s: float(s.decode().replace(',', '.'))}
+        converters={0: lambda s: float(s.replace(',', '.').encode()),
+                    1: lambda s: float(s.replace(',', '.').encode())},
     )
 
     relevant_data = data[:num_samples, 1]   # Auswahl der relevanten Daten
@@ -83,7 +84,6 @@ x = np.linspace(x_data[0], x_data[-1], 1000)
 y = np.exp(b) * x ** a
 # plot_function_data(x, y, x_data, y_data, "Linear regression", r**2)
 
-# ! Blatt Messung
 
-width_mean, width_std_dev = read_csv_file("SSS/messungen/Blatt_B.csv")
-height_mean, height_std_dev = read_csv_file("SSS/messungen/Blatt_L.csv")
+s = np.std(y_data, ddof=1)
+sx = s / math.sqrt(len(y_data))
