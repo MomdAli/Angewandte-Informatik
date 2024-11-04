@@ -1,12 +1,8 @@
 ---
-title: 
+title: 📜
 tags: 
-date: 
-aliases: 
-cssclasses:
+date:
 ---
-## ==Links zu Dateien==
-
 - [[Link1]]
 	- [[sublinker1]]
 	- [[sublinker2]]

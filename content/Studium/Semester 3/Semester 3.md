@@ -7,7 +7,7 @@ aliases:
 cssclasses:
 ---
 ![[Semester 3 Logo.svg|600]]
- 
+ ![[Algorithmen]]
 ![[Betriebssysteme.md]]
 
 ![[Software Engineering.md]]
