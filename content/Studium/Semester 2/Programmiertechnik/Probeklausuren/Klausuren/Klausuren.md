@@ -15,7 +15,7 @@ aliases:
   - prog_klausuren
   - prog-klausur
 ---
-- [[Klausur SS 18|Klausur SS 2018]]
-- [[Klausur WS 18|Klausur WS 2018]]
-- [[Klausur WS 2019|Klausur WS 19]]
-- [[Klausur WS 2019|Klausur WS 23]]
+- [[Klausur SS 18.md|Klausur SS 2018]]
+- [[Klausur WS 18.md|Klausur WS 2018]]
+- [[Klausur WS 2019.md|Klausur WS 19]]
+- [[Klausur WS 2019.md|Klausur WS 23]]

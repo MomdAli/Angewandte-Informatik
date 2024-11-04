@@ -58,4 +58,4 @@ Virtual memory systems also provide protection between processes. Each process h
 
 Virtual memory systems use address translation to map virtual addresses to physical addresses. This allows the system to provide the illusion of a large amount of memory to the user, while actually using a smaller amount of physical memory. The translation process is handled by the hardware, which uses a page table to map virtual addresses to physical addresses.
 
-##### Next chapter: [[7_Memory API]] 
+##### Next chapter: [[7_Memory API.md]] 

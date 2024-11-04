@@ -53,11 +53,11 @@ First (during boot time) setting up the trap handler and and storing an interrup
 #### **Security**:
 
 - The CPU operates in two modes: **user mode** (restricted) and **kernel mode** (privileged). User-mode programs cannot perform sensitive operations like accessing hardware (e.g., disk, memory) directly because that would compromise system security.
-- The [[Trap Instruction]] allows a user-mode program to request a privileged operation from the OS safely. When a program makes a **system call** (e.g., reading a file), it uses a [[Trap Instruction]] to switch from user mode to kernel mode.
+- The [[Trap Instruction.md]] allows a user-mode program to request a privileged operation from the OS safely. When a program makes a **system call** (e.g., reading a file), it uses a [[Trap Instruction.md]] to switch from user mode to kernel mode.
 - The OS, running in kernel mode, can now securely perform the requested operation. Once the task is completed, the OS returns control to the program in user mode. This mechanism ensures that programs can only request system resources **through the OS**, maintaining strict control and protecting the system from unauthorized access.
 #### **Performance**:
 
-- Without traps, the OS would need to simulate everything (like hardware access), which would be slow and inefficient. The [[Trap Instruction]] allows user-mode programs to run directly on the CPU at full speed while giving the OS control only when needed (like during system calls).
+- Without traps, the OS would need to simulate everything (like hardware access), which would be slow and inefficient. The [[Trap Instruction.md]] allows user-mode programs to run directly on the CPU at full speed while giving the OS control only when needed (like during system calls).
 - The **trap table**, which the OS sets up during boot, tells the CPU what to do when a trap occurs. This allows the OS to quickly handle system calls, exceptions, and interrupts in an efficient, predefined way.
 - By letting the program run natively on the CPU most of the time and only trapping into kernel mode when necessary, performance is maximized while maintaining the OS’s control.
 
@@ -83,4 +83,4 @@ A <font color="#d99694">context switch</font> happens when the OS stops one proc
 - <font color="#d99694">Context Switching Code</font>: The OS’s context-switching code, which runs in kernel mode, is written very carefully to ensure all necessary registers are saved before switching to another process. When switching back, the saved context is restored so that the process can continue as if nothing happened.
 
 
-##### Next chapter: [[4_Scheduling]]
+##### Next chapter: [[4_Scheduling.md]]

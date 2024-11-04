@@ -48,7 +48,7 @@ tiere[1] = new Katze();
 Eine Schnittstelle in der Programmiersprache Java ist ein abstrakter Typ, der verwendet wird, um ein Verhalten zu deklarieren, das Klassen implementieren müssen. Sie ähneln Protokollen. Schnittstellen werden mit dem Schlüsselwort **„interface“** deklariert und dürfen nur Methodensignaturen und Konstanten Deklarationen enthalten.
 
 > [!Example]- Beispiel
-> ![[Code Beispiele#^83b2b2]]
+> ![[Code Beispiele.md#^83b2b2]]
 
 ### <font color="#8db3e2">Was ist eine abstrakte Klasse?</font>
 Abstrakte Klassen sind **Klassen, die als Oberklassen dienen und selbst nicht zur Bildung von Objekten herangezogen werden können**. Sie werden oft verwendet, um Eigenschaften und Fähigkeiten einer allgemeinen Typgruppe zu definieren, deren abgeleitete Unterklassen diese dann weiter spezifizieren.
@@ -141,10 +141,10 @@ Eine immutable Klasse ist eine Klasse, deren Instanzen nach ihrer Erstellung nic
 ### <font color="#8db3e2">Listen </font>
 
 > [!Example]- Array List
-> ![[Code Beispiele#^dcdb5c]]
+> ![[Code Beispiele.md#^dcdb5c]]
 
 > [!Example]- Linked List 
-> ![[Code Beispiele#^e760e1]]
+> ![[Code Beispiele.md#^e760e1]]
 
 ---
 ## <font color="#ffc000">Generische Datentypen und Iteratoren</font>

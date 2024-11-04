@@ -7,12 +7,12 @@ aliases:
 cssclasses:
 ---
 <font color="#bb9af7">Echo Relics</font>
-- [[Echo Relics (About)]]
-- [[Implementation]]
+- [[About)](Echo Relics (About|Echo Relics (About)]].md)
+- [[Implementation.md]]
 
 <font color="#bb9af7">Scala Programming Language</font>
-- [[0. Scala]]
-- [[1. Basics]]
-- [[2. Unified Types]]
-- [[3. Classes]]
-- [[4. Traits]]
+- [[0. Scala.md]]
+- [[1. Basics.md]]
+- [[2. Unified Types.md]]
+- [[3. Classes.md]]
+- [[4. Traits.md]]

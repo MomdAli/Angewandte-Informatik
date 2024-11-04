@@ -35,7 +35,7 @@ $$
 | ---------------- | --------------------- | --------------- |
 | $Potenzfunktion$ | $Exponentialfunktion$ | $Sinusfunktion$ |
 
-![450|](funktionen.png)
+![[funktionen.png|450|]]
 
 | Schreibweise                       | Definition/Sprechweise                                                                                  |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -86,7 +86,7 @@ $$
 >>
 >>\end{aligned}
 >>$$
->>![Stetige_Funktion](Stetige_Funktion.png)
+>>![[Stetige_Funktion.png]]
 
 
 
@@ -107,7 +107,7 @@ $$
 >> $$
 >> \lim_{x\nearrow 1}\frac{(x+1)}{(x-1)^3}=-\infty
 >> $$
->> ![200|center](Pollstelle.png)
+>> ![[Pollstelle.png|200|center]]
 
 
 
@@ -115,7 +115,7 @@ $$
 
 ## <font color="#fac08f">Ableitungen</font>
 
-![700](Ableitungen.png)
+![[Ableitungen.png|700]]
 
 ### <font color="#b2a2c7">Newton-Verfahren</font>
 > [!IMPORTANT] Wichtig
@@ -125,7 +125,7 @@ $$
 > \large x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}
 > $$
 
-![Newton_Verfahren_Ex](Newton_Verfahren_Ex.png)![](NewtonIteration_Ani.gif)
+![[Newton_Verfahren_Ex.png]]![[NewtonIteration_Ani.gif]]
 
 ### <font color="#b2a2c7">Taylorpolynom</font>
 
@@ -140,7 +140,7 @@ $$
 
 ![](https://www.youtube.com/watch?v=urPIxvNBXF0)
 
-![n-2-taylor](n-2-taylor.gif)
+![[n-2-taylor.gif]]
 ## <font color="#938953">Multivariaten Funktionen</font>
 
 > [!IMPORTANT] Wichtig
@@ -178,7 +178,7 @@ $$
 
 ## <font color="#245bdb">Integration</font>
 
-![Intergrale](Intergrale.png)
+![[Intergrale.png]]
 
 > [!IMPORTANT] 
 > Regeln der unbestimmten Integration:

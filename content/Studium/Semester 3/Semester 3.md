@@ -8,10 +8,10 @@ cssclasses:
 ---
 ![[Semester 3 Logo.svg|600]]
  
-![[Betriebssysteme]]
+![[Betriebssysteme.md]]
 
-![[Software Engineering]]
+![[Software Engineering.md]]
 
-![[THGI]]
+![[THGI.md]]
 
-![[SSS]]
+![[SSS.md]]

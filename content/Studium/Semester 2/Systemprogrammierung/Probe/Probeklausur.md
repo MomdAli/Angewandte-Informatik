@@ -288,7 +288,7 @@ In modernem C++ sollte man stattdessen `std::array` oder `std::vector` verwenden
 
 ---
 ## <font color="#e97144">Aufagbe 6</font>
-##### [[Makefile|Makefile cheatsheet]]
+##### [[Makefile.md|Makefile cheatsheet]]
 
 ```makefile title="Makefile"
 PDFLATEX = pdflatex

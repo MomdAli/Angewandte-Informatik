@@ -7,5 +7,5 @@ aliases:
 cssclasses: 
 explorer: true
 ---
-![[Semester 2]]
-![[Semester 3]]
+![[Semester 2.md]]
+![[Semester 3.md]]

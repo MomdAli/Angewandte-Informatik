@@ -6,7 +6,7 @@ date: ""
 aliases: 
 cssclasses:
 ---
-- [[1_Process]]
+- [[1_Process.md]]
 - [[2. Process API]]
 - [[3. Limited Direct Execution]]
 - [[4. Scheduling]]
@@ -18,13 +18,13 @@ cssclasses:
 - [[10. Free-Space Management]]
 
 #### Homework
-- [[HW_Chapter_4]]
-- [[HW_Chapter_5]]
-- [[HW_Chapter_7]]
-- [[HW_Chapter_8]]
-- [[HW_Chapter_13]]
-- [[HW_Chapter_14]]
+- [[HW_Chapter_4.md]]
+- [[HW_Chapter_5.md]]
+- [[HW_Chapter_7.md]]
+- [[HW_Chapter_8.md]]
+- [[HW_Chapter_13.md]]
+- [[HW_Chapter_14.md]]
 
 #### Other
-- [[Exec Family]]
-- [[Trap Instruction]]
+- [[Exec Family.md]]
+- [[Trap Instruction.md]]
