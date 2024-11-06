@@ -59,6 +59,10 @@ For a more specific example, a process with base set to 16 KB and bounds set to 
    - Virtual address 3 KB to physical address 19 KB.
    - Virtual address 4 KB or higher triggers an exception.
 
+> [!Tip]
+> - **internal fragmentation:** wasted space within an a chunk
+> - **external fragmentation:** wasted space between chunks
+
 ## Advantages and Limitations
 
 - **Advantages**:
@@ -72,4 +76,4 @@ For a more specific example, a process with base set to 16 KB and bounds set to 
 This summary provides an in-depth look at address translation, highlighting the base-and-bounds model's ability to virtualize memory efficiently while offering control and protection. Future advancements, such as segmentation and paging, aim to address its limitations, particularly around memory utilization and scalability.
 
 
-##### Next Chapter: [[9_Segmentation.md]]
+##### Next Chapter: [[9_Segmentation|Segmentation]]

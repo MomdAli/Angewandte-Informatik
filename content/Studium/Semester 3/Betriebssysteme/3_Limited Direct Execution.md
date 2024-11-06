@@ -83,4 +83,4 @@ A <font color="#d99694">context switch</font> happens when the OS stops one proc
 - <font color="#d99694">Context Switching Code</font>: The OS’s context-switching code, which runs in kernel mode, is written very carefully to ensure all necessary registers are saved before switching to another process. When switching back, the saved context is restored so that the process can continue as if nothing happened.
 
 
-##### Next chapter: [[4_Scheduling.md]]
+##### Next chapter: [[4_Scheduling| Scheduling]]

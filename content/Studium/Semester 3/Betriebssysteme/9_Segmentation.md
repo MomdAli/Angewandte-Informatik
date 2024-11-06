@@ -89,4 +89,4 @@ date: 2024-11-03
 - **Segmentation in Modern Systems**: Many modern systems use a combination of segmentation and paging, or just paging, since it’s simpler for managing memory at scale and provides finer-grained control.
 
 
-##### Next Chapter: [[10_Free-Space Management.md]]
+##### Next Chapter: [[10_Free-Space Management|Free-Space Management]]

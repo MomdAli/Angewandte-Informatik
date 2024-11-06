@@ -108,4 +108,4 @@ The `free()` function is used to deallocate memory allocated by the `malloc()` f
 - [Dangling Pointers in C](https://www.geeksforgeeks.org/d)
 - [Double Free in C](https://www.geeksforgeeks.org/double-pointer-pointer-pointer-c/)
 
-##### Next Chapter: [[8_Address Translation.md]]
+##### Next Chapter: [[8_Address Translation| Address Translation]]
