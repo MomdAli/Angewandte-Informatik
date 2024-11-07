@@ -157,3 +157,4 @@ public class SortedArrayDictionary<K extends Comparable<K>, V> implements Dictio
 ## Summary
 
 A sorted array dictionary provides efficient searching with binary search, making it useful for read-heavy operations. However, due to the **O(n)** cost for insertion and deletion, it is not ideal for applications requiring frequent updates. For dynamic datasets, data structures like BSTs or hash maps may be preferable.
+
