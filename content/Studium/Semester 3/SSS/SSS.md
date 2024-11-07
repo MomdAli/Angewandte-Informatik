@@ -8,5 +8,5 @@ date:
 aliases: 
 cssclasses:
 ---
-- [[Sensoren und Messung.md]]
-	- [[Drehspulinstrument.md]]
+- [[Sensoren und Messung]]
+	- [[Drehspulinstrument]]

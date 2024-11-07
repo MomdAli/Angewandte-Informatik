@@ -7,6 +7,6 @@ aliases:
 cssclasses:
 ---
 ![[Semester 2 Logo.svg|600]]
-![[Analysis.md]]
+![[Analysis]]
 ![[Programmiertechnik.md]]
 ![[Systemprogrammierung.md]]

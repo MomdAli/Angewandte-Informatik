@@ -6,10 +6,10 @@ date:
 aliases: 
 cssclasses:
 ---
-![[Klausuren.md]]
-- [[Binary Search Tree.md]]
-- [[Collections.md]]
-- [[Spickzettel.md]]
-- [[Zusammenfassung.md]]
-- [[Studium/Semester 2/Programmiertechnik/Klausurvorbereitung.md]]
-- [[Code Beispiele.md]]
+![[Klausuren]]
+- [[Binary Search Tree]]
+- [[Collections]]
+- [[Spickzettel]]
+- [[Zusammenfassung]]
+- [[Studium/Semester 2/Programmiertechnik/Klausurvorbereitung|Klausurvorbereitung]]
+- [[Code Beispiele]]

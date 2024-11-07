@@ -8,7 +8,7 @@ cssclasses:
 ---
 - [[1_Process|Process]]
 - [[2_Process API|Process API]]
-- [[3_Limited Direct Execution|Limited Direct Execution]]]]
+- [[3_Limited Direct Execution|Limited Direct Execution]]
 - [[4_Scheduling|Scheduling]]
 - [[5_MLFQ|MLFQ]]
 - [[6_Address Spaces|Address Spaces]]
@@ -25,7 +25,6 @@ cssclasses:
 - [[HW_Chapter_13| Homework Chapter 13]]
 - [[HW_Chapter_14| Homework Chapter 14]]
 - [[HW_Chapter_15| Homework Chapter 15]]
-- [[HW_Chapter_17| Homework Chapter 17]]
 
 #### Other
 - [[Exec Family]]

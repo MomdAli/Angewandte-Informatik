@@ -6,10 +6,10 @@ date: 2024-10-12
 ---
 ![[Semester 3 Logo.svg|600]]
  ![[Algorithmen]]
-![[Betriebssysteme.md]]
+![[Betriebssysteme]]
 
-![[Software Engineering.md]]
+![[Software Engineering]]
 
-![[THGI.md]]
+![[THGI]]
 
-![[SSS.md]]
+![[SSS]]
