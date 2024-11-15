@@ -11,12 +11,25 @@ aliases:
 cssclasses: 
 ---
 ### **Main Components of the Diagram:**
+### Model
+- **Player.scala**: Represents a player in the game. Holds basic player information.
+- **Tile.scala**: Defines the content of a tile (e.g., empty, wall, player, out).
+- **Grid.scala**: Represents the game grid and its layout.
+- **GameManager.scala**: Manages game state, players, and grid interactions.
+- **GameState.scala**: Enum for different game states (e.g., NotStarted, Playing).
+- **Position.scala**: Utility to manage positions on the grid.
 
-- **Player**: Represents the player who can move on the grid and leave echoes behind.
-- **Echo**: Represents a ghostly version of the player that mimics previous moves.
-- **Relic**: Represents relics scattered across the grid, each with unique abilities.
-- **Grid**: Represents the 5x5 playing grid containing Tiles.
-- **Tile**: Represents individual tiles on the grid, which may hold traps, relics, or echoes.
-- **GameController**: Manages the overall game state and player actions.
+### View
+- **DisplayRenderer.scala**: Handles rendering the game state in a visual manner.
+- **TUI.scala**: Text-based User Interface that displays the game to the user. It also implements an `Observer` to reflect game state changes.
 
-![[Class-Diagram.svg|center]]
+### Controller
+- **Controller.scala**: Acts as a middleman between the game model (`GameManager`) and the views (`TUI`). Controls the game flow and user actions.
+- **InputHandler.scala**: Processes user input and passes it to the appropriate game logic.
+
+### Utilities / Shared
+- **Observable.scala**: Implements the Observer pattern, enabling views to react to changes in the model.
+- **Direction.scala**: Enumerates directions for player movement.
+- **echorelics.scala**: The main entry point that sets up the game.
+
+![[Diagram.png]]
