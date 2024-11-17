@@ -86,4 +86,4 @@ The authors conclude by identifying open challenges:
 
 This survey provides an in-depth review of memory allocation, emphasizing that traditional allocator designs often fail to balance speed and memory efficiency due to simplified assumptions about program behavior. Future research should focus on more realistic program models, adaptive policies, and more complex data structures to improve memory allocation in diverse computing environments.
 
-##### Next Chapter: 
+##### Next Chapter: [[11_Paging]]
