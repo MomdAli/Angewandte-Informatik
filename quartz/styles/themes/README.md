@@ -1,19 +1,19 @@
-# Maple
+# Obsidian Nord
 
-[Maple](https://github.com/subframe7536)
+[Obsidian Nord](https://insanum.com)
 
 ## Usage
 
 ```bash
-just theme Maple
+just theme Obsidian Nord
 ```
 
 ## Preview
 
 ### Light
 
-![Preview of Maple Light](preview-light.png)
+![Preview of Obsidian Nord Light](preview-light.png)
 
 ### Dark
 
-![Preview of Maple Dark](preview-dark.png)
+![Preview of Obsidian Nord Dark](preview-dark.png)
