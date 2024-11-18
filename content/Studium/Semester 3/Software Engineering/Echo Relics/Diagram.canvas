@@ -50,7 +50,7 @@
       "y": -560,
       "width": 260,
       "height": 60,
-      "color": "#653ed0"
+      "color": "6"
     },
     {
       "id": "d598e659a58609ec",
@@ -77,18 +77,6 @@
       "height": 60
     },
     {
-      "id": "7fa6c8b15f59438e",
-      "type": "text",
-      "text": "## GameState",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "x": -740,
-      "y": -340,
-      "width": 160,
-      "height": 60
-    },
-    {
       "id": "6adfa6719cf033d7",
       "type": "text",
       "text": "## Tile",
@@ -98,32 +86,6 @@
       "x": -1340,
       "y": -180,
       "width": 140,
-      "height": 60
-    },
-    {
-      "id": "07e85759d734c736",
-      "type": "text",
-      "text": "# Controller",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "x": 20,
-      "y": -350,
-      "width": 260,
-      "height": 140,
-      "color": "#a5a800"
-    },
-    {
-      "id": "470fad1a7a33b1d9",
-      "type": "text",
-      "text": "## Observable",
-      "styleAttributes": {
-        "textAlign": "center",
-        "border": "dashed"
-      },
-      "x": 20,
-      "y": -580,
-      "width": 260,
       "height": 60
     },
     {
@@ -137,6 +99,44 @@
       "x": -1135,
       "y": -180,
       "width": 145,
+      "height": 60
+    },
+    {
+      "id": "7fa6c8b15f59438e",
+      "type": "text",
+      "text": "## GameState",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": -740,
+      "y": -340,
+      "width": 160,
+      "height": 60
+    },
+    {
+      "id": "07e85759d734c736",
+      "type": "text",
+      "text": "# Controller",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": 20,
+      "y": -350,
+      "width": 260,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "470fad1a7a33b1d9",
+      "type": "text",
+      "text": "## Observable",
+      "styleAttributes": {
+        "textAlign": "center",
+        "border": "dashed"
+      },
+      "x": 20,
+      "y": -580,
+      "width": 260,
       "height": 60
     },
     {
@@ -164,7 +164,7 @@
       "y": -345,
       "width": 260,
       "height": 130,
-      "color": "#41660a"
+      "color": "4"
     },
     {
       "id": "f19977723a8b6b89",
