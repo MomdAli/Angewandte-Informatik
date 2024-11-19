@@ -24,6 +24,7 @@ const config: QuartzConfig = {
       "**/*.excalidraw.md"
     ],
     defaultDateType: "created",
+    generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
