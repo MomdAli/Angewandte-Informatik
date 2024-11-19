@@ -76,4 +76,4 @@ For a more specific example, a process with base set to 16 KB and bounds set to 
 This summary provides an in-depth look at address translation, highlighting the base-and-bounds model's ability to virtualize memory efficiently while offering control and protection. Future advancements, such as segmentation and paging, aim to address its limitations, particularly around memory utilization and scalability.
 
 
-##### Next Chapter: [[9_Segmentation|Segmentation]]
+##### Next Chapter: [[9_Segmentation|9.Segmentation]]

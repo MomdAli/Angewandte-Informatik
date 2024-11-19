@@ -42,4 +42,4 @@ The core problem addressed by TLBs is the performance overhead of paging. Paging
 
 TLBs are a fundamental component of modern virtual memory systems, bridging the gap between the speed of CPU operations and the slower nature of memory. By caching address translations, TLBs ensure that most memory references are resolved quickly. Challenges such as handling misses, context switches, and replacement policies require careful hardware and software design. Future improvements in TLB technology, such as enhanced multi-level designs and adaptive replacement strategies, promise to further optimize virtual memory performance.
 
-##### Next Chapter: [[13_Smaller_Tables]]
+##### Next Chapter: [[13_Smaller_Tables|13. Smaller Tables]]

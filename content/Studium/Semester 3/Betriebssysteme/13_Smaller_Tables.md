@@ -64,10 +64,71 @@ The challenge arises from the excessive memory consumption of linear page tables
     
 4. **Inverted Tables with Hashing**:  
     Hashing mechanisms speed up lookups in inverted page tables, making them feasible for systems with many processes and large address spaces.
-    
 
+
+---
+
+### Hardware-Managed TLBs
+
+- **Responsibility for Management**:
+    
+    - The **hardware (MMU - Memory Management Unit)** automatically handles TLB misses.
+    - When a TLB miss occurs, the hardware walks the page table to find the translation and updates the TLB.
+- **Mechanism**:
+    
+    - The CPU contains specialized circuits to perform the page table walk and insert the appropriate entry into the TLB.
+    - This process is transparent to the operating system.
+- **Advantages**:
+    
+    - **Speed**: Hardware-managed TLBs are very fast because they operate directly at the hardware level.
+    - **Simplicity**: The OS does not need to implement TLB miss handling logic, simplifying the OS design.
+- **Disadvantages**:
+    
+    - **Lack of Flexibility**: The page table format and TLB management policies are constrained by the hardware implementation.
+    - **Hardware Complexity**: Requires more complex hardware, increasing cost and power consumption.
+
+---
+
+### Software-Managed TLBs
+
+- **Responsibility for Management**:
+    
+    - The **operating system** handles TLB misses.
+    - When a TLB miss occurs, the CPU traps into the OS, which uses software to look up the page table and update the TLB.
+- **Mechanism**:
+    
+    - The CPU triggers a trap (e.g., `TLB_MISS_EXCEPTION`) when the requested virtual-to-physical address translation is not in the TLB.
+    - The OS then performs a page table lookup and inserts the corresponding entry into the TLB.
+- **Advantages**:
+    
+    - **Flexibility**: The OS can define its own page table structures and policies for TLB management.
+    - **Customizability**: Different page table formats or optimization techniques can be implemented in software.
+- **Disadvantages**:
+    
+    - **Slower**: Software management introduces overhead because a trap into the OS is required on every TLB miss.
+    - **Complex OS Code**: The OS must implement efficient TLB miss handling, which can be complex.
+
+---
+
+### Key Differences at a Glance
+
+| Aspect                      | Hardware-Managed TLB                | Software-Managed TLB              |
+| --------------------------- | ----------------------------------- | --------------------------------- |
+| **Who handles TLB misses?** | Handled by hardware (MMU)           | Handled by the OS in software     |
+| **Page table walk**         | Performed automatically by hardware | Performed by the OS               |
+| **Performance**             | Faster (direct hardware operation)  | Slower (requires OS intervention) |
+| **Flexibility**             | Limited by hardware design          | Highly flexible (OS-defined)      |
+| **Complexity**              | More complex hardware               | More complex OS code              |
+
+---
+
+### When are they used?
+
+- **Hardware-Managed TLBs**: Common in traditional desktop and server CPUs, where performance is critical.
+- **Software-Managed TLBs**: Found in systems that prioritize flexibility or have simpler hardware, such as some RISC architectures (e.g., MIPS, SPARC).
+f
 ### Conclusion
 
 Reducing page table size is essential for efficient memory management in modern systems. Techniques such as multi-level page tables, hybrid paging, and inverted page tables address the limitations of linear designs, offering substantial memory savings while supporting sparse address spaces. Each method comes with trade-offs in complexity, performance, and implementation effort. The choice of page table design depends on system constraints, workload characteristics, and the desired balance between memory efficiency and translation speed.
 
-##### Next Chapter: [[14_Beyond_Physical_Memory]]
+##### Next Chapter: [[14_BPM|14. Beyond Physical Memory]]

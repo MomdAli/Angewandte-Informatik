@@ -40,4 +40,4 @@ The main challenge of paging is to virtualize memory effectively while addressin
 
 Paging addresses the limitations of segmentation by dividing memory into fixed-sized units, eliminating external fragmentation and enabling sparse address space utilization. However, it introduces challenges in terms of memory and performance overheads. Efficient design of page tables and hardware optimizations like TLBs are crucial for practical and high-performance implementation.
 
-##### Next Chapter: [[12_TLBs]]
+##### Next Chapter: [[12_TLBs|12. TLBs]]

@@ -1,11 +1,12 @@
 ---
-title: 14. Beyond Physical Memory
+title: 14. BPM
 tags:
   - Betriebssysteme
   - Semester-3
   - Informatik
 date: 2024-11-17
 ---
+## Virtual Memory: Beyond Physical Memory
 
 > [!Info]
 > This is a summary of the 21st chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter discusses the challenges and solutions for managing memory beyond physical memory limits, including techniques such as swapping, paging, and demand paging. It explores the trade-offs between these methods and their implications for system performance and efficiency.

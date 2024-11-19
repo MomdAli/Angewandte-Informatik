@@ -92,4 +92,4 @@ In real-world systems, jobs perform I/O operations. The scheduler must ensure th
 A fundamental limitation of most schedulers is that they require knowledge of job lengths, which is typically unavailable in real-world systems. To address this, future algorithms like [[5. MLFQ]] will predict future job behavior based on historical execution patterns, providing a more dynamic and efficient scheduling mechanism.
 
 
-##### Next chapter: [[5_MLFQ| MLFQ]]
+##### Next chapter: [[5_MLFQ|5.MLFQ]]

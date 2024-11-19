@@ -106,4 +106,4 @@ By learning from a job’s past behavior, MLFQ ensures both efficient CPU utiliz
 
 MLFQ is widely used in modern operating systems like BSD Unix, Solaris, and Windows due to its flexibility and effectiveness in handling diverse workloads.
 
-##### Next chapter: [[6_Address Spaces| Address Spaces]] 
+##### Next chapter: [[6_Address Spaces|6.Address Spaces]] 
