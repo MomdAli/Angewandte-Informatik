@@ -11,7 +11,7 @@ Schau dich um, vielleicht findest du auch was, das dich interessiert oder dir be
 
 ## 📂 Unterlagen
 
-- [[Studium/index|Studium Unterlagen]]
+- [[Studium/index|Studienunterlagen]]
 -  [[tags/|Tags]]
 
 ## 📧 Kontakt

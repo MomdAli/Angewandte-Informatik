@@ -97,7 +97,7 @@ The challenge arises from the excessive memory consumption of linear page tables
     - When a TLB miss occurs, the CPU traps into the OS, which uses software to look up the page table and update the TLB.
 - **Mechanism**:
     
-    - The CPU triggers a trap (e.g., `TLB_MISS_EXCEPTION`) when the requested virtual-to-physical address translation is not in the TLB.
+    - The CPU triggers a trap (e.g., `TLB_MISS`) when the requested virtual-to-physical address translation is not in the TLB.
     - The OS then performs a page table lookup and inserts the corresponding entry into the TLB.
 - **Advantages**:
     

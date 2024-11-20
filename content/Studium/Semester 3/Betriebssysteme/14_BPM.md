@@ -71,4 +71,4 @@ The primary issue addressed here is how to enable processes to use address space
 
 By utilizing swap space and efficient memory management policies, operating systems extend physical memory limits, enabling processes to utilize larger address spaces than available RAM. While this abstraction is powerful, it requires careful balancing of latency, throughput, and system resources. Mechanisms like page faults, replacement policies, and proactive paging work together to minimize the performance impact of using disk-based memory. However, poor management can lead to severe slowdowns, highlighting the importance of optimized memory management strategies.
 
-##### Next Chapter: 
+##### Next Chapter: [[15_BPM-Policies|Beyond Physical Memory - Policies]]
