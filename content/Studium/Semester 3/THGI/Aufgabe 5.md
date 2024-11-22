@@ -1,9 +1,9 @@
 ---
-title: Aufgabe 3
+title: Aufgabe 5
 tags:
   - THGI
   - Semester-3
   - Informatik
-date: 2024-10-29
+date: 2024-11-20
 ---
-![[Aufgabe3.svg]]
+![[Aufgabe5.svg]]
