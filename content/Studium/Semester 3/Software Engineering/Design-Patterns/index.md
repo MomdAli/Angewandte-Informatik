@@ -1,7 +1,11 @@
 ---
 title: Design Patterns
-tags: 
-date:
+tags:
+  - Design-Pattern
+  - Semester-3
+  - Informatik
+  - Software-Engineering
+date: 2024-11-23
 ---
 > [!info]- Cheatsheet
 > ![[Cheat-Sheet-1.png]]
