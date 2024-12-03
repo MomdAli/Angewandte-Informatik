@@ -66,3 +66,4 @@ The challenge lies in determining which page(s) to evict when memory is full. Po
 
 Page-replacement policies are a cornerstone of virtual memory management, aiming to reduce the impact of limited memory by minimizing cache misses. While optimal replacement serves as an ideal benchmark, practical policies like LRU and Clock balance efficiency and feasibility. Innovations like scan-resistant algorithms and prefetching have improved performance, but the advent of faster storage devices like SSDs continues to reshape the landscape, driving further evolution in these policies.
 
+##### Next Chapter: [[16_Concurrency|Concurrency]]
