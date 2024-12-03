@@ -32,4 +32,6 @@ cssclasses:
 - **Direction.scala**: Enumerates directions for player movement.
 - **echorelics.scala**: The main entry point that sets up the game.
 
-![[Diagram.png]]
+
+
+

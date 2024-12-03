@@ -98,4 +98,3 @@ object FacadePatternExample extends App {
 
 - [Facade Design Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/facade)
 - [Facade Pattern - Wikipedia](https://en.wikipedia.org/wiki/Facade_pattern)
-- Facade Design Pattern in Scala - Source Code Examples

@@ -8,8 +8,6 @@ tags:
   - Informatik
 date: 2024-11-22
 ---
-### Factory Method Design Pattern
-
 The **Factory Method** is a creational design pattern that provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. It delegates the instantiation logic to subclasses.
 
 
