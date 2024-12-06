@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3dcdb2bc-57a2-45f1-91f4-bfe3a1277411" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../content/.makemd/fileCache.mdc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/.makemd/superstate.mdc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/.space/waypoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Ableitungen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Complexity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Drehspulsinstrument.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Figure 4.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Figure_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Intergrale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Kernel and User mode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Memory_Layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Memory_Layout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/NewtonIteration_Ani.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Newton_Verfahren_Ex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Pasted Image 20241029175059_120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Pasted image 20241029085353.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Pasted image 20241029091129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Pollstelle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Semester 2 Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Semester 3 Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Stetige_Funktion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/Uebung01_theoretischeinformatik.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/funktionen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/image_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/image_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/java_cheat_sheet_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/java_cheat_sheet_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Assets/n-2-taylor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Folgen_Übung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Funktionen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Newton_Verfahren_Ex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Folgen_Übung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Drawing-2024-07-17-09.44.11.excalidraw.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/Formelsammlung_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formelsammlung.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Formelsammlung.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Funktionen.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Limes-berechnungen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Limes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Limes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Newton_Verfahren_Ex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufagbe5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufagbe5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufagbe5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufagbe5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Probe_Aufgabe6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Quiz 1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Quiz 2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Quiz 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Quiz 4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Quiz 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Regression.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/Substituieren.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/diskrete_funktionen.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/multivariat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Probeklausur/multivariat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Quiz-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Regression.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/Substituieren.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/diskrete_funktionen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/multivariat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/newton verfahren/Drawing 2024-10-08 17.24.22.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/newton verfahren/newton aufgabe 6 SS24.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/newton verfahren/newton aufgabe 6 SS24.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/newton verfahren/newton aufgabe 6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Analysis/newton verfahren/newton aufgabe 6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Programmiertechnik/Datentypen.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Programmiertechnik/Datentypen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto Draw for Pen.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto Draw for Pen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto Layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto Layout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto-Draw-for-Pen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto-Draw-for-Pen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto-Layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Auto-Layout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Elbow connectors.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Elbow connectors.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Elbow-connectors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Elbow-connectors.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/ExcaliAI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/ExcaliAI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/ExcaliAI.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Expand rectangles horizontally keep text centered.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Expand rectangles horizontally keep text centered.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Expand-rectangles-horizontally-keep-text-centered.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Expand-rectangles-horizontally-keep-text-centered.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Repeat Elements.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Repeat Elements.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Set Grid.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Set Grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Set-Grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Set-Grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Toggle Grid.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Toggle Grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Toggle-Grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/Toggle-Grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Scripts/Downloaded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Semester 2 Logo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Excalidraw/Semester 3 Logo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Analysis/Analysis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Analysis/Klausurvorbereitung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Code Beispiele.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Klausurvorbereitung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Binary Search Tree.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Collections.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/Klausuren.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/SS 18/Aufgabe_1a.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/SS 18/Aufgabe_1a.excalidraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/SS 18/Aufgabe_5a.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/SS 18/Aufgabe_5a.excalidraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/SS 18/Klausur SS 18.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/SS 18/Klausur_SS18.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/WS 18/Klausur WS 18.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/WS 19/Aufagbe 1.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/WS 19/Aufagbe 1.excalidraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/WS 19/Aufgabe 3.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/WS 19/Aufgabe 3.excalidraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/WS 19/Klausur WS 2019.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Klausuren/WS 23/Klausur WS 23.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Spickzettel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Zeichen_ws18.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Zeichen_ws18.excalidraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Programmiertechnik/Probeklausuren/Zusammenfassung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/C++ Constructors.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/Constructors.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/Constructors.excalidraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/Makefile.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/Probe/Probeklausur.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/Probe/SYPR-Probeklausur.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/Probe/Speicher in C.excalidraw.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/Systemprogrammierung/Probe/Speicher in C.excalidraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 2/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Algorithmen/Binary Search Tree Dictionary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Algorithmen/Dictionary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Algorithmen/Hash Dictionary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Algorithmen/Linear Search.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Algorithmen/Sorted Array Dictionary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Algorithmen/Time Measurement.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/10_Free-Space Management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/11_Paging.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/12_TLBs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/13_Smaller_Tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/14_BPM.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/15_BPM-Policies.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/16_Concurrency.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/17_Thread API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/1_Process.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/2_Process API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/3_Limited Direct Execution.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/4_Scheduling.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/5_MLFQ.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/6_Address Spaces.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/7_Memory API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/8_Address Translation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/9_Segmentation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_13.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_14.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_15.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_27.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/HW_Chapter_8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Homework/Plot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Other/Exec Family.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Betriebssysteme/Other/Trap Instruction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/.ipynb_checkpoints/test-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Drehspulinstrument.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Sensoren und Messung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Tutorium/.ipynb_checkpoints/Bilder-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Tutorium/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Tutorium/Bilder.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Tutorium/ausschnitt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Tutorium/stinkbug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/.ipynb_checkpoints/Versuch-1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/.ipynb_checkpoints/Versuch-1-checkpoint.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/Versuch-1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/Versuch-1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/.ipynb_checkpoints/Blatt_B-checkpoint.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/.ipynb_checkpoints/Blatt_L-checkpoint.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Blatt_B.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Blatt_L.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung001.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung002.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung003.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung004.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung005.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung006.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung007.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung008.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung009.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung010.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung011.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung013.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung014.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung015.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung016.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung017.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung018.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung019.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/messungen/Messung020.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/output_14_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 1/output_8_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/CorrectedImage-checkpoint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/CorrectedImage_White-checkpoint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/Dunkelbild-checkpoint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/Gray-checkpoint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/Weissbild-checkpoint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/test-checkpoint.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/test-checkpoint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/.ipynb_checkpoints/versuch-2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/CorrectedImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/CorrectedImage_White.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkel/Dunkel9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Dunkelbild.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Grauwerte.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/OpenCV-Python.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weiss/Weiss9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/Weissbild.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/vers_2_kamera.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 2/versuch-2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 3/Messung-groß.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 3/Messung-klein.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 3/Messung-normal copy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 3/Messung-normal.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/SSS/Versuch 3/versuch-3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Check-List.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Cheat-Sheet-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Cheat-Sheet-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Creational/Abstract-Factory.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Creational/Builder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Creational/Factory-Method.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Creational/Prototype.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Creational/Simple-Factory.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Creational/Singleton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Structural/Adapter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Structural/Bridge.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Structural/Composite.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Structural/Decorator.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Structural/Facade.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Structural/Flyweight.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/Structural/Proxy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Design-Patterns/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Echo Relics/Diagram.canvas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Echo Relics/Echo Relics (About).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Echo Relics/Implementation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Echo Relics/MVC-Design-Pattern-.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Echo-Relics-Update.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Echo-Relics-Update.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Scala Programming/0. Scala.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Scala Programming/1. Basics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Scala Programming/2. Unified Types.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Scala Programming/3. Classes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Scala Programming/4. Traits.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/Software Engineering/Scala Programming/Cheatsheet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe 1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe 2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe 3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe 4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe 5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe 6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe 7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-1/Aufgabe1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-1/Aufgabe1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-1/Uebung01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-2/Aufgabe2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-2/Aufgabe2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-2/Aufgabe2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-2/Uebung02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-3/Aufgabe3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-3/Aufgabe3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-3/Aufgabe3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-3/Uebung03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-4/Aufgabe4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-4/Aufgabe4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-4/Aufgabe4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-4/Uebung04.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-5/Aufgabe5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-5/Aufgabe5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-5/Aufgabe5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-5/Uebung05.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-6/Aufgabe6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-6/Aufgabe6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-6/Aufgabe6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-6/Uebung06.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-7/Aufgabe7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-7/Aufgabe7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-7/Aufgabe7.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Aufgabe-7/Uebung07+08.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/THGI/Regex Cheatsheet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/Semester 3/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Studium/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/Default_Note.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/Image_URL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/Linker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/New_Drawing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/Youtube_Link.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/rating/1-star.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/rating/2-stars.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/rating/3-stars.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/rating/4-stars.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/Templates/rating/5-stars.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../content/tags/Informatik.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2pksQqLzvgSD2XlYTj4dHAhC6p3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "v4",
+    "last_opened_file_path": "C:/Users/mohsa/Programming/Java/Edabit",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dcdb2bc-57a2-45f1-91f4-bfe3a1277411" name="Changes" comment="" />
+      <created>1733321399304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733321399304</updated>
+      <workItem from="1733321400477" duration="63000" />
+    </task>
+    <servers />
+  </component>
+</project>
