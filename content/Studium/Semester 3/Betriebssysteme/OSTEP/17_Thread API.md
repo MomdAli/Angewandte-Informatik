@@ -114,3 +114,6 @@ Chapter 27 focuses on the **Thread API**, providing a foundational understanding
 
 ### Conclusion
 This chapter lays the groundwork for using the pthread library to build robust multi-threaded applications. While the APIs themselves are straightforward, achieving correct and performant concurrency requires thoughtful design and careful handling of synchronization primitives. Mastering these basics is critical for developing reliable concurrent programs.
+
+
+##### Next Chapter: [[18_Locks|Locks]]
