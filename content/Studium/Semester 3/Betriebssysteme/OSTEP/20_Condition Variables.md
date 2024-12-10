@@ -205,5 +205,3 @@ void free(void *ptr, int size) {
 - Always check the condition in a `while` loop to handle spurious wakeups.
 - Use multiple condition variables for distinct conditions (e.g., `empty` and `fill`).
 - **Hold locks when signaling or waiting** to avoid race conditions.
-
----

@@ -36,10 +36,13 @@ Lock if it's unlocked, or spin-wait if it's not. After critical section, check i
 
 **6**. Now run the code, changing the value of the interrupt interval (-i) again, and making sure to loop for a number of times. Does the code always work as expected? Does it sometimes lead to an inefficient use of the CPU? How could you quantify that? 
 
--> It is very correct and deterministic. However it is inefficient due to 
+-> It is very correct and deterministic.
 
 
 **7**. Use the -P flag to generate specific tests of the locking code. For example, run a schedule that grabs the lock in the first thread, but then tries to acquire it in the second. Does the right thing happen? What else should you test? 
+
+-> `./x86.py -p test-and-set.s -M mutex -R ax -a bx=10,bx=10 -P 0011 -c` 
+	Yes, the right thing does happen.
 
 **8**. Now let’s look at the code in peterson.s, which implements Peterson’s algorithm (mentioned in a sidebar in the text). Study the code and see if you can make sense of it. 
 
