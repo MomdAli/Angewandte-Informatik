@@ -4,4 +4,4 @@ tags:
   - Semester-3
   - Informatik
 ---
-![[Semester 3 Logo.svg|600]]
+![[Semester_3_Logo.svg|600]]
