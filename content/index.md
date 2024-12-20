@@ -6,7 +6,6 @@ date: 2024-07-16
 ## 📂 Unterlagen
 
 - [[Studium/index|Studienunterlagen]]
-
 -  [[tags/|Tags]]
 
 ## 📧 Kontakt

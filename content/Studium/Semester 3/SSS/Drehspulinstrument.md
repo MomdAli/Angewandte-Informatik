@@ -47,3 +47,4 @@ Das **Drehspulinstrument** ist eines der bekanntesten analogen Messgeräte und w
 ## Anwendungen des Drehspulinstruments
 
 Drehspulinstrumente werden häufig in Amperemetern, Voltmessgeräten und Ohmmetern verwendet, um Gleichstrom oder Gleichspannung zu messen. Sie sind sehr robust und zuverlässig für einfache Anwendungen, haben jedoch in der modernen Messtechnik durch digitale Messgeräte an Bedeutung verloren, die präziser und schneller sind.
+
