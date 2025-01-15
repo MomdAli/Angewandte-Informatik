@@ -109,4 +109,5 @@ tags:
 
 - **Regex101**: [https://regex101.com/](https://regex101.com/) - Test your regex with detailed explanations
 - **RegExr**: [https://regexr.com/](https://regexr.com/) - A great tool for learning, building, and testing regex
+- **Cyrilex**: [https://extendsclass.com/regex-tester.html](https://extendsclass.com/regex-tester.html) - Test and visualize your regex
 - **Regex Cheat Sheet**: [https://www.rexegg.com/regex-quickstart.html](https://www.rexegg.com/regex-quickstart.html) - A quick reference for regular expressions

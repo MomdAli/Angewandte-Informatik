@@ -12,7 +12,7 @@ date: 2024-12-10
 ## 1. Introduction
 Locks alone are insufficient for building complex concurrent programs where threads need to wait for specific conditions to be true before proceeding. **Condition Variables (CVs)** address this need by allowing threads to:
 1. Wait for a condition to be met (`wait()`).
-2. Notify other threads when a condition changes (`signal()` or `broadcast()`).
+2. Notify other threads when a condition changes (`signal()` or `broadcast()`). 
 
 ### Key Objectives
 1. **Mutual Exclusion**: Ensured by locks.
@@ -205,3 +205,6 @@ void free(void *ptr, int size) {
 - Always check the condition in a `while` loop to handle spurious wakeups.
 - Use multiple condition variables for distinct conditions (e.g., `empty` and `fill`).
 - **Hold locks when signaling or waiting** to avoid race conditions.
+
+
+##### Next Chapter: [[21_Semaphores|Semaphores]]
