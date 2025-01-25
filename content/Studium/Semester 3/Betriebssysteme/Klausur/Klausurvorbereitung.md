@@ -1,5 +1,5 @@
 ---
-title: 🖥️ Probeklausur
+title: 🖥️ Klausurvorbereitung
 tags:
   - Betriebssysteme
   - Semester-3
