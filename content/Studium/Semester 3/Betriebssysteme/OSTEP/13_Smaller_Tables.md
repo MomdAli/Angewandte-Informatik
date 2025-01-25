@@ -126,7 +126,7 @@ The challenge arises from the excessive memory consumption of linear page tables
 
 - **Hardware-Managed TLBs**: Common in traditional desktop and server CPUs, where performance is critical.
 - **Software-Managed TLBs**: Found in systems that prioritize flexibility or have simpler hardware, such as some RISC architectures (e.g., MIPS, SPARC).
-f
+
 ### Conclusion
 
 Reducing page table size is essential for efficient memory management in modern systems. Techniques such as multi-level page tables, hybrid paging, and inverted page tables address the limitations of linear designs, offering substantial memory savings while supporting sparse address spaces. Each method comes with trade-offs in complexity, performance, and implementation effort. The choice of page table design depends on system constraints, workload characteristics, and the desired balance between memory efficiency and translation speed.

@@ -1,19 +1,6 @@
 {
   "nodes": [
     {
-      "id": "794b9bddb02027f7",
-      "type": "group",
-      "styleAttributes": {
-        "border": "invisible"
-      },
-      "x": -1400,
-      "y": -660,
-      "width": 1000,
-      "height": 840,
-      "color": "6",
-      "label": "Model"
-    },
-    {
       "id": "b4c2e11b456b873a",
       "type": "group",
       "styleAttributes": {
@@ -40,78 +27,17 @@
       "label": "View"
     },
     {
-      "id": "d358acddf1df2da4",
-      "type": "text",
-      "text": "# GameManager",
+      "id": "794b9bddb02027f7",
+      "type": "group",
       "styleAttributes": {
-        "textAlign": "center"
+        "border": "invisible"
       },
-      "x": -1040,
-      "y": -560,
-      "width": 260,
-      "height": 60,
-      "color": "6"
-    },
-    {
-      "id": "d598e659a58609ec",
-      "type": "text",
-      "text": "## Player",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "x": -990,
-      "y": -340,
-      "width": 160,
-      "height": 60
-    },
-    {
-      "id": "6583c0db0c84233b",
-      "type": "text",
-      "text": "## Grid",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "x": -1240,
-      "y": -340,
-      "width": 160,
-      "height": 60
-    },
-    {
-      "id": "6adfa6719cf033d7",
-      "type": "text",
-      "text": "## Tile",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "x": -1340,
-      "y": -180,
-      "width": 140,
-      "height": 60
-    },
-    {
-      "id": "0a3c225f4a0a55dd",
-      "type": "text",
-      "text": "## Position",
-      "styleAttributes": {
-        "textAlign": "center",
-        "border": "dashed"
-      },
-      "x": -1135,
-      "y": -180,
-      "width": 145,
-      "height": 60
-    },
-    {
-      "id": "7fa6c8b15f59438e",
-      "type": "text",
-      "text": "## GameState",
-      "styleAttributes": {
-        "textAlign": "center"
-      },
-      "x": -740,
-      "y": -340,
-      "width": 160,
-      "height": 60
+      "x": -1440,
+      "y": -660,
+      "width": 980,
+      "height": 840,
+      "color": "6",
+      "label": "Model"
     },
     {
       "id": "07e85759d734c736",
@@ -140,22 +66,9 @@
       "height": 60
     },
     {
-      "id": "b028d1ba5d947212",
-      "type": "text",
-      "text": "## Direction",
-      "styleAttributes": {
-        "textAlign": "center",
-        "border": "dashed"
-      },
-      "x": -1135,
-      "y": 0,
-      "width": 145,
-      "height": 60
-    },
-    {
       "id": "fdebce37c804c1a6",
       "type": "text",
-      "text": "# TUI",
+      "text": "# TUI/GUI\n",
       "styleAttributes": {
         "textAlign": "center",
         "shape": null
@@ -169,27 +82,52 @@
     {
       "id": "f19977723a8b6b89",
       "type": "text",
-      "text": "## InputHandler",
+      "text": "## InputHandler, ActionHandler, KeyHandler",
       "styleAttributes": {
         "textAlign": "center",
         "border": "dashed"
       },
-      "x": 880,
+      "x": 860,
       "y": -80,
-      "width": 260,
-      "height": 60
+      "width": 300,
+      "height": 140
     },
     {
       "id": "15868882f1bb8959",
       "type": "text",
-      "text": "## DisplayRenderer",
+      "text": "## TextRenderer, GuiRenderer",
       "styleAttributes": {
         "textAlign": "center",
         "border": "dashed"
       },
-      "x": 1280,
+      "x": 1260,
       "y": -80,
+      "width": 280,
+      "height": 140
+    },
+    {
+      "id": "d358acddf1df2da4",
+      "type": "text",
+      "text": "# GameManager",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": -1060,
+      "y": -550,
       "width": 260,
+      "height": 60,
+      "color": "6"
+    },
+    {
+      "id": "7fa6c8b15f59438e",
+      "type": "text",
+      "text": "## GameState",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": -720,
+      "y": -310,
+      "width": 160,
       "height": 60
     },
     {
@@ -205,6 +143,68 @@
       "width": 260,
       "height": 140,
       "color": "2"
+    },
+    {
+      "id": "0a3c225f4a0a55dd",
+      "type": "text",
+      "text": "## Position",
+      "styleAttributes": {
+        "textAlign": "center",
+        "border": "dashed"
+      },
+      "x": -1155,
+      "y": -150,
+      "width": 145,
+      "height": 60
+    },
+    {
+      "id": "b028d1ba5d947212",
+      "type": "text",
+      "text": "## Direction",
+      "styleAttributes": {
+        "textAlign": "center",
+        "border": "dashed"
+      },
+      "x": -1155,
+      "y": 30,
+      "width": 145,
+      "height": 60
+    },
+    {
+      "id": "6adfa6719cf033d7",
+      "type": "text",
+      "text": "## Tile",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": -1360,
+      "y": -150,
+      "width": 140,
+      "height": 60
+    },
+    {
+      "id": "6583c0db0c84233b",
+      "type": "text",
+      "text": "## Grid",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": -1260,
+      "y": -310,
+      "width": 160,
+      "height": 60
+    },
+    {
+      "id": "d598e659a58609ec",
+      "type": "text",
+      "text": "## Players",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "x": -1010,
+      "y": -310,
+      "width": 160,
+      "height": 60
     }
   ],
   "edges": [
