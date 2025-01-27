@@ -10,7 +10,7 @@ cssclasses:
 ---
 
 > [!Info]
-> This is a summary of the ninth chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter covers the concept of address spaces in operating systems, including the layout of a process's address space, virtual memory, and the benefits of using virtual memory. Key topics include transparency, demand paging, efficient memory use, protection, and address translation.
+> This is a summary of the 13th chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter covers the concept of address spaces in operating systems, including the layout of a process's address space, virtual memory, and the benefits of using virtual memory. Key topics include transparency, demand paging, efficient memory use, protection, and address translation.
 
 ## Early Systems
 

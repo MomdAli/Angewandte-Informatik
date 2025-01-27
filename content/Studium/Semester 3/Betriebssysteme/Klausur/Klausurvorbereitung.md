@@ -6,6 +6,23 @@ tags:
   - Informatik
 date: 2025-01-25
 ---
+## Scheduler
+
+![[Scheduler.svg]]
+
+## Base-and-Bounds
+
+`Base <= Base + Virtual Address < Base + Bounds`
+`Virtual Address must be smaller than bounds`
+
+Example:
+Base = 1000
+Bounds = 500
+-> Virtual Address = 300
+   $\rightarrow$ Address is valid
+   $\rightarrow$ Physical Address = 1000 + 300 = 1300
+  `1000 <= 1300 < 1500`
+  
 ## Linear Page Table 
 
 Gegeben:
@@ -51,3 +68,10 @@ $$
 \end{align*}
 $$
 
+## Page Fault Control Flow
+
+![[Page_Fault Control Flow.svg]]
+
+## Deadlock
+
+![[Deadlock.svg]]

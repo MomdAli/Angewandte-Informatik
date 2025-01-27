@@ -60,7 +60,7 @@ For a more specific example, a process with base set to 16 KB and bounds set to 
    - Virtual address 4 KB or higher triggers an exception.
 
 > [!Tip]
-> - **internal fragmentation:** wasted space within an a chunk
+> - **internal fragmentation:** wasted space within a chunk
 > - **external fragmentation:** wasted space between chunks
 
 ## Advantages and Limitations

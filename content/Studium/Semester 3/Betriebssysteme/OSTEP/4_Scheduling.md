@@ -50,7 +50,9 @@ Scheduling metrics are used to evaluate the performance of different algorithms.
 ### 1. First-In, First-Out (FIFO)
 
 - **Description**: The simplest scheduling policy where the first job to arrive is the first to run.
-- **Pros**: Easy to implement.
+- **Pros**: 
+	- Easy to implement.
+	- Low overhead.
 - **Cons**: Leads to **convoy effect**, where short jobs wait behind long jobs, causing high average turnaround time for shorter jobs.
 
 ### 2. Shortest Job First (SJF)
@@ -89,7 +91,7 @@ In real-world systems, jobs perform I/O operations. The scheduler must ensure th
 
 ## Limitations and Future Scheduling Strategies
 
-A fundamental limitation of most schedulers is that they require knowledge of job lengths, which is typically unavailable in real-world systems. To address this, future algorithms like [[5. MLFQ]] will predict future job behavior based on historical execution patterns, providing a more dynamic and efficient scheduling mechanism.
+A fundamental limitation of most schedulers is that they require knowledge of job lengths, which is typically unavailable in real-world systems. To address this, future algorithms like [[5_MLFQ|MLFQ]] will predict future job behavior based on historical execution patterns, providing a more dynamic and efficient scheduling mechanism.
 
 
 ##### Next chapter: [[5_MLFQ|5.MLFQ]]
