@@ -99,6 +99,7 @@ if (Success == true) { // TLB Hit
 ```
 The reason there is **no explicit TLB valid bit check** is that in a **hardware-managed TLB**, the TLB_Lookup(VPN) function **only returns valid entries**. If the entry were invalid, the lookup would fail, causing a **TLB Miss**, which then checks the page table for a valid mapping.
 
+
 ## Deadlock
 
 ![[Deadlock.svg]]
@@ -115,3 +116,7 @@ The four conditions for deadlock are:
 ## Hard Disk Drives
 
 ![[IO_Math.svg]]
+
+
+
+
