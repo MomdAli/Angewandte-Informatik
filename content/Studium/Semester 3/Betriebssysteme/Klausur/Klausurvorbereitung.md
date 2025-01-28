@@ -6,10 +6,6 @@ tags:
   - Informatik
 date: 2025-01-25
 ---
-## Scheduler
-
-![[Scheduler.svg]]
-
 ## Base-and-Bounds
 
 `Base <= Base + Virtual Address < Base + Bounds`
@@ -59,7 +55,7 @@ $$
 ![[Multilevel-Page-Table.png]]
 
 $$
-\color{#5cf19e}
+\color{#7ac17d}
 \begin{align*}
 
 \text{PTEAddr} &= \text{PDE.PFN} << SHIFT + \text{(PTIndex} \cdot \text{sizeof(PTE))}\ \text{or} \\\\
@@ -68,10 +64,54 @@ $$
 \end{align*}
 $$
 
+![[Multi-Level Page Table.svg]]
+
 ## Page Fault Control Flow
 
 ![[Page_Fault Control Flow.svg]]
 
+Pseudo-Code:
+```c
+VPN = (Virtual_Address & VPN_Mask) << SHIFT
+(Success, TLB_Entry) = TLB_Lookup(VPN)
+if (Success == true) { // TLB Hit
+	if (CanAccess(TLB_Entry.ProtectionBit) == false) {
+		Raise_Exception(Protection_Fault)
+	} else {
+		Offset = Virtual_Address & Offset_Mask
+		PhysAddr = TLB_Entry.PFN << SHIFT | Offset
+		Register = AccessMemory(PhysAddr)
+	}
+} else { // TLB Miss
+	PTEAddr = PTBR + (VPN * sizeof(PTE))
+	PTE = AccessMemory(PTEAddr)
+	if (PTE.valid == false) {
+		Raise_Exception(Segmentation_fault)
+	} else if (CanAccess(PTE.ProtectionBit) == false) {
+		Raise_Exception(Protection_Fault)
+	} else if (PTE.present == false) {
+		Raise_Exception(Page_Fault)
+	} else { // Now can access
+		TLB_Insert(VPN, PTE.PFN, PTE.ProtectionBit)
+		RetryInstruction()
+	}
+}
+```
+The reason there is **no explicit TLB valid bit check** is that in a **hardware-managed TLB**, the TLB_Lookup(VPN) function **only returns valid entries**. If the entry were invalid, the lookup would fail, causing a **TLB Miss**, which then checks the page table for a valid mapping.
+
 ## Deadlock
 
 ![[Deadlock.svg]]
+
+The four conditions for deadlock are:
+1. **Mutual Exclusion**: Resources cannot be shared.
+2. **Hold and Wait**: Processes hold resources while waiting for others.
+3. **No Preemption**: Resources cannot be forcibly taken from a process.
+4. **Circular Wait**: A cycle of processes exists, each waiting for a resource held by the next.
+
+#### Bankier's Algorithm
+
+![[Bankier's Algorithm.svg]]
+## Hard Disk Drives
+
+![[IO_Math.svg]]
