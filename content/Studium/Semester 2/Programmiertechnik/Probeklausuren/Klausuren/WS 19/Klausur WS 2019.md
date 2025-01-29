@@ -112,7 +112,7 @@ public void add(String n, int v) {
 get: O(n)
 add: O(n)
 ## Aufgabe 5
-![[Binary Search Tree.md#WS 19 Aufgabe 5]]
+![[Studium/Semester 2/Programmiertechnik/Probeklausuren/Binary Search Tree#WS 19 Aufgabe 5]]
 ## Aufgabe 6
 **a)**
 ```java
