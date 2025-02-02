@@ -134,7 +134,7 @@ int main(int argc, char *argv[])
 }
 ```
 ### Output:
-```console {3,6} showLineNumbers=false
+```sh {3,6} showLineNumbers=false
 parent pid: 23449
 before Changing x: 100
 after Changing x: 25

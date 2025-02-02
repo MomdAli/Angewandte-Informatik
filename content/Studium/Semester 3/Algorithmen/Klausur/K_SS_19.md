@@ -2,9 +2,9 @@
 title: Klausur SS 19
 tags:
   - Algorithm
-  - Probeklausur
   - Semester-3
   - Informatik
+  - Probeklausur
 date: 2025-01-31
 ---
 ![[Pasted image 20250131230103.png]]
