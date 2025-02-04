@@ -1,10 +1,10 @@
 ---
-title: Klausur SS 19
+title: Klausur SS 17
 tags:
   - Algorithm
   - Semester-3
   - Informatik
   - Probeklausur
-date: 2025-01-31
+date: 2025-02-02
 ---
-![[Klausur-SS19.svg]]
+![[Klausur-SS17.svg]]

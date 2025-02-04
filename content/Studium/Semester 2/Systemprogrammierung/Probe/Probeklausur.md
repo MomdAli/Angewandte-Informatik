@@ -274,7 +274,8 @@ int main ()
 ```cpp
 friend std::ostream& operator<<(std::ostream& os, const fuzzy& f) 
 {
-	os << f.truth; return os; 
+	os << f.truth;
+	return os; 
 }
 ```
 
