@@ -1,3 +1,11 @@
+---
+title: Übung 1
+tags:
+  - 2DCV
+  - Semester-5
+  - Informatik
+---
+
 ## Bild einlesen und anzeigen mithilfe von Scikit-Image
 
 

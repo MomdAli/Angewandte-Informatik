@@ -9,7 +9,7 @@ draft: true
 ### The verse of Tat-heer (Purification) [33:33](https://quran.com/33/33)
 It is widely known that the Qur'an as recorded in writing is not in the order of its revelation. However, a common misunderstanding is that any single numbered verse would have been revealed at the same time as a single unit. That has not always been the case.
 
-Before looking at 33:33 we can examine the famous verse of 5:3 to see an example of this phenomenon.
+Before looking at 33:33 we can examine the famous verse of [5:3](https://quran.com/5/3) to see an example of this phenomenon.
 
 - You are prohibited carrion, blood, the flesh of swine, and what has been offered to other than Allah, and the animal strangled or beaten to death, and that which dies by falling or is gored to death, and that which is mangled by a beast of prey—barring that which you may purify —and what is sacrificed on stone altars \[to idols\], and that you should divide by raffling with arrows. All that is transgression. Today the faithless have despaired of your religion. So do not fear them, but fear Me. **Today I have perfected your religion for you, and I have completed My blessing upon you, and I have approved Islam as your religion.** But should anyone be compelled by hunger, without inclining to sin, then Allah is indeed all-forgiving, all-merciful.
 
