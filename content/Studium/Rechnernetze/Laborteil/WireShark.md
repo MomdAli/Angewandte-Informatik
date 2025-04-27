@@ -3,6 +3,7 @@ excalidraw-plugin: parsed
 tags:
   - excalidraw
   - Informatik
+  - Semester-5
 draft: true
 excalidraw-export-transparent: 
 excalidraw-export-dark:

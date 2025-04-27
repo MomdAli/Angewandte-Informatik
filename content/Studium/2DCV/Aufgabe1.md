@@ -1,5 +1,5 @@
 ---
-title: Übung 1
+title: Aufgabe 1
 tags:
   - 2DCV
   - Semester-5
