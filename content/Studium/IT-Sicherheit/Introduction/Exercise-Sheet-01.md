@@ -1,7 +1,7 @@
 ---
 title: Exercise Sheet 01
 tags:
-  - Security
+  - IT-Sicherheit
   - Semester-5
   - Informatik
 date: 2025-04-27
