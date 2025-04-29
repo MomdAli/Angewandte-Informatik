@@ -1,5 +1,5 @@
 ---
-title: Ping and traceroute
+title: Ping and Traceroute
 tags:
   - Rechnernetze
   - Semester-5
@@ -47,7 +47,7 @@ Approximate round trip times in milli-seconds:
 ```
 
 
-![[Wireshark-SS-01.png]]
+![[SS-Wireshark-1.png]]
 Auf das **Echo Reply** klicken (z. B. Nr. 6), unten klappt sich die Paketstruktur auf
 "Internet Control Message Protocol" -> Response Time: 6,776 ms
 TTL steht oben rechts.
@@ -122,7 +122,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![[Studium/Rechnernetze/Laborteil/Figure_1.png]]
+![[Studium/Rechnernetze/Laborteil/Bilder/Figure_1.png]]
 
 ## Aufgabe 3.1)
 
@@ -224,7 +224,7 @@ Ausbreitung mit Lichtgeschwindigkeit auf direktem Weg voraussetzen (z.B.
 http://www.luftlinie.org/)? Um welchen Faktor ist die tatsächlich gemessene Zeit länger als
 das theoretische Minimum? Führen Sie Erklärungen für die längeren Laufzeiten an.
 
-![[Map-SS-01.png]]
+![[SS-Map.png]]
 Die theoretische Minimallaufzeit eines Pakets auf direktem Weg mit Lichtgeschwindigkeit beträgt bei einer Luftlinien-Gesamtdistanz von ~26.370 km:
 
 $$

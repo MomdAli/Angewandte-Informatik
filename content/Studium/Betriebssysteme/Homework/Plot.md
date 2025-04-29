@@ -6,4 +6,4 @@ tags:
   - Informatik
 date: 2024-11-12
 ---
-![[Figure_1.png]]
+![[Assets/Figure_1.png]]
