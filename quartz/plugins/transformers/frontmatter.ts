@@ -135,13 +135,18 @@ declare module "vfile" {
     } & Partial<{
       tags: string[]
       aliases: string[]
+      modified: string
+      created: string
+      published: string
       description: string
-      publish: boolean
-      draft: boolean
+      socialDescription: string
+      publish: boolean | string
+      draft: boolean | string
       lang: string
       enableToc: string
       cssclasses: string[]
-      explorer: boolean
+      socialImage: string
+      comments: boolean | string
     }>
   }
 }

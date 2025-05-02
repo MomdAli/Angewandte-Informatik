@@ -335,7 +335,7 @@ export async function handleBuild(argv) {
     clientRefresh()
   }
 
-  let clientRefresh = () => {}
+  let clientRefresh = () => { }
   if (argv.serve) {
     const connections = []
     clientRefresh = () => connections.forEach((conn) => conn.send("rebuild"))
@@ -462,19 +462,12 @@ export async function handleBuild(argv) {
       "package.json",
     ])
     chokidar
-      .watch(["**/*.ts", "**/*.tsx", "**/*.scss", "package.json"], {
-        persistent: true,
-        cwd: argv.directory,
-        useFsEvents: true,
-        atomic: true,
-        ignoreInitial: true,
-      })
-      .on("all", async () => {
-        build(clientRefresh)
-      })
-  } else {
-    await build(() => { })
-    ctx.dispose()
+      .watch(paths, { ignoreInitial: true })
+      .on("add", () => build(clientRefresh))
+      .on("change", () => build(clientRefresh))
+      .on("unlink", () => build(clientRefresh))
+
+    console.log(chalk.grey("hint: exit with ctrl+c"))
   }
 }
 

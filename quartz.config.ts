@@ -30,7 +30,7 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
-        body: "Noto Sans",
+        body: "Lora",
         code: "JetBrains Mono",
       },
       colors: {
@@ -71,7 +71,7 @@ const config: QuartzConfig = {
           light: "catppuccin-latte",
           dark: "nord",
         },
-        keepBackground: true,
+        keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: true }),
       Plugin.GitHubFlavoredMarkdown(),
