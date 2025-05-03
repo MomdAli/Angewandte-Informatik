@@ -24,7 +24,6 @@ const config: QuartzConfig = {
       "**/*.excalidraw.md"
     ],
     defaultDateType: "created",
-    // generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -68,10 +67,10 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "catppuccin-latte",
-          dark: "nord",
+          light: "github-light",
+          dark: "min-dark",
         },
-        keepBackground: false,
+        keepBackground: true,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: true }),
       Plugin.GitHubFlavoredMarkdown(),
@@ -96,7 +95,7 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      // Plugin.CustomOgImages(),
+      //Plugin.CustomOgImages(),
     ],
   },
 }

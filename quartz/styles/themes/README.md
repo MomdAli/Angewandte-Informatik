@@ -1,10 +1,10 @@
-# Velvet-Moon
+# Ebullientworks
 
-[Velvet-Moon](https://quinta0.github.io/)
+[Ebullientworks](https://github.com/ebullient)
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/velvet-moon/)
+[Open live preview](https://quartz-themes.github.io/ebullientworks/)
 
 ## Usage
 
@@ -12,7 +12,7 @@
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- velvet-moon
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- ebullientworks
 ```
 
 ### Manual install
@@ -20,7 +20,7 @@
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh velvet-moon
+./action.sh ebullientworks
 ```
 
 ### Install script (Advanced)
@@ -28,5 +28,5 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 After installing:
 
 ```bash
-npm run theme velvet-moon
+npm run theme ebullientworks
 ```

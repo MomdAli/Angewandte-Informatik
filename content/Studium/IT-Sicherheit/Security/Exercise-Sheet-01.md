@@ -8,11 +8,6 @@ date: 2025-04-28
 ---
 # Vulnerabilities and Access Control Implementation
 
-> [!Example] Gruppe
-> Mohammed Ali Al-Saiaf - 310320
-> Nico Roth - 302552
-> Nokha Temarbulatov - 310576
-
 ## 1. Web Application Vulnerabilities (Without Time Constraints)
 
 #### 1.2. Solve 2 of the challenges in the category Challenges => Web-Client that have a name starting with "XSS". \[Groups: 2 challenges per group member, e.g., 6 challenges for 3 persons\]

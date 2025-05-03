@@ -67,15 +67,18 @@ ul,
 }
 
 article {
-  > mjx-container.MathJax,
-  blockquote > div > mjx-container.MathJax {
+
+  >mjx-container.MathJax,
+  blockquote>div>mjx-container.MathJax {
     display: flex;
-    > svg {
+
+    >svg {
       margin-left: auto;
       margin-right: auto;
     }
   }
-  blockquote > div > mjx-container.MathJax > svg {
+
+  blockquote>div>mjx-container.MathJax>svg {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -88,7 +91,7 @@ strong {
 a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
-  transition: background-color 0.1s ease, color 0.2s ease;
+  transition: color 0.2s ease;
   color: var(--secondary);
 
   &:hover {
@@ -173,11 +176,11 @@ a {
 
   &>#quartz-body {
     display: grid;
-    grid-template-columns: #{map-get($desktopGrid, templateColumns)};
-    grid-template-rows: #{map-get($desktopGrid, templateRows)};
-    column-gap: #{map-get($desktopGrid, columnGap)};
-    row-gap: #{map-get($desktopGrid, rowGap)};
-    grid-template-areas: #{map-get($desktopGrid, templateAreas)};
+    grid-template-columns: #{map.get($desktopGrid, templateColumns)};
+    grid-template-rows: #{map.get($desktopGrid, templateRows)};
+    column-gap: #{map.get($desktopGrid, columnGap)};
+    row-gap: #{map.get($desktopGrid, rowGap)};
+    grid-template-areas: #{map.get($desktopGrid, templateAreas)};
 
     @media all and ($tablet) {
       grid-template-columns: #{map.get($tabletGrid, templateColumns)};
@@ -240,7 +243,7 @@ a {
         margin-right: inherit;
       }
 
-      @media all and ($desktop) {
+      @media all and not ($desktop) {
         position: initial;
         height: unset;
         width: 100%;
@@ -385,7 +388,7 @@ h6 {
     opacity: 1;
   }
 
-  &:not([id]) > a[role="anchor"] {
+  &:not([id])>a[role="anchor"] {
     display: none;
   }
 }
@@ -595,22 +598,14 @@ ol.overflow {
   content: "";
   clear: both;
 
-  &>li:last-of-type {
-    margin-bottom: 30px;
+  &>li.overflow-end {
+    height: 0.5rem;
+    margin: 0;
   }
 
-  /*&:after {
-    pointer-events: none;
-    content: "";
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    background: linear-gradient(transparent 0px, var(--light));
-  }*/
+  &.gradient-active {
+    mask-image: linear-gradient(to bottom, black calc(100% - 50px), transparent 100%);
+  }
 }
 
 .transclude {
@@ -630,4 +625,15 @@ iframe.pdf {
   height: 100%;
   width: 100%;
   border-radius: 5px;
+}
+
+.navigation-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--secondary);
+  transition: width 0.2s ease;
+  z-index: 9999;
 }
