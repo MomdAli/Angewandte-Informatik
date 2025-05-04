@@ -9,6 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "🦉 Main",
+    pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -20,10 +21,9 @@ const config: QuartzConfig = {
       "Private",
       "Templates",
       ".obsidian",
-      "Excalidraw",
-      "**/*.excalidraw.md"
+      "Excalidraw"
     ],
-    defaultDateType: "created",
+    defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -68,7 +68,7 @@ const config: QuartzConfig = {
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
-          dark: "min-dark",
+          dark: "catppuccin-macchiato",
         },
         keepBackground: true,
       }),
@@ -84,7 +84,16 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        sort: (f1, f2) => {
+          const f1Title = f1.frontmatter?.title.toLowerCase() ?? ""
+          const f2Title = f2.frontmatter?.title.toLowerCase() ?? ""
+          return f1Title.localeCompare(f2Title, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
@@ -95,7 +104,7 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      //Plugin.CustomOgImages(),
+      Plugin.CustomOgImages(),
     ],
   },
 }

@@ -64,7 +64,6 @@ def get_pixel(in_image, x, y, edge='min'):
 
 Faltet ein Bild mit einer Filtermatrix und behandelt die Ränder entsprechend 'min', 'max' oder 'continue'
 
-
 ```python
 def advanced_filter(in_image, filter_matrix, offset=1, edge='continue'):
     img_h, img_w = in_image.shape

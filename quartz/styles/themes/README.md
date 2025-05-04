@@ -1,10 +1,10 @@
-# Ebullientworks
+# Catppuccin
 
-[Ebullientworks](https://github.com/ebullient)
+[Catppuccin](https://github.com/catppuccin/obsidian)
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/ebullientworks/)
+[Open live preview](https://quartz-themes.github.io/catppuccin/)
 
 ## Usage
 
@@ -12,7 +12,7 @@
 
 ```yaml
 - name: Fetch Quartz Theme
-  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- ebullientworks
+  run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- catppuccin
 ```
 
 ### Manual install
@@ -20,7 +20,7 @@
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh ebullientworks
+./action.sh catppuccin
 ```
 
 ### Install script (Advanced)
@@ -28,5 +28,5 @@ curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-them
 After installing:
 
 ```bash
-npm run theme ebullientworks
+npm run theme catppuccin
 ```

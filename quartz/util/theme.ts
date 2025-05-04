@@ -18,10 +18,10 @@ interface Colors {
 export type FontSpecification =
   | string
   | {
-      name: string
-      weights?: number[]
-      includeItalic?: boolean
-    }
+    name: string
+    weights?: number[]
+    includeItalic?: boolean
+  }
 
 export interface Theme {
   typography: {
@@ -70,9 +70,9 @@ function formatFontSpecification(
   if (weights.length > 1) {
     const weightSpec = italic
       ? weights
-          .flatMap((w) => [`0,${w}`, `1,${w}`])
-          .sort()
-          .join(";")
+        .flatMap((w) => [`0,${w}`, `1,${w}`])
+        .sort()
+        .join(";")
       : weights.join(";")
 
     features.push(`wght@${weightSpec}`)
@@ -107,6 +107,13 @@ export interface GoogleFontFile {
   extension: string
 }
 
+const fontMimeMap: Record<string, string> = {
+  truetype: "ttf",
+  woff: "woff",
+  woff2: "woff2",
+  opentype: "otf",
+}
+
 export async function processGoogleFonts(
   stylesheet: string,
   baseUrl: string,
@@ -114,14 +121,16 @@ export async function processGoogleFonts(
   processedStylesheet: string
   fontFiles: GoogleFontFile[]
 }> {
-  const fontSourceRegex = /url\((https:\/\/fonts.gstatic.com\/s\/[^)]+\.(woff2|ttf))\)/g
+  const fontSourceRegex =
+    /url\((https:\/\/fonts.gstatic.com\/.+(?:\/|(?:kit=))(.+?)[.&].+?)\)\sformat\('(\w+?)'\);/g
   const fontFiles: GoogleFontFile[] = []
   let processedStylesheet = stylesheet
 
   let match
   while ((match = fontSourceRegex.exec(stylesheet)) !== null) {
     const url = match[1]
-    const [filename, extension] = url.split("/").pop()!.split(".")
+    const filename = match[2]
+    const extension = fontMimeMap[match[3].toLowerCase()]
     const staticUrl = `https://${baseUrl}/static/fonts/${filename}.${extension}`
 
     processedStylesheet = processedStylesheet.replace(url, staticUrl)
