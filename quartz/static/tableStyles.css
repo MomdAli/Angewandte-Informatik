@@ -426,3 +426,14 @@ Eg. cssclass: purpleRed, wideTable
 }
 
 /* --------------------------------------------   */
+
+
+.noBorder {
+	--table-border-width: 0px;
+	--table-white-space: normal;
+	--table-header-border-width: var(--table-border-width);
+	--table-column-first-border-width: var(--table-border-width);
+	--table-column-last-border-width: var(--table-border-width);
+	--table-row-last-border-width: var(--table-border-width);
+	margin-top: 0px;
+}

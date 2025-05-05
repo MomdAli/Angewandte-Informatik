@@ -16,11 +16,13 @@
     height: 20px;
     top: calc(50% - 10px);
     stroke: var(--darkgray);
+    color: var(--darkgray);
     transition: opacity 0.1s ease;
   }
 }
 
 :root[reader-mode="on"] {
+
   & .sidebar.left,
   & .sidebar.right {
     opacity: 0;

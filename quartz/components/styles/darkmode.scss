@@ -15,7 +15,6 @@
     width: 20px;
     height: 20px;
     top: calc(50% - 10px);
-    fill: var(--darkgray);
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
   }
@@ -23,11 +22,13 @@
   .dayIcon {
     opacity: 1;
     transform: rotate(0deg);
+    fill: var(--darkgray);
   }
 
   .nightIcon {
     opacity: 0;
     transform: rotate(-90deg);
+    fill: var(--darkgray);
   }
 }
 
