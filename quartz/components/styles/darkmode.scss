@@ -16,32 +16,43 @@
     height: 20px;
     top: calc(50% - 10px);
     fill: var(--darkgray);
-    transition: opacity 0.1s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .dayIcon {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  .nightIcon {
+    opacity: 0;
+    transform: rotate(-90deg);
   }
 }
 
-:root[saved-theme="dark"] {
-  color-scheme: dark;
+/* light mode (default) */
+:root[saved-theme="light"] .darkmode {
+  .dayIcon {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  .nightIcon {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
 }
 
-:root[saved-theme="light"] {
-  color-scheme: light;
-}
-
+/* dark mode */
 :root[saved-theme="dark"] .darkmode {
-  & > .dayIcon {
-    display: none;
+  .dayIcon {
+    opacity: 0;
+    transform: rotate(90deg);
   }
-  & > .nightIcon {
-    display: inline;
-  }
-}
 
-:root .darkmode {
-  & > .dayIcon {
-    display: inline;
-  }
-  & > .nightIcon {
-    display: none;
+  .nightIcon {
+    opacity: 1;
+    transform: rotate(0deg);
   }
 }

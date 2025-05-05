@@ -10,13 +10,23 @@ export const sharedPageComponents: SharedLayout = {
 			showTags: false,
 			limit: 3
 		}),
+		Component.Comments({
+			provider: "giscus",
+			options: {
+				repo: "MomdAli/Angewandte-Informatik",
+				repoId: "R_kgDOMXLlag",
+				category: "Announcements",
+				categoryId: "DIC_kwDOMXLlas4Cpy8_",
+				reactionsEnabled: true,
+				inputPosition: "top",
+				themeUrl: "https://momdali.de/static/giscus",
+				darkTheme: "dark",
+				lightTheme: "light",
+				strict: false,
+			}
+		})
 	],
-	footer: Component.Footer({
-		links: {
-			GitHub: "https://github.com/MomdAli/Angewandte-Informatik",
-			"Discord Server": "https://discord.gg/nwtQs3UMec",
-		},
-	}),
+	footer: Component.Footer(),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -52,32 +62,32 @@ export const defaultContentPageLayout: PageLayout = {
 	right: [
 		Component.Graph({
 			localGraph: {
-				drag: true, // whether to allow panning the view around
-				zoom: true, // whether to allow zooming in and out
-				depth: 1, // how many hops of notes to display
-				scale: 1.1, // default view scale
-				repelForce: 0.5, // how much nodes should repel each other
-				centerForce: 0.3, // how much force to use when trying to center the nodes
-				linkDistance: 30, // how long should the links be by default?
-				fontSize: 0.6, // what size should the node labels be?
-				opacityScale: 1, // how quickly do we fade out the labels when zooming out?
-				removeTags: [], // what tags to remove from the graph
-				showTags: true, // whether to show tags in the graph
-				enableRadial: false, // whether to constrain the graph, similar to Obsidian
+				drag: true,
+				zoom: true,
+				depth: 1,
+				scale: 1.1,
+				repelForce: 0.8,       // mehr Abstand zwischen Nodes
+				centerForce: 0.4,      // weniger starkes Zentrieren
+				linkDistance: 120,     // deutlich lockerer!
+				fontSize: 0.6,
+				opacityScale: 1,
+				removeTags: [],
+				showTags: true,
+				enableRadial: true,
 			},
 			globalGraph: {
 				drag: true,
 				zoom: true,
-				depth: -1,
-				scale: 0.9,
-				repelForce: 0.5,
-				centerForce: 0.3,
-				linkDistance: 30,
+				depth: 3,
+				scale: 1.5,
+				repelForce: 0.8,
+				centerForce: 1.0,
+				linkDistance: 120,
 				fontSize: 0.6,
 				opacityScale: 1,
-				removeTags: [], // what tags to remove from the graph
-				showTags: true, // whether to show tags in the graph
-				enableRadial: true, // whether to constrain the graph, similar to Obsidian
+				removeTags: [],
+				showTags: true,
+				enableRadial: true,
 			},
 		}),
 		Component.DesktopOnly(Component.TableOfContents()),
