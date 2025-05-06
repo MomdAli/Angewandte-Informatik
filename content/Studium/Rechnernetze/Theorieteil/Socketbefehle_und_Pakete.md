@@ -7,7 +7,6 @@ tags:
 date: 2025-05-05
 cssclasses:
   - wideFc
-  - noMargin
   - leftAlign
 ---
 
@@ -59,7 +58,7 @@ except socket.error:
 | **FIN + ACK** | Finish + Acknowledge | “I’m done too - I got your FIN.”                 | `close()` (on the other side)                                                                         |
 | **RST**       | Reset                | “Something went wrong. Kill this connection.”    | Happens if one side tries to connect<br>but the other side isn’t listening                            |
 | **RST + ACK** | Reset + Acknowledge  | “Hey, I got your message, but I’m not listening" | Usually when `connect()` is called, but the other<br>side hasn’t called `listen()` or `accept()` yet. |
-
+[Source](https://networkwalks.com/wp-content/uploads/2020/03/TCP-notes-cheat-sheet-network-walks-academy.pdf)
 
 | Nr. | Time  | Source    | Destination | Protocol | Length | Src Port | Dst Port | Info                                                    |
 | --: | ----- | --------- | ----------- | :------: | -----: | -------: | -------: | :------------------------------------------------------ |
