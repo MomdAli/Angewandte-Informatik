@@ -9,7 +9,7 @@ date: 2025-04-29
 ## 2 Monitoring von Sockets
 #### 2.1) Wie viele Sockets sind insgesamt geöffnet?
 - 100 total Ports 
-  ![[Bilder/RN-Sockets-count.PNG]]
+  ![[RN-Sockets-count.PNG]]
 
 #### 2.2) Wie unterscheiden sich die Einträge von TCP und UDP Sockets?
 
@@ -34,7 +34,7 @@ date: 2025-04-29
 - Nur die Einträge zählen, wo "Listening" steht.
 - 37 Listening sockets. 82 total ports (TCP-Listening, UDP)
 
-![[Bilder/RN-Socket-Listening-State.PNG]]
+![[RN-Socket-Listening-State.PNG]]
 #### 2.5) Wie viele Sockets (ESTABLISHED) werden neu geöffnet, wenn Sie die Messung nach einer Minute erneut durchführen bzw. die Ergebnisse aktualisieren?
 
 1. Verbindungen Filtern, auswählen und speichern

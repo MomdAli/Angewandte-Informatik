@@ -122,7 +122,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![[Studium/Rechnernetze/Laborteil/Bilder/Figure_1.png]]
+![[Studium/Rechnernetze/Bilder/Figure_1.png]]
 
 ## Aufgabe 3.1)
 
