@@ -52,7 +52,7 @@ Germany was the **most targeted country** for DDoS in Q1 2025. Over **20.5 milli
 Based on frameworks like the *BSI kill‑chain model* and *Unit 42 Q1 2025* report:
 
 **Initial Access**:
-- Phishing emails with malicious attachments or links; sometimes exploiting remote access flaws like unpatched RDP [(Top 10 Ransomware measures)](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Analysen-und-Prognosen/Ransomware-Angriffe/Top-10-Ransomware-Massnahmen/top-10-ransomware-massnahmen_node.html).
+- Phishing emails with malicious attachments or links. sometimes exploiting remote access flaws like unpatched RDP [(Top 10 Ransomware measures)](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Analysen-und-Prognosen/Ransomware-Angriffe/Top-10-Ransomware-Massnahmen/top-10-ransomware-massnahmen_node.html).
 
 **Exploit and Privilege Escalation**:
 - Zero‑day exploits e.g. CLFS vulnerability or credential‑dumping tools .
@@ -70,24 +70,18 @@ Based on frameworks like the *BSI kill‑chain model* and *Unit 42 Q1 2025* 
 
 ### 2.4. What protection mechanisms are recommended by IT-Grundschutz against malware? Name the title and ID of the specific requirements and state whether these are required for basic protection, standard protection, or for increased protection needs.
 
-According to the BSI’s [Top 10 Ransomware measures](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Analysen-und-Prognosen/Ransomware-Angriffe/Top-10-Ransomware-Massnahmen/top-10-ransomware-massnahmen_node.html), the following align with IT‑Grundschutz modules OPS and SYS:
+I’ve spent some time mapping the [BSI’s Top-10 ransomware recommendations](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Analysen-und-Prognosen/Ransomware-Angriffe/Top-10-Ransomware-Massnahmen/top-10-ransomware-massnahmen_node.html) onto the exact IT-Grundschutz controls, and here’s a narrative that ties them together more naturally.
 
-| **BSI Measure**                     | **Relevant IT Grundschutz Domain**          |
-| ----------------------------------- | ------------------------------------------- |
-| 1. **Patches and Updates**          | OPS, SYS: Patch management, update roll‑out |
-| 2. **Remote Access**                | OPS: VPN + 2FA                              |
-| 3. **No macros / phishing filters** | OPS: Mail configuration, user training      |
-| 4. **Software Whitelisting**        | SYS: Application control                    |
-| 5. **Antivirus + IPS**              | OPS, SYS: EDR/AV installations              |
-| 6. **Admin account segregation**    | SYS: Principle of least privilege           |
-| 7. **Network Segmentation**         | SYS, OPS: Firewalls, sub‑networks           |
-| 8. **Offline and tested backups**   | OPS: Backup strategy, restore procedures    |
-Additional recommendations:
+#### Basic Protection
+One of the most important first steps is regular patching. According to **OPS.1.1.3**, you need to keep track of all important systems and install security updates as soon as possible—ideally within a few days. For remote access (**OPS.1.2.5**), it’s important to use secure VPN connections with two-factor authentication and only allow specific maintenance actions. Email is also a common entry point for malware, so **OPS.2.1.3** recommends filtering emails for phishing and removing dangerous content like macros before they reach users. Regular awareness training also helps people spot threats.
 
-- User awareness training e.g. spotting malicious links [cyfirma.com, ](https://www.cyfirma.com/research/tracking-ransomware-february-2025/)[srd-rechtsanwaelte.de, ](https://www.srd-rechtsanwaelte.de/en/ransomware)[guidepointsecurity.com](https://www.guidepointsecurity.com/wp-content/uploads/2025/04/GRIT-2025-Q1-Ransomware-Cyber-Threat-Report.pdf).
-- EDR and anomaly detection to monitor CLFS activity, process spawning.
-- Incident Response planning: Isolation of infected systems, documentation, notification to authorities .
-- Immutable and offline backups, using app‑whitelisting, ZFS snapshots or VSS hardening [en.wikipedia.org](https://en.wikipedia.org/wiki/Ransomware).
+#### Standard Protection
+Once the basics are covered, you focus more on the systems people use. **SYS.3.1.1** requires antivirus or EDR software that not only scans for viruses but also watches for unusual behavior. With **SYS.3.1.4**, you can control which applications are allowed to run—anything unapproved gets blocked. Then there’s **SYS.2.1.2**, which follows the least privilege principle: users and services only get the permissions they really need, and admin accounts are stored securely and used only when necessary.
+
+#### Increased Protection
+For critical environments, **SYS.4.1.1** suggests dividing the network into zones, so even if one part is attacked, it can’t spread easily. Lastly, **OPS.2.5.1** highlights how important backups are. Using the 3-2-1 rule (three copies, two different storage types, one offsite), along with regular recovery tests, makes sure you can recover quickly if ransomware hits.
+
+
 <div style="page-break-after: always;"></div>
 
 ## 3. Vulnerability Management with CVE
