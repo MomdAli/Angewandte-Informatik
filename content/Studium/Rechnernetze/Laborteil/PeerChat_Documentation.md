@@ -2,12 +2,13 @@
 title: PeerChat Documentation
 tags:
   - Rechnernetze
+  - Laborteil
   - Semester-5
   - Informatik
 date: 2025-05-24
 ---
 > \[!important]- Also
-> Check out [PeerChat](https://github.com/MomdAli/PeerChat/)
+> Check out https://github.com/MomdAli/PeerChat/
 
 ## 1. [protocol.py](https://github.com/MomdAli/PeerChat/blob/main/network/protocol.py)
 

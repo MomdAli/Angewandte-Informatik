@@ -2,6 +2,7 @@
 title: Ping and Traceroute
 tags:
   - Rechnernetze
+  - Laborteil
   - Semester-5
   - Informatik
 date: 2025-04-13

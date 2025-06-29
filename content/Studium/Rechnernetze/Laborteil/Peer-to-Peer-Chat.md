@@ -2,6 +2,7 @@
 title: Peer to Peer Chat
 tags:
   - Rechnernetze
+  - Laborteil
   - Semester-5
   - Informatik
 date: 2025-05-24

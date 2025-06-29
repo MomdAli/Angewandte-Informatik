@@ -2,6 +2,7 @@
 title: Socket Monitoring
 tags:
   - Rechnernetze
+  - Laborteil
   - Semester-5
   - Informatik
 date: 2025-04-29

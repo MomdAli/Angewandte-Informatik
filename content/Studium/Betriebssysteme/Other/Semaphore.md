@@ -4,7 +4,7 @@ tags:
   - Betriebssysteme
   - Semester-3
   - Informatik
-date:
+date: 2025-01-25
 ---
 This program uses a custom semaphore to synchronize threads incrementing a shared counter. Each thread runs a function that waits for the semaphore (`sem_wait`), increments the counter, and signals the semaphore (`sem_post`). The semaphore ensures mutual exclusion, preventing race conditions. The main function initializes the semaphore, creates threads, waits for them to finish, and prints the final counter value.
 

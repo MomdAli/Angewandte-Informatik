@@ -2,6 +2,7 @@
 title: Socketbefehle und Pakete
 tags:
   - Rechnernetze
+  - Theorieteil
   - Semester-5
   - Informatik
 date: 2025-05-05
