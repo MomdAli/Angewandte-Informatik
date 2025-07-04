@@ -6,4 +6,4 @@ tags:
   - Informatik
 date: 2025-02-05
 ---
-![[Klausur_SS16]]
+![[Klausur_SS16.svg]]

@@ -15,9 +15,9 @@ date: 2025-06-23
 ## Capture the Flag
 
 ### Challenge 1 (Web) ~ Mohammed
-We began by signing up on the BCACTF platform and navigating to the Web category of the challenges. The first challenge asked us to find the administrator's email address and submit it in the format `bcactf{...}`. The challenge linked to the website:
+We began by signing up on the BCACTF platform and navigating to the Web category of the challenges. The first challenge asked us to find the administrator's email address and submit it in the format `bcactf{...}`. The challenge:
 ```
-http://challs.bcactf.com:42593
+https://play.bcactf.com/challenges#People-58
 ```
 On the page, we found a list of people with their names, usernames (included as HTML comments), and Gravatar profile images. After inspecting the page source, we came across this snippet:
 
@@ -39,10 +39,10 @@ This successfully completed the challenge.
 
 ### Challenge 2 (Web) ~ Mohammed
 
-One of the challenges asked us to find out **when the page was compiled**, and to submit the answer in a specific format. The website provided for the challenge was:
+One of the challenges asked us to find out **when the page was compiled**, and to submit the answer in a specific format. The challenge in:
 
 ```
-http://challs.bcactf.com:26137
+https://play.bcactf.com/challenges#Temps-45
 ```
 
 When we visited the page, we noticed that it was a broken SvelteKit application. It was attempting to load JavaScript modules from the `_app/immutable/` directory, but all of them were blocked by the browser due to an incorrect MIME type. Specifically, the server was returning a `Content-Type: text/plain`, which modern browsers block when loading ES modules.
@@ -62,48 +62,36 @@ const en = ((oe = globalThis.__sveltekit_1kkkrww) == null ? void 0 : oe.assets) 
 ...
 ```
 
-Among these variables, the one named `nn` contained a long number: `1735776187591`. This stood out, and after converting it, we realized it was a **Unix timestamp in milliseconds**. That made sense as the answer to the challenge, which was to determine **when the page was compiled**.
+Among these variables, the one named `nn` contained a long number: `1735776187591`. This stood out, and after converting it, we realized it was a **Unix timestamp in milliseconds**. 
 
-We submitted the timestamp as the flag:
+We then submitted the timestamp as the flag:
 
 ```
 bcactf{1735776187591}
 ```
 
-And it was accepted.
-
 ### Challenge 3 (Rev) ~ Mohammed
 We were presented with a challenge:
+```
+https://play.bcactf.com/challenges#malware-18
+```
 
 > “I found a suspicious program on my computer. Apparently it’s NOT malware? I want you to help me check this out, can you help me out?”
 > **Hint:** what is a popular tool used to check for viruses?
 
-We downloaded the mystery executable and began by:
+So, we downloaded the unknown executable and started investigating.
 
-1. **Inspecting its contents**
-   * Ran basic strings and looked for suspicious indicators.
-   * No obvious malicious code or clear text strings stood out.
-2. **Attempting to execute it in a sandbox**
-   * Launched it in a disposable VM.
-   * Observed no network activity or file changes.
+We used some basic tools like `strings` to see if anything weird showed up, like hidden commands, URLs, or suspicious keywords. But nothing obvious stood out. The file didn’t look like classic malware.
+Next, we ran it in a sandbox (a disposable virtual machine) just to be safe. There was no network activity, no files being written or changed. It behaved normally.
 
-Still nothing flagged it as malware. The hint pointed us toward **virus-checking tools**. First we tried:
+We thought the hint might be pointing us toward antivirus software. So we installed ClamAV and scanned the file using `clamscan`. Still, no red flags. ClamAV said it was clean.
+Since ClamAV didn’t catch anything, we tried VirusTotal, a site that checks files with lots of antivirus engines at once. We uploaded the file and looked closely at the results.
 
-3. Local AV scan with ClamAV
-   * Installed `clamav` and ran `clamscan` on the file.
-   * ClamAV returned no detections.
+That’s where we found something interesting: the names and comments from different virus scanners actually spelled out a hidden message. After putting the pieces together, we got the flag:
 
-Since ClamAV didn’t identify anything, we googled for a more comprehensive, multi-engine scanner and found VirusTotal. We:
-
-4. Uploaded the file to VirusTotal
-   * Examined the “Names” and “Comments” fields from dozens of engines.
-
-Those vendor names included a hidden message, which we extracted to reveal the flag:
-
-```
+```plaintext
 bcactf{wtf_fake_malware_thx_virustotal}
 ```
-
 
 ### Challenge 4 (Web) ~ Nokha
 
@@ -319,7 +307,7 @@ We began by examining the provided source code in source.py and immediately iden
 
 ```python
 def encryptMessage(message, key, nonce):
-    cipher = ChaCha20.new(key=key, nonce=iv)  # Bug: uses 'iv' instead of 'nonce'
+    cipher = ChaCha20.new(key=key, nonce=iv)  # uses iv instead of nonce
     ciphertext = cipher.encrypt(message)
     return ciphertext
 ```
@@ -383,13 +371,11 @@ int SSL_select_next_proto(unsigned char **out, unsigned char *outlen,
                           const unsigned char *in, unsigned int inlen,
                           const unsigned char *client, unsigned int clientlen)
 {
-    /* ... */
     if (clientlen == 0) {
         /* no length check: client is empty -> using client[0] below is OOB */
     }
     /* Copy one protocol name from client into temporary buffer of size [255] */
     memcpy(tmp, client, client[0] + 1); 
-    /* … */
 }
 ```
 
@@ -471,23 +457,23 @@ Static Analysis Pre-Screen: Run a static code scanner, e.g. Fortify or Sonarqube
 
 ### 3.4 Scope of Inspection
 We narrowed inspection to:
-#### Authentication & Session Management
+#### Authentication and Session Management
 
-This part is mostly about how logins work and how sessions are kept secure. It includes files like `authenticate.*` and `SOGoSession*`. I looked at how passwords are handled, how session cookies are set up (like whether they're secure and have the right flags), and how tokens expire after some time.
+This part is mostly about how logins work and how sessions are kept secure. It includes files like `authenticate.*` and `SOGoSession*`. We looked at how passwords are handled, how session cookies are set up (like whether they're secure and have the right flags), and how tokens expire after some time.
 
-#### HTTP Request Handling / Routing
+#### HTTP Request Handling/Routing
 
-Here, I focused on how SOGo processes incoming web requests. The main files are in `router.*` and the `WebDAV` folder. I checked how inputs are decoded, how paths are cleaned up (so attackers can’t trick the server), and how headers are read and processed.
+Here, we focused on how SOGo processes incoming web requests. The main files are in `router.*` and the `WebDAV` folder. We checked how inputs are decoded, how paths are cleaned up (so attackers can’t trick the server), and how headers are read and processed.
 
 #### Data Persistence Layers
 
-This is all about how SOGo interacts with databases and mail storage. The relevant code is in `SQLStore/*` and `MailStore/*`. I looked at how SQL queries are built, whether values are properly bound to prevent injections, and how data is formatted when stored (like in JSON or XML).
+This is all about how SOGo interacts with databases and mail storage. The relevant code is in `SQLStore/*` and `MailStore/*`. We looked at how SQL queries are built, whether values are properly bound to prevent injections, and how data is formatted when stored (like in JSON or XML).
 
 #### Synchronization Endpoints
 
-This section handles mobile and calendar syncing, like with phones or calendar apps. It includes folders like `ActiveSync/*` and `CalDAV/*`. I paid attention to how sync requests are parsed and how file attachments are managed securely.
+This section handles mobile and calendar syncing, like with phones or calendar apps. It includes folders like `ActiveSync/*` and `CalDAV/*`. We paid attention to how sync requests are parsed and how file attachments are managed securely.
 
-#### Configuration & Access Controls
+#### Configuration and Access Controls
 
 Lastly, I looked at how SOGo handles its configuration and permissions. This includes the `Config/*` and `ACL/*` folders. I focused on how access control rules are enforced and how config files are parsed to make sure they can’t be misused.
 
@@ -500,10 +486,10 @@ Lastly, I looked at how SOGo handles its configuration and permissions. This inc
 
 ### Challenge 1 (Web)
 
-We continued with the next Web challenge on BCACTF, which presented us with a form at:
+We continued with the next Web challenge on BCACTF, which presented us with a form:
 
 ```
-http://challs.bcactf.com:47861
+https://play.bcactf.com/challenges#What?-49
 ```
 
 The form asked for two input strings and compared their MD5 hashes on the backend. We were also provided with the source code of `what.php`, which revealed the logic behind the challenge.
@@ -544,7 +530,7 @@ For the next Web challenge on BCACTF, we were given the hint:
 And a link to the challenge:
 
 ```
-http://challs.bcactf.com:28973
+https://play.bcactf.com/challenges#Source%20Under%20Control-50
 ```
 
 When we visited the site, the only visible content was a simple HTML page with:
@@ -591,9 +577,9 @@ In the first commit, we found the flag in the html file:
 
 
 ### Cahllenge 3 (Web)
-The next challenge was for us to log in to this website:
+The next challenge was for us to log in to the website in :
 ```
-http://challs.bcactf.com:30147/
+https://play.bcactf.com/challenges#Neuroflux%20Dynamics-62
 ```
  where passwords were stored as salted SHA-1 but the login kept failing. Here’s how we solved it:
 
