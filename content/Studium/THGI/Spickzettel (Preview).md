@@ -6,4 +6,4 @@ tags:
   - Informatik
 date: 2025-02-04
 ---
-![[Spickzettel.svg]]
+![[Studium/THGI/Spickzettel.svg]]

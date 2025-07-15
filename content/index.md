@@ -5,7 +5,7 @@ description: Just my little corner of the internet where I drop notes, thoughts,
 cssclasses:
   - untouchable
 ---
-![[Banner.png]]
+![[Banner.svg]]
 
-- [[Studium/index|index]]
-- [Tags](tags/)
+[![[Studiumsunterlagen.svg]]](Studium/index)
+[![[Tags.svg]]](tags/)
