@@ -14,11 +14,11 @@ img[alt~="center"] {
 }
 
 // Image zoom
-img:not(.Logo):not(.untouchable) {
+img:not(.Logo):not([alt="untouchable"]) {
   cursor: zoom-in;
 }
 
-img:active:not(.Logo):not(.untouchable) {
+img:active:not(.Logo):not([alt="untouchable"]) {
   cursor: zoom-out;
   display: block;
   z-index: 100;

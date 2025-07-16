@@ -1,11 +1,13 @@
 ---
 title: 🌳 Mohammed's Second Brain🧠
 date: 2024-07-16
-description: Just my little corner of the internet where I drop notes, thoughts, and projects while studying computer science. It’s messy, it’s growing, and it helps me make sense of what I’m learning. Kind of like my digital brain.
+description: This website is where I document my computer science journey, gathering notes, testing ideas, and sharing prototypes. It’s a flexible space that grows with each insight and helps me keep my learning on track.
 cssclasses:
   - untouchable
 ---
 ![[Banner.svg]]
 
-[![[Studiumsunterlagen.svg]]](Studium/index)
-[![[Tags.svg]]](tags/)
+
+[![[Studiumsunterlagen.svg|untouchable]]](Studium/index)
+[![[Tags.svg|untouchable]]](tags/)
+
