@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2024-07-20","modified":"2025-09-12T21:50:42.976+02:00","published":"2024-07-20","tags":["Probeklausur","Programmiertechnik","Java","Semester-2","Informatik"],"cssclasses":"purpleRed wideTable leftAlign"}
+{"publish":true,"created":"2024-07-20","modified":"2025-09-12T22:05:54.563+02:00","published":"2024-07-20","tags":["Probeklausur","Programmiertechnik","Java","Semester-2","Informatik"],"cssclasses":"","date":"2024-07-20"}
 ---
 
 ## Aufgabe 1
