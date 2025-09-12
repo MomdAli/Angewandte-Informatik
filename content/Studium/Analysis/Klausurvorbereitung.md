@@ -1,12 +1,7 @@
 ---
-date: 2024-07-17
-tags:
-  - Probeklausur
-  - Zusammenfassung
-  - Mathematik
-  - Semester-2
-publish: true
+{"publish":true,"tags":["Probeklausur","Zusammenfassung","Mathematik","Semester-2"],"cssclasses":""}
 ---
+
 
 ## <font color="#92d050">Folgen</font>
 
@@ -35,7 +30,7 @@ $$
 | ---------------- | --------------------- | --------------- |
 | $Potenzfunktion$ | $Exponentialfunktion$ | $Sinusfunktion$ |
 
-![[funktionen.png|450|]]
+![[Assets/funktionen.png]]
 
 | Schreibweise                       | Definition/Sprechweise                                                                                  |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -86,7 +81,7 @@ $$
 >>
 >>\end{aligned}
 >>$$
->>![[Stetige_Funktion.png]]
+>>![[Assets/Stetige_Funktion.png]]
 
 
 
@@ -107,7 +102,7 @@ $$
 >> $$
 >> \lim_{x\nearrow 1}\frac{(x+1)}{(x-1)^3}=-\infty
 >> $$
->> ![[Pollstelle.png|200|center]]
+>> ![[Assets/Pollstelle.png|center]]
 
 
 
@@ -115,7 +110,7 @@ $$
 
 ## <font color="#fac08f">Ableitungen</font>
 
-![[Ableitungen.png|700]]
+![[Assets/Ableitungen.png|700]]
 
 ### <font color="#b2a2c7">Newton-Verfahren</font>
 > [!IMPORTANT] Wichtig
@@ -125,7 +120,7 @@ $$
 > \large x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}
 > $$
 
-![[Newton_Verfahren_Ex.png]]![[NewtonIteration_Ani.gif]]
+![[Assets/Newton_Verfahren_Ex.png]]![[Assets/NewtonIteration_Ani.gif]]
 
 ### <font color="#b2a2c7">Taylorpolynom</font>
 
@@ -140,7 +135,7 @@ $$
 
 ![](https://www.youtube.com/watch?v=urPIxvNBXF0)
 
-![[n-2-taylor.gif]]
+![[Assets/n-2-taylor.gif]]
 ## <font color="#938953">Multivariaten Funktionen</font>
 
 > [!IMPORTANT] Wichtig
@@ -178,7 +173,7 @@ $$
 
 ## <font color="#245bdb">Integration</font>
 
-![[Intergrale.png]]
+![[Assets/Intergrale.png]]
 
 > [!IMPORTANT] 
 > Regeln der unbestimmten Integration:
