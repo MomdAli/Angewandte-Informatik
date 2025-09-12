@@ -1,0 +1,9 @@
+---
+{"publish":true,"draft":true,"created":"2024-07-20T10:57:31.913+02:00","modified":"2025-09-12T21:25:02.600+02:00","published":"2025-09-12T21:25:02.600+02:00","tags":["excalidraw","Informatik"],"cssclasses":""}
+---
+
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+
+# Excalidraw Data
+## Text Elements
