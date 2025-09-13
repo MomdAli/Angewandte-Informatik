@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Page Load Times","created":"2025-06-02","modified":"2025-09-12T21:25:02.740+02:00","published":"2025-06-02","tags":["Rechnernetze","Theorieteil","Semester-5","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Page Load Times","created":"2025-06-02","modified":"2025-09-13T08:47:41.742+02:00","published":"2025-06-02","tags":["Rechnernetze","Theorieteil","Semester-5","Informatik"],"cssclasses":"","date":"2025-06-02"}
 ---
 
 | Begriff / Abkürzung         | Bedeutung                  | Erklärung                                                                                                                                                                                                 |
