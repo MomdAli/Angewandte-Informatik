@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Homework Chapter 7","created":"2024-10-13","modified":"2025-09-12T21:25:01.374+02:00","published":"2024-10-13","tags":["Betriebssysteme","Homework","Semester-3","Python","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Homework Chapter 7","tags":["Betriebssysteme","Homework","Semester-3","Python","Informatik"],"cssclasses":""}
 ---
 
 This program, scheduler.py, allows you to see how different schedulers perform under [[Studium/Betriebssysteme/OSTEP/4_Scheduling]] metrics such as response time, turnaround time, and total wait time. See the README for details.

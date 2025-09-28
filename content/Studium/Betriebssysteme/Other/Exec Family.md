@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Exec","created":"2024-10-07","modified":"2025-09-12T21:25:01.490+02:00","published":"2024-10-07","tags":["Betriebssysteme","C","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Exec","tags":["Betriebssysteme","C","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 ## execl()

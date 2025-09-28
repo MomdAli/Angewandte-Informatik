@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"Prozess_API ProzessAPI ProcessAPI","title":"2. Process API","created":"2024-10-01","modified":"2025-09-12T21:25:02.198+02:00","published":"2024-10-01","tags":["Betriebssysteme","Semester-3","C","Informatik"],"cssclasses":""}
+{"publish":true,"aliases":"Prozess_API ProzessAPI ProcessAPI","title":"2. Process API","tags":["Betriebssysteme","Semester-3","C","Informatik"],"cssclasses":""}
 ---
 
 

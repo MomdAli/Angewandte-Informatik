@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"4. Scheduling","created":"2024-10-13","modified":"2025-09-12T21:25:02.206+02:00","published":"2024-10-13","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"4. Scheduling","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 

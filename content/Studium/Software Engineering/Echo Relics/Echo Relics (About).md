@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Echo Relics (About)","created":"2024-10-14","modified":"2025-09-12T21:25:02.885+02:00","published":"2024-10-14","tags":["Software-Engineering","Scala","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Echo Relics (About)","tags":["Software-Engineering","Scala","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 ## Concept:

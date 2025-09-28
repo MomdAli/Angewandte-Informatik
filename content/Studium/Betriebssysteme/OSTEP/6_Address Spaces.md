@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"6. Address Spaces","created":"2024-10-21","modified":"2025-09-12T21:25:02.220+02:00","published":"2024-10-21","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"6. Address Spaces","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 

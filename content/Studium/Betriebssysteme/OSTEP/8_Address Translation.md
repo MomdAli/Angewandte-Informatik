@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"8. Address Translation","created":"2024-11-02","modified":"2025-09-12T21:25:02.238+02:00","published":"2024-11-02","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"8. Address Translation","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 > [!Info]

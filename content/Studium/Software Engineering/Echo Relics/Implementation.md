@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Implementation","created":"2024-10-14","modified":"2025-09-12T21:25:02.891+02:00","published":"2024-10-14","tags":["Software-Engineering","Scala","UML","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Implementation","tags":["Software-Engineering","Scala","UML","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 ### **Main Components of the Diagram:**

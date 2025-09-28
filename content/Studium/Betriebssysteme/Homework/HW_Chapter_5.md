@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"HW5 Homework5","title":"Homework Chapter 5","created":"2024-10-03","modified":"2025-09-12T21:25:01.362+02:00","published":"2024-10-03","tags":["Betriebssysteme","Homework","Python","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"aliases":"HW5 Homework5","title":"Homework Chapter 5","tags":["Betriebssysteme","Homework","Python","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 ## <font color="#71e9ac">Simulation</font>

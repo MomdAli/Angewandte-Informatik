@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"Prozesse process Prozess","title":"1. Process","created":"2024-10-01","modified":"2025-09-12T21:25:02.146+02:00","published":"2024-10-01","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"aliases":"Prozesse process Prozess","title":"1. Process","tags":["Betriebssysteme","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 

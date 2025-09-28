@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"3. Limited Direct Execution","created":"2024-10-12","modified":"2025-09-12T21:25:02.193+02:00","published":"2024-10-12","tags":["Betriebssysteme","C","Assembly","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"3. Limited Direct Execution","tags":["Betriebssysteme","C","Assembly","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 

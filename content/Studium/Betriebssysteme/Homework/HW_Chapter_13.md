@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Homework Chapter 13","created":"2024-10-21","modified":"2025-09-12T21:25:01.294+02:00","published":"2024-10-21","tags":["Betriebssysteme","Semester-3","Informatik","Linux","Homework"],"cssclasses":""}
+{"publish":true,"title":"Homework Chapter 13","tags":["Betriebssysteme","Semester-3","Informatik","Linux","Homework"],"cssclasses":""}
 ---
 
 

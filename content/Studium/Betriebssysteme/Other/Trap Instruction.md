@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"trap traps trap-instruction","title":"Trap Instruction","created":"2024-10-13","modified":"2025-09-12T21:25:01.509+02:00","published":"2024-10-13","tags":["Betriebssysteme","Assembly","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"aliases":"trap traps trap-instruction","title":"Trap Instruction","tags":["Betriebssysteme","Assembly","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 The **trap instruction** is a key mechanism that enables the operating system (OS) to handle privileged operations securely and efficiently. It is fundamental in allowing the OS to virtualize the CPU and manage hardware resources while keeping control over user processes. Here's a detailed breakdown of what the **trap instruction** is, how it works, and why it's important:

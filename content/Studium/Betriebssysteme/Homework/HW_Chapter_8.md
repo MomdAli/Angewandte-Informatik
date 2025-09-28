@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Homework Chapter 8","created":"2024-10-13","modified":"2025-09-12T21:25:01.383+02:00","published":"2024-10-13","tags":["Betriebssysteme","Homework","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Homework Chapter 8","tags":["Betriebssysteme","Homework","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 This program, `mlfq.py`, allows you to see how the [[Studium/Betriebssysteme/OSTEP/5_MLFQ\|Multi-Level Feedback Queue]] scheduler presented in this chapter behaves. See the README for details.

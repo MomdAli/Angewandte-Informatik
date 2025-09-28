@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Drehspulinstrument","created":"2024-10-23","modified":"2025-09-12T21:25:02.957+02:00","published":"2024-10-23","tags":["SSS","Semester-3","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Drehspulinstrument","tags":["SSS","Semester-3","Informatik"],"cssclasses":""}
 ---
 
 

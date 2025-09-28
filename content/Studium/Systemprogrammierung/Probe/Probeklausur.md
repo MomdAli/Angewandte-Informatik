@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"Probeklausur-Systemprogrammierung Probe Probe-Sysprog Systemprogrammierung-Probeklausur","title":"🧑🏼‍💻 Probeklausur","created":"2024-07-23T11:54:00.352+02:00","modified":"2025-09-12T21:25:03.060+02:00","published":"2025-09-12T21:25:03.060+02:00","tags":["Probeklausur","Systemprogrammierung","CPP","C","Semester-2","Informatik"],"cssclasses":""}
+{"publish":true,"aliases":"Probeklausur-Systemprogrammierung Probe Probe-Sysprog Systemprogrammierung-Probeklausur","title":"🧑🏼‍💻 Probeklausur","tags":["Probeklausur","Systemprogrammierung","CPP","C","Semester-2","Informatik"],"cssclasses":""}
 ---
 
 [[SYPR-Probeklausur.pdf|Link zu Probeklausur]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Sensoren und Messung","created":"2024-10-22","modified":"2025-09-12T21:25:03.029+02:00","published":"2024-10-22","tags":["SSS","Informatik","Semester-3"],"cssclasses":""}
+{"publish":true,"title":"Sensoren und Messung","tags":["SSS","Informatik","Semester-3"],"cssclasses":""}
 ---
 
 

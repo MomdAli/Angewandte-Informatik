@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"1. What is Security?","created":"2025-07-16T12:31:05.736+02:00","modified":"2025-09-12T21:25:02.294+02:00","published":"2025-09-12T21:25:02.294+02:00","tags":["IT-Sicherheit","Software-Security","Semester-5","Informatik"],"cssclasses":""}
+{"publish":true,"title":"1. What is Security?","tags":["IT-Sicherheit","Software-Security","Semester-5","Informatik"],"cssclasses":""}
 ---
 
 ## Core definitions and terminology
