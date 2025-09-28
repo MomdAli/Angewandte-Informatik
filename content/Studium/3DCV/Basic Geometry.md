@@ -1,10 +1,11 @@
 ---
-{"publish":true,"title":"Basic Geometry","created":"2025-07-18","modified":"2025-09-12T21:25:00.772+02:00","published":"2025-07-18","tags":["3DCV","Semester-5","Informatik"],"cssclasses":""}
+{"publish":true,"title":"Basic Geometry","tags":["3DCV","Semester-5","Informatik"],"cssclasses":""}
 ---
 
 ## What is a Cartesian coordinate system?
 
 A Cartesian coordinate system is a coordinate system that specifies each point uniquely in a plane by a pair of numerical coordinates, which are the signed distances to the point from two fixed perpendicular oriented lines, measured in the same unit of length. In three-dimensional space, a Cartesian coordinate system uses three axes (x, y, z) to define the position of points.
+
 
 ## How are translations, rotations, and scalings represented in 2D and 3D?
 
