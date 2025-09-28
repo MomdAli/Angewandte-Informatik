@@ -7,6 +7,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-22
+publish: true
 ---
 The **Flyweight** design pattern is a structural pattern that aims to minimize memory usage by sharing as much data as possible with similar objects. It is particularly useful when dealing with a large number of objects that share common properties, allowing for efficient resource utilization.
 

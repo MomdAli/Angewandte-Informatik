@@ -7,6 +7,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-22
+publish: true
 ---
 The **Bridge** design pattern is a structural pattern that decouples an abstraction from its implementation, allowing the two to vary independently. It is particularly useful when you want to avoid a permanent binding between an abstraction and its implementation, enabling flexibility and extensibility.
 

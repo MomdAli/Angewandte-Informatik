@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date: 2025-01-29
+publish: true
 ---
 ## **1. Definition**
 A **Binary Search Tree (BST)** is a hierarchical data structure in which each node has at most **two children**. The **left child** contains only values smaller than the parent, and the **right child** contains only values larger than the parent. This structure enables efficient **search, insertion, and deletion** operations.

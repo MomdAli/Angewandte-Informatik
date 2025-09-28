@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-12-08
+publish: true
 ---
 > [!info] 
 > This is a summary of the 28th chapter of the book "Operating System: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. It provides an in-depth explanation of locks, their importance in concurrent programming, different types of locks, and mechanisms to ensure synchronization and fairness.

@@ -7,6 +7,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-22
+publish: true
 ---
 The **Proxy** design pattern is a structural pattern that provides a surrogate or placeholder for another object to control access to it. This pattern is useful for implementing lazy initialization, access control, logging, and more.
 

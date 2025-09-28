@@ -6,5 +6,6 @@ tags:
   - Informatik
   - Probeklausur
 date: 2025-02-01
+publish: true
 ---
 ![[Klausur-WS19.svg]]

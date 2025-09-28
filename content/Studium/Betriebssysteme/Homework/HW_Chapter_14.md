@@ -6,8 +6,7 @@ tags:
   - Informatik
   - Homework
 date: 2024-10-22
-aliases: 
-cssclasses:
+publish: true
 ---
 
 ## Question 1:

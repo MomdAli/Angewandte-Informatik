@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-01-11
+publish: true
 ---
 > [!info] 
 > This is a summary of Chapter 32 from the book _Operating System: Three Easy Pieces_ by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. This chapter examines **Common Concurrency Problems**, including types of concurrency bugs such as **non-deadlock bugs** (atomicity and order violations) and **deadlock bugs**, their causes, and methods to prevent or handle them.

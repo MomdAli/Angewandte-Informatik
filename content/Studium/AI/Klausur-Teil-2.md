@@ -5,6 +5,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-10
+publish: true
 ---
 ## Aufgabe 1-1
 $$

@@ -6,6 +6,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-16
+publish: true
 ---
 ## What is OS hardening?
 OS hardening is the process of securing an operating system by reducing its attack surface, removing or disabling unneeded features, tightening configurations, and adding protective controls so that potential vulnerabilities cannot be exploited. Think of it as stripping down the OS to only what's necessary for its intended role, then "bolting on" extra defences where needed.

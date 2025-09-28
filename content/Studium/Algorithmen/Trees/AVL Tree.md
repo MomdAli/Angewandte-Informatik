@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date:
+publish: true
 ---
 ## **1. Definition**
 An **AVL Tree** is a **self-balancing binary search tree (BST)** where the height difference (balance factor) between left and right subtrees is at most **1** for every node. This balance ensures that search, insertion, and deletion operations remain efficient.

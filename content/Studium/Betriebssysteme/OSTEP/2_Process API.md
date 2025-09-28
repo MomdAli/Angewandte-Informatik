@@ -10,7 +10,7 @@ aliases:
   - Prozess_API
   - ProzessAPI
   - ProcessAPI
-cssclasses:
+publish: true
 ---
 
 > [!Info]

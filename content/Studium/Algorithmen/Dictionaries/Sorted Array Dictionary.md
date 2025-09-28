@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-04
+publish: true
 ---
 A **Sorted Array Dictionary** is a data structure that uses a sorted array to maintain key-value pairs in order. This approach allows efficient binary search but can have costly insertion and deletion operations due to the need for shifting elements.
 

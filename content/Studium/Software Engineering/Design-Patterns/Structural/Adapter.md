@@ -7,6 +7,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-22
+publish: true
 ---
 The **Adapter** design pattern is a structural design pattern that acts as a bridge between two incompatible interfaces. It enables classes with incompatible interfaces to work together by converting one interface into another that a client expects.
 

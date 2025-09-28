@@ -12,6 +12,7 @@ aliases:
   - cheatsheet
   - makefile_cheatsheet
   - makefile-cheatsheet
+publish: true
 ---
 ### Var assignment
 ```makefile

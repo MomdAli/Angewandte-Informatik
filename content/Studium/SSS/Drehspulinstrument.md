@@ -5,8 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-10-23
-aliases: 
-cssclasses:
+publish: true
 ---
 
 Das **Drehspulinstrument** ist eines der bekanntesten analogen Messgeräte und wird hauptsächlich zur Messung von Gleichstrom verwendet. Es basiert auf dem Prinzip der elektromagnetischen Induktion, wo eine stromdurchflossene Drahtspule in einem Magnetfeld bewegt wird. Hier ist eine detailliertere Beschreibung:

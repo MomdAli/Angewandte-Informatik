@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date: 2025-01-29
+publish: true
 ---
 ## **1. Definition**
 A **B-Tree** is a **self-balancing search tree** designed for systems that read and write **large blocks of data**. It is **optimized for disk storage** and is commonly used in **databases and file systems**.

@@ -5,6 +5,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-11
+publish: true
 ---
 1. Economy of mechanism: Keep the design as simple and small as possible.
 2. Fail-safe defaults: Base access decisions on permission rather than exclusion.

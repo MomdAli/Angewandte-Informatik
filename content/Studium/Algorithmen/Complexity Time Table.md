@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-02-02
+publish: true
 ---
 ### **Time Complexity of Data Structures**
 | **Data Structure**                | **Search**    | **Insertion** | **Deletion**  | **Delete Max**             | **Delete Min**             |

@@ -14,6 +14,7 @@ aliases:
   - prog_klausur
   - prog_klausuren
   - prog-klausur
+publish: true
 ---
 - [[Klausur SS 18|Klausur SS 2018]]
 - [[Klausur WS 18|Klausur WS 2018]]

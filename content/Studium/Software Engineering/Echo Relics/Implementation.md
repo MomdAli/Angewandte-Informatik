@@ -7,8 +7,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-10-14
-aliases: 
-cssclasses: 
+publish: true
 ---
 ### **Main Components of the Diagram:**
 ### Model

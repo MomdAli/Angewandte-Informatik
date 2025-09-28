@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-12-03
+publish: true
 ---
 
 > [!info]

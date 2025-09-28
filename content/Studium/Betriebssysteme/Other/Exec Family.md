@@ -6,8 +6,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-10-07
-aliases: 
-cssclasses: 
+publish: true
 ---
 ## execl()
 **execl()** receives the location of the executable file as its first argument. The next arguments will be available to the file when it’s executed. The last argument has to be _NULL_:<br>

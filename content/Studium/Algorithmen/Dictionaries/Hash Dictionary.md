@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-04
+publish: true
 ---
 A **Hash Dictionary** is a data structure that uses hashing to store key-value pairs. Hashing enables constant-time complexity for search, insertion, and deletion operations on average, making hash dictionaries ideal for scenarios with large datasets and frequent updates.
 

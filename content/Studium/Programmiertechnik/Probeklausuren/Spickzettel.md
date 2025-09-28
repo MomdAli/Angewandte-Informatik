@@ -6,6 +6,7 @@ tags:
   - Java
   - Semester-2
   - Informatik
+publish: true
 ---
 Java Stream API
 

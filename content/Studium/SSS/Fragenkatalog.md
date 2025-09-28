@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-02-09
+publish: true
 ---
 > [!question]- Was ist der Unterschied zwischen einem Sensor und einem Messgerät?
 > Messgeräte vergleichen zusätzlich den Ausgangswert des Sensors mit einer Bezugsgröße.

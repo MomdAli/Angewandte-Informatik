@@ -7,8 +7,7 @@ tags:
   - Python
   - Informatik
 date: 2024-10-13
-aliases: 
-cssclasses: 
+publish: true
 ---
 This program, scheduler.py, allows you to see how different schedulers perform under [[4_Scheduling]] metrics such as response time, turnaround time, and total wait time. See the README for details.
 ## Question 1:

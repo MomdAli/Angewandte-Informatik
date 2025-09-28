@@ -5,6 +5,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-19
+publish: true
 ---
 ## Taxonomy of Acquisition Methods
 |Axis|Categories|
@@ -68,7 +69,7 @@ Larger disparity $p'_{x} \Rightarrow z$ (closer object).
 ## Error Propagation
 Depth accuracy degrades with distance $z$ and depends on two ratios
 $$
-\Large
+\large
 \text{image scale } m_{b} = \frac{z}{f}, \quad \text{base ratio } m_{y} = \frac{b}{z} 
 $$
 Roughly, $\large \sigma_{z} \propto \frac{z^{2}}{f\,b}\sigma_p:$ errors grow quadratically with distance.  
@@ -86,14 +87,14 @@ $$
 \large
 z \;=\; b\,\frac{\sin\varphi_1\,\sin\varphi_2}{\sin(\pi - \varphi_1 - \varphi_2)},
 $$
-	where $b = |O_1O_2|$ is the fixed baseline.
+where $b = |O_1O_2|$ is the fixed baseline.
 - Offers micrometre–millimetre accuracy over moderate ranges, but requires very precise calibration of both camera and projector.
 
 ## Calibration and Sensor Localization
 All active and passive methods rely on knowing the **intrinsic** (focal length, principal point, distortion) and **extrinsic** (rotation $R$, translation $N$) parameters of the sensor(s). Calibration typically uses a calibration object with known 3D “ground truth” points whose image coordinates are measured, yielding a linear or non-linear system to solve for the parameters
 
 ## Exam Questions to Prepare
-- - **Classify** different 3D acquisition methods by tactile/non-tactile, active/passive, optical/non-optical.
+- **Classify** different 3D acquisition methods by tactile/non-tactile, active/passive, optical/non-optical.
 - Define **disparity** and **parallax**, and explain why vertical disparity vanishes in the normal stereo case.
 - **Derive** the normal-case stereo reconstruction equations and discuss error propagation ($\sigma_z$).
 - Explain the **principle of ToF** and derive $d=c(t_1-t_0)/2$.

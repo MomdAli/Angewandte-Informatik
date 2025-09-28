@@ -7,6 +7,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-22
+publish: true
 ---
 The **Composite** design pattern is a structural pattern that allows you to compose objects into tree-like structures to represent part-whole hierarchies. This pattern enables clients to treat individual objects and compositions of objects uniformly, simplifying the management of complex structures.
 

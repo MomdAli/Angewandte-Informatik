@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date: 2025-01-31
+publish: true
 ---
 **Depth-First Search (DFS)** is a **graph traversal algorithm** that explores as far as possible along a branch before backtracking. It is widely used in **pathfinding, cycle detection, topological sorting**, and solving **connectivity problems**.
 

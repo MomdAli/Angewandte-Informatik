@@ -6,6 +6,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-16
+publish: true
 ---
 ## Definition and importance
 **Privacy** is the right of individuals to control how their personal information is collected, used and shared. It depends on:

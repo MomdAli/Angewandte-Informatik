@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Homework
 date: 2024-12-03
+publish: true
 ---
 ## Questions
 

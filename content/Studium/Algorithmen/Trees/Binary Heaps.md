@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date: 2025-01-31
+publish: true
 ---
 A **Binary Heap** is a **complete binary tree** that satisfies the **heap property**:
 

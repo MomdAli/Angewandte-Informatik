@@ -6,8 +6,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-03
-aliases: 
-cssclasses:
+publish: true
 ---
 ## Questions
 Using the `relocation.py` script, here are the answers for each problem:

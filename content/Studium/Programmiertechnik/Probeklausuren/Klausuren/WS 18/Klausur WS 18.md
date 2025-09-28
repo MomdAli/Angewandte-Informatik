@@ -6,6 +6,7 @@ tags:
   - Java
   - Semester-2
   - Informatik
+publish: true
 ---
 ## <font color="#71e9ac">Aufgabe 6</font>
 

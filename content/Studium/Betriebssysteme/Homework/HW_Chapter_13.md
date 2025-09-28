@@ -7,8 +7,7 @@ tags:
   - Linux
   - Homework
 date: 2024-10-21
-aliases: 
-cssclasses:
+publish: true
 ---
 
 ## Question 1:

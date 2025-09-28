@@ -5,7 +5,7 @@ tags:
   - Software-Security
   - Semester-5
   - Informatik
-date:
+publish: true
 ---
 ## Core definitions and terminology
 - **Security** is a non-functional property concerned with preventing *bad events* caused with malicious intent. 

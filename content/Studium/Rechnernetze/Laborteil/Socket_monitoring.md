@@ -6,6 +6,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-04-29
+publish: true
 ---
 ## 2 Monitoring von Sockets
 #### 2.1) Wie viele Sockets sind insgesamt geöffnet?

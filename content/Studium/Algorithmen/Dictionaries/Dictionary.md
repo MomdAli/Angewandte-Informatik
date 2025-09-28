@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-04
+publish: true
 ---
 
 The `Dictionary` interface provided in the Java package `dictionary` defines a custom data structure that stores key-value pairs and offers basic dictionary functionality, such as insertion, search, and removal of entries. This interface uses Java Generics, allowing the dictionary to store keys and values of any specified type.

@@ -13,5 +13,6 @@ aliases:
   - constructor
   - cpp_constructor
   - cpp_constructors
+publish: true
 ---
 ![[Constructors.excalidraw.svg]]

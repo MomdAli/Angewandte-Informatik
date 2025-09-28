@@ -7,6 +7,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-16
+publish: true
 ---
 ![[WS-21-IT-Security.svg]]
 ![[WS-21-IT-Security.svg]]

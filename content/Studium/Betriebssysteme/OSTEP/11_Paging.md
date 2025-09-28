@@ -5,6 +5,7 @@ tags:
   - Betriebssysteme
   - Semester-3
   - Informatik
+publish: true
 ---
 
 > [!Info]

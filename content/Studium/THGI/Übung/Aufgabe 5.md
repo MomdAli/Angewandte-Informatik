@@ -5,5 +5,6 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-20
+publish: true
 ---
 ![[Aufgabe5.svg]]

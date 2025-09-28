@@ -5,6 +5,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-19
+publish: true
 ---
 ## Overview 
 In a 3D reconstruction pipeline, **data representation** determines how we store and manipulate both the shape of objects and any associated attributes (color, normals, texture coordinates, etc.). At each stage—acquisition, preprocessing, reconstruction, and rendering—the chosen representation affects efficiency, precision, and the types of algorithms we can apply.

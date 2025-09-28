@@ -5,6 +5,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-05-04
+publish: true
 ---
 ## Beantworten Sie folgende Fragen:
 

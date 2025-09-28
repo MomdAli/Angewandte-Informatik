@@ -2,7 +2,7 @@
 title: Studium
 tags:
   - Informatik
-date:
+publish: true
 ---
 > [!faq]
 > Hier finden sich alle Informationen zum Studium im Fach Informatik an der **HTWG Konstanz**.  

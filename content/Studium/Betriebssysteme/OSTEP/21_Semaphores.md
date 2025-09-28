@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-01-11
+publish: true
 ---
 > [!info]
 > This is a summary of Chapter 31 from the book *Operating System: Three Easy Pieces* by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. This chapter discusses **Semaphores**, their functionalities, and their applications in solving various concurrency problems like **locks**, **thread synchronization**, **bounded buffer**, and **reader-writer locks**.

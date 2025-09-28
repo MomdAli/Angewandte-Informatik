@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-02-03
+publish: true
 ---
 > [!Info]
 > Die **Potenzmengenkonstruktion** ist ein Algorithmus, um einen **nichtdeterministischen endlichen Automaten (NEA)** in einen **deterministischen endlichen Automaten (DEA)** zu überführen. Sie stellt sicher, dass jeder nichtdeterministische Automat durch einen äquivalenten deterministischen Automaten simuliert werden kann.

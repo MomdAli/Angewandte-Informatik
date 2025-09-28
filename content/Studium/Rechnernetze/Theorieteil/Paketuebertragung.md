@@ -5,7 +5,10 @@ tags:
   - Theorieteil
   - Semester-5
   - Informatik
-date: 2025-04-15
+created: 2025-04-15
+modified: 2025-09-12T21:25:02.748+02:00
+published: 2025-04-15
+publish: true
 ---
 ### Was ist das?
 

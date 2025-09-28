@@ -5,6 +5,7 @@ tags:
   - THGI
   - Semester-3
   - Informatik
+publish: true
 ---
 ## Basic Characters
 

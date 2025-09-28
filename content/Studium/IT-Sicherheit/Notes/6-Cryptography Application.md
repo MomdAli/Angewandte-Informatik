@@ -6,6 +6,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-16
+publish: true
 ---
 ## Definitions and importance
 Cryptography is the art and science of protecting data, whether in transit over an insecure channel or at rest on untrusted media, by ensuring [[1-Security#Traditional Security Goals (CIA)|CIA]].

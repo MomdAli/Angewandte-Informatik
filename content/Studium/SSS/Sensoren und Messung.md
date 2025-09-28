@@ -5,8 +5,7 @@ tags:
   - Informatik
   - Semester-3
 date: 2024-10-22
-aliases: 
-cssclasses:
+publish: true
 ---
 
 ## Sensoren

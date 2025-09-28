@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date: 2025-01-29
+publish: true
 ---
 > **Definition**:  
 > Sequential Search (also called *Linear Search*) is a basic algorithm used to find a specific element in a collection by checking each element one by one.  

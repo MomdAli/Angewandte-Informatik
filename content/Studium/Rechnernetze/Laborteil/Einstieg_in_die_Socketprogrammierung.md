@@ -6,6 +6,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-05-12
+publish: true
 ---
 ## Rechenserver
 

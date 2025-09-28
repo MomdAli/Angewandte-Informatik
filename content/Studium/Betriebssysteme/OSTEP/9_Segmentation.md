@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-03
+publish: true
 ---
 > [!Info]
 > This is a summary of the 16th chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter introduces segmentation, a memory management technique that divides a program’s address space into segments like code, stack, and heap. Segmentation allows each segment to be placed separately in physical memory, reducing wasted space and providing finer control over memory access and sharing. The document explains how segmentation works, its advantages and limitations, and how modern systems use segmentation alongside paging for efficient memory management.

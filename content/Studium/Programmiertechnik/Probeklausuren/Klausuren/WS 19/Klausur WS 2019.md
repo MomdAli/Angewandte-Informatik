@@ -6,12 +6,7 @@ tags:
   - Java
   - Semester-2
   - Informatik
-cssclasses:
-  - purpleRed
-  - wideTable
-  - leftAlign
-excalidraw-autoexport: true
-excalidraw-export-dark: true
+publish: true
 ---
 ## Aufgabe 1
 ![[Aufagbe 1.excalidraw.svg]]

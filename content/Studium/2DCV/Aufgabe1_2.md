@@ -4,6 +4,7 @@ tags:
   - 2DCV
   - Semester-5
   - Informatik
+publish: true
 ---
 
 ## Bild einlesen und anzeigen mithilfe von Scikit-Image

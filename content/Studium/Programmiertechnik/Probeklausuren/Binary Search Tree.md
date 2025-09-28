@@ -7,6 +7,7 @@ tags:
   - Informatik
 enableToc: false
 date: 2024-07-20
+publish: true
 ---
 ## WS 18 Aufgabe 5
 **a)**

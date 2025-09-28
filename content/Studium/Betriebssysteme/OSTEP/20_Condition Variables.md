@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-12-10
+publish: true
 ---
 > [!info]
 > This is a summary of the 30th chapter of the book "Operating System: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. This chapter focuses on **Condition Variables**, their usage in concurrent programming, and their application in solving problems like `join`, `bounded buffer`, and `broadcast`.

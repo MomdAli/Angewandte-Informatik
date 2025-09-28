@@ -9,6 +9,7 @@ date: 2025-04-13
 cssclasses:
   - noBorder
   - noMargin
+publish: true
 ---
 ## Aufgabe 2.1)
 

@@ -6,6 +6,7 @@ tags:
   - Semester-5
   - Informatik
 date: 2025-07-16
+publish: true
 ---
 ## Definitions and importance
 Trusted computing embeds a hardware-based root of trust into a system so that software integrity and confidentiality can be enforced even if hight-level software is compromised. The cornerstone is the **Trusted Platform Module (TPM)**, a dedicated security chip (or integrated microcontroller) that generates, stores and uses cryptographic keys in a tamper-evident environment. By anchoring trust in hardware, we can ensure that only approved code runs at boot and that sensitive data stays bound to a known, secure configuration.

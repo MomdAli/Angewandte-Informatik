@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Software-Engineering
 date: 2024-11-23
+publish: true
 ---
 > [!info]- Cheatsheet
 > ![[Cheat-Sheet-1.png]]

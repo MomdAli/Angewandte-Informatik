@@ -5,8 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-02
-aliases: 
-cssclasses:
+publish: true
 ---
 > [!Info]
 > This is a summary of the 15th chapter of the book "Operating Systems: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter introduces address translation, a key concept in virtualizing memory to provide each process with an isolated address space. Address translation uses hardware to map virtual addresses to physical addresses, ensuring efficient memory use and protection between processes.

@@ -1,5 +1,6 @@
 ---
-title: 
-tags: 
+title:
+tags:
 date:
+publish:
 ---

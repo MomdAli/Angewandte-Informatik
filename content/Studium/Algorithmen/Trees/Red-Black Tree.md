@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date: 2025-01-29
+publish: true
 ---
 # 📌 2-3-4 Tree and Red-Black Tree  
 

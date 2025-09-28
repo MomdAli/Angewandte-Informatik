@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-01-29
+publish: true
 ---
 > [!info]
 > This is a summary of Chapter 38 from the book *Operating System: Three Easy Pieces* by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. This chapter focuses on **Redundant Arrays of Inexpensive Disks (RAID)**, explaining different RAID levels, their advantages, trade-offs, and performance characteristics.

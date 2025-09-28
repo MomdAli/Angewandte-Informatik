@@ -6,8 +6,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-10-13
-aliases: 
-cssclasses: 
+publish: true
 ---
 This program, `mlfq.py`, allows you to see how the [[5_MLFQ|Multi-Level Feedback Queue]] scheduler presented in this chapter behaves. See the README for details.
 ## Question 1:

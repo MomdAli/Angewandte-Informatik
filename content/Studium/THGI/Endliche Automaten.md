@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-02-03
+publish: true
 ---
 ## Definition
 Ein **endlicher Automat** ist ein mathematisches Modell für Berechnungen mit einer **endlichen Anzahl von Zuständen**. Er verarbeitet eine **Eingabezeichenkette** und wechselt zwischen **Zuständen** gemäß einer definierten **Übergangsfunktion**.

@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-02-03
+publish: true
 ---
 ## Definition
 Eine **reguläre Sprache** ist eine formale Sprache, die von einem **endlichen Automaten** erkannt wird. Sie können mit **regulären Ausdrücken** beschrieben und durch **reguläre Grammatiken** erzeugt werden.

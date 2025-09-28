@@ -7,6 +7,7 @@ tags:
   - Informatik
   - Scala
 date: 2024-11-22
+publish: true
 ---
 In software development, the **Simple Factory** pattern centralizes object creation, allowing clients to request objects without needing to know the specifics of their instantiation. This approach promotes code maintainability and scalability by decoupling object creation from the client code.
 

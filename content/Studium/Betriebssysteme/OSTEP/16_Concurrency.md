@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-12-03
+publish: true
 ---
 > [!info]
 >  This is a summary of the 27th chapter of the book "Operating System: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. The chapter introduces the concept of concurrency, focusing on threads, synchronization issues, and their significance in operating systems.

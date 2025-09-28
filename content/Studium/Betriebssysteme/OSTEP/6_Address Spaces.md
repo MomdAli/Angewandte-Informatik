@@ -5,8 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-10-21
-aliases: 
-cssclasses:
+publish: true
 ---
 
 > [!Info]

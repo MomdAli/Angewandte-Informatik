@@ -5,5 +5,6 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-02-04
+publish: true
 ---
 ![[Studium/THGI/Spickzettel.svg]]

@@ -8,6 +8,7 @@ tags:
   - Informatik
 date: 2024-07-19
 enableToc: false
+publish: true
 ---
 
 ## <font color="#ffc000">Grundlagen</font>

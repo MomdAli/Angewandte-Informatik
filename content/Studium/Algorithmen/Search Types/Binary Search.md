@@ -6,6 +6,7 @@ tags:
   - Informatik
   - Java
 date: 2025-01-29
+publish: true
 ---
 > **Definition**  
 > Binary Search is an efficient searching algorithm that finds an element in a **sorted** array by repeatedly dividing the search interval in half.  

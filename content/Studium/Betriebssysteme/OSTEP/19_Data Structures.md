@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-12-10
+publish: true
 ---
 > [!info]
 > This is a summary of the 29th chapter of the book "Operating System: Three Easy Pieces" by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. This chapter focuses on how locks can be used to create thread-safe concurrent data structures like counters, linked lists, queues, and hash tables, while addressing challenges of correctness and scalability.

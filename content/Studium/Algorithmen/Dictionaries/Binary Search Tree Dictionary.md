@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2024-11-04
+publish: true
 ---
 
 A **Binary Search Tree (BST)** is a data structure that maintains elements in sorted order. Each node in a BST has a key, and nodes are organized such that for any given node, the left child contains values less than the parent, and the right child contains values greater than the parent. This structure is useful for quickly searching, inserting, and deleting entries.

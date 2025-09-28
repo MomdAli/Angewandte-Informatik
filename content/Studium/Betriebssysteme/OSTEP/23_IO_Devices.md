@@ -5,6 +5,7 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-01-11
+publish: true
 ---
 > [!info] 
 > This is a summary of Chapter 36 from the book _Operating System: Three Easy Pieces_ by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. This chapter focuses on **I/O Devices**, their integration into operating systems, and techniques for efficient interaction, including concepts such as **interrupts**, **Direct Memory Access (DMA)**, and **device drivers**.

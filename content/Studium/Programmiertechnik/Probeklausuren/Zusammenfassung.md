@@ -14,6 +14,7 @@ aliases:
   - zusammenfassung-programmiertechnik
   - zusammenfassung-prog
   - zusammenfassung_prog
+publish: true
 ---
 
 ### 1. Binäre Bäume und verkettete Listen

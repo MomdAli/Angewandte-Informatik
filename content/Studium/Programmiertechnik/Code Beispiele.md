@@ -1,6 +1,7 @@
 ---
 tags:
   - Informatik
+publish: true
 ---
 
 ```java

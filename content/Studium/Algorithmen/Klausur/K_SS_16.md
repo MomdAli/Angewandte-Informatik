@@ -5,5 +5,6 @@ tags:
   - Semester-3
   - Informatik
 date: 2025-02-05
+publish: true
 ---
 ![[Klausur_SS16.svg]]

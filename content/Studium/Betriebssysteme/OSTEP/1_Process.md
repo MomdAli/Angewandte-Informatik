@@ -9,7 +9,7 @@ aliases:
   - Prozesse
   - process
   - Prozess
-cssclasses:
+publish: true
 ---
 
 > [!Info]
