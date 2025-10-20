@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for git info
           submodules: recursive
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: latest
       - name: Install Dependencies
